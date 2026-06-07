@@ -29,7 +29,7 @@ class SpillConfig:
     T_ee_to_mug: np.ndarray            # (4,4)
     mug_up_local: np.ndarray = None    # default = [0,1,0] (mesh +y is up)
     dt: float = 0.05                   # seconds per waypoint
-    theta_max_deg: float = 25.0
+    theta_max_deg: float = 25.0        # scalar OR np.ndarray (N,) for time-varying
     g: float = 9.81
 
     def __post_init__(self):
@@ -46,8 +46,16 @@ class SpillCost:
         self.T_em = torch.as_tensor(cfg.T_ee_to_mug, dtype=self.dtype, device=self.device)
         self.up_local = torch.as_tensor(cfg.mug_up_local, dtype=self.dtype, device=self.device)
         self.g_world = torch.tensor([0.0, 0.0, -cfg.g], dtype=self.dtype, device=self.device)
-        self.cos_thmax = torch.tensor(math.cos(math.radians(cfg.theta_max_deg)),
-                                       dtype=self.dtype, device=self.device)
+        # Support scalar OR per-waypoint theta_max
+        if np.isscalar(cfg.theta_max_deg):
+            self.cos_thmax = torch.tensor(math.cos(math.radians(cfg.theta_max_deg)),
+                                           dtype=self.dtype, device=self.device)
+            self.theta_max_per_wp = None
+        else:
+            arr = np.asarray(cfg.theta_max_deg, dtype=float)
+            self.cos_thmax = torch.tensor(np.cos(np.radians(arr)),
+                                           dtype=self.dtype, device=self.device)
+            self.theta_max_per_wp = arr
         self.dt = cfg.dt
 
     def _per_waypoint(self, q: torch.Tensor):
@@ -80,7 +88,9 @@ class SpillCost:
         g_eff = self.g_world.unsqueeze(0) - a                       # (N, 3)
         g_hat = g_eff / (g_eff.norm(dim=-1, keepdim=True) + 1e-9)
         align = -(g_hat * up_w).sum(dim=-1)                          # (N,)
-        penalty = torch.clamp(self.cos_thmax - align, min=0.0) ** 2  # (N,)
+        # cos_thmax is either scalar tensor or (N,) tensor
+        cos_thmax = self.cos_thmax if self.cos_thmax.dim() == 0 else self.cos_thmax[:align.shape[0]]
+        penalty = torch.clamp(cos_thmax - align, min=0.0) ** 2  # (N,)
         return penalty.sum()
 
     def diagnostics(self, q: torch.Tensor) -> dict:
@@ -96,7 +106,12 @@ class SpillCost:
             g_hat = g_eff / (g_eff.norm(dim=-1, keepdim=True) + 1e-9)
             align = -(g_hat * up_w).sum(dim=-1)
             theta = torch.acos(align.clamp(-1, 1))
-            spill_flag = (theta > math.radians(self.cfg.theta_max_deg))
+            if np.isscalar(self.cfg.theta_max_deg):
+                thmax_arr = np.full(theta.shape[0], self.cfg.theta_max_deg)
+            else:
+                thmax_arr = np.asarray(self.cfg.theta_max_deg, dtype=float)[:theta.shape[0]]
+            thmax_rad = torch.tensor(np.radians(thmax_arr), dtype=self.dtype, device=self.device)
+            spill_flag = (theta > thmax_rad)
             return dict(
                 p_mug=p_mug.cpu().numpy(),
                 up_w=up_w.cpu().numpy(),
@@ -105,4 +120,5 @@ class SpillCost:
                 tilt_deg=torch.rad2deg(theta).cpu().numpy(),
                 spill_flag=spill_flag.cpu().numpy(),
                 spill_ratio=float(spill_flag.float().mean()),
+                theta_max_per_wp=thmax_arr,
             )

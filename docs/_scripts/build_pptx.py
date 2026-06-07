@@ -6,12 +6,14 @@ this keeps every title/bullet/table editable in PowerPoint.
 Output: docs/slides_proposal_editable.pptx
 """
 import os
+import numpy as np
 from PIL import Image
 from pptx import Presentation
 from pptx.util import Inches, Pt, Emu
 from pptx.dml.color import RGBColor
 from pptx.enum.text import PP_ALIGN, MSO_ANCHOR
-from pptx.enum.shapes import MSO_SHAPE
+from pptx.enum.shapes import MSO_SHAPE, MSO_CONNECTOR
+from pptx.oxml.ns import qn
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DOCS = os.path.abspath(os.path.join(HERE, ".."))
@@ -105,6 +107,92 @@ def callout(s, text, left, top, width, height):
     return box
 
 
+# ---- native-shape helpers (used to build the slide-2 diagram editably) ----
+GREEN = RGBColor(0x27, 0x86, 0x5A)
+BLUE = RGBColor(0x2C, 0x6F, 0xBB)
+PURPLE = RGBColor(0x8E, 0x44, 0xAD)
+THBG = RGBColor(0xEE, 0xF4, 0xFB)
+PRBG = RGBColor(0xFD, 0xF0, 0xEF)
+LGRAY = RGBColor(0x88, 0x88, 0x88)
+
+
+def rrect(s, x, y, w, h, fill=WHITE, line=SLATE, line_w=1.5):
+    sp = s.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(x), Inches(y),
+                            Inches(w), Inches(h))
+    sp.fill.solid(); sp.fill.fore_color.rgb = fill
+    if line is None:
+        sp.line.fill.background()
+    else:
+        sp.line.color.rgb = line; sp.line.width = Pt(line_w)
+    sp.shadow.inherit = False
+    return sp
+
+
+def set_text(sp, runs, size=12, align=PP_ALIGN.CENTER, color=SLATE, bold=False):
+    tf = sp.text_frame; tf.word_wrap = True
+    tf.vertical_anchor = MSO_ANCHOR.MIDDLE
+    for m in ("left", "right"):
+        setattr(tf, f"margin_{m}", Inches(0.05))
+    for m in ("top", "bottom"):
+        setattr(tf, f"margin_{m}", Inches(0.02))
+    lines = runs if isinstance(runs, list) else [runs]
+    for i, ln in enumerate(lines):
+        p = tf.paragraphs[0] if i == 0 else tf.add_paragraph()
+        p.alignment = align
+        rr = ln if isinstance(ln, list) else [(ln, {})]
+        for t, st in rr:
+            r = p.add_run(); r.text = t
+            r.font.name = FONT; r.font.size = Pt(st.get("size", size))
+            r.font.bold = st.get("bold", bold); r.font.color.rgb = st.get("color", color)
+    return sp
+
+
+def arrow(s, x1, y1, x2, y2, color=LGRAY, w=1.75, dashed=False):
+    cn = s.shapes.add_connector(MSO_CONNECTOR.STRAIGHT, Inches(x1), Inches(y1),
+                                Inches(x2), Inches(y2))
+    cn.line.color.rgb = color; cn.line.width = Pt(w)
+    ln = cn.line._get_or_add_ln()
+    tail = ln.makeelement(qn("a:tailEnd"), {"type": "triangle", "w": "med", "len": "med"})
+    ln.append(tail)
+    if dashed:
+        d = ln.makeelement(qn("a:prstDash"), {"val": "dash"})
+        ln.insert(list(ln).index(tail), d)
+    return cn
+
+
+def arc_curve(s, x0, x1, ybase, peak, color, w=2.5, n=14):
+    """Smooth dome drawn as n straight connectors (renders reliably everywhere)."""
+    t = np.linspace(0, 1, n + 1)
+    xs = x0 + (x1 - x0) * t
+    ys = ybase - peak * np.sin(np.pi * t)
+    for i in range(n):
+        cn = s.shapes.add_connector(MSO_CONNECTOR.STRAIGHT, Inches(xs[i]), Inches(ys[i]),
+                                    Inches(xs[i + 1]), Inches(ys[i + 1]))
+        cn.line.color.rgb = color; cn.line.width = Pt(w)
+
+
+def oval(s, cx, cy, d, color):
+    sp = s.shapes.add_shape(MSO_SHAPE.OVAL, Inches(cx - d / 2), Inches(cy - d / 2),
+                            Inches(d), Inches(d))
+    sp.fill.solid(); sp.fill.fore_color.rgb = color
+    sp.line.fill.background(); sp.shadow.inherit = False
+    return sp
+
+
+def crop_thumb(src, dst, thr=20, pad=8):
+    im = Image.open(src).convert("RGB")
+    a = np.asarray(im).astype(int)
+    bg = a[0, 0]
+    mask = np.abs(a - bg).max(-1) > thr
+    ys, xs = np.where(mask)
+    if len(xs):
+        box = (max(int(xs.min()) - pad, 0), max(int(ys.min()) - pad, 0),
+               min(int(xs.max()) + pad, a.shape[1]), min(int(ys.max()) + pad, a.shape[0]))
+        im = im.crop(box)
+    im.save(dst)
+    return dst
+
+
 # ============================ SLIDE 1 — Title ============================
 s = slide()
 textbox(s, "Affordance-Grasp Conditioned\nSpill-Free Trajectory Optimization".split("\n"),
@@ -116,16 +204,69 @@ textbox(s, [[("Does ", {}), ("how you grasp", {"bold": True, "color": NAVY}),
 textbox(s, "Jihoon Yun   ·   Motion Planning   ·   2026-06-08",
         0.92, 5.0, 11.5, 0.5, size=15, color=GRAY)
 
-# ====================== SLIDE 2 — Big picture ===========================
+# ====================== SLIDE 2 — Big picture (native, editable) ========
 s = slide()
-t = title(s, "My thesis picks the grasp — this project plans the carry")
-b = place_image(s, "overview_thesis_project.png", t + 0.05, max_w=12.2, max_h=4.7)
-textbox(s, [[("My thesis (left): ", {"bold": True, "color": NAVY}),
-             ("object mesh + a natural-language task → a dexterous grasp (same mug, the task "
-              "picks a different grasp).   ", {}),
-             ("This project (right): ", {"bold": True, "color": DRED}),
-             ("take that grasp + start/goal poses → plan a spill-free carry trajectory.", {})]],
-        0.7, b + 0.12, 12.0, 0.9, size=13, color=SLATE)
+title(s, "My thesis picks the grasp — this project plans the carry")
+
+# region backgrounds
+rrect(s, 0.30, 1.55, 7.05, 4.95, fill=THBG, line=None)
+rrect(s, 7.55, 1.55, 5.45, 4.95, fill=PRBG, line=None)
+textbox(s, [[("MY THESIS", {"bold": True, "color": NAVY, "size": 13}),
+             ("  ·  Affordance & taxonomy-aware grasp pose generation",
+              {"color": NAVY, "size": 12.5})]],
+        0.45, 1.66, 6.8, 0.55, size=12.5, color=NAVY, align=PP_ALIGN.CENTER)
+textbox(s, "THIS PROJECT  ·  spill-free carry (motion planning)",
+        7.6, 1.66, 5.35, 0.55, size=12.5, color=DRED, bold=True, align=PP_ALIGN.CENTER)
+
+# left: inputs -> grasp generation box
+set_text(rrect(s, 0.55, 2.65, 1.7, 0.7, line=BLUE),
+         [[("object", {})], [("mesh", {})]], size=11)
+set_text(rrect(s, 0.55, 3.75, 2.1, 1.15, line=BLUE),
+         [[("task (language)", {"size": 11})],
+          [("\"pour\" / \"drink\" / \"hand over\"", {"size": 10, "color": SLATE})]], size=11)
+set_text(rrect(s, 2.95, 3.0, 1.55, 1.3, line=BLUE),
+         [[("Grasp", {"bold": True})], [("generation", {"bold": True})]], size=12.5)
+arrow(s, 2.27, 2.95, 2.93, 3.4)
+arrow(s, 2.67, 4.1, 2.93, 3.85)
+
+# left: 3 grasp thumbnails (separate, editable images) + plain labels
+thumbs = [("grasp_drinking.png", "drink", GREEN),
+          ("grasp_pouring.png", "pour", BLUE),
+          ("grasp_handover.png", "hand-over", PURPLE)]
+ys = [2.45, 3.85, 5.25]
+imx, imw = 4.95, 1.45
+for (fn, lbl, col), yy in zip(thumbs, ys):
+    cpath = crop_thumb(os.path.join(FIGS, fn), os.path.join(FIGS, fn[:-4] + "_c.png"))
+    iw, ih = Image.open(cpath).size
+    h = imw * ih / iw
+    s.shapes.add_picture(cpath, Inches(imx), Inches(yy - h / 2), Inches(imw), Inches(h))
+    arrow(s, 4.55, 3.65, imx - 0.02, yy, color=col, w=1.4)
+    textbox(s, lbl, imx + imw + 0.05, yy - 0.2, 1.0, 0.4, size=11, color=col, bold=True,
+            anchor=MSO_ANCHOR.MIDDLE)
+textbox(s, "same mug, task → different grasp", 3.4, 6.05, 3.9, 0.35, size=10,
+        color=SLATE, italic=True, align=PP_ALIGN.CENTER)
+
+# cross arrow: a grasp -> this project
+arrow(s, 6.55, 3.55, 7.75, 2.95, color=NAVY, w=2.5)
+textbox(s, "a grasp", 6.55, 2.85, 1.2, 0.35, size=11, color=NAVY, bold=True)
+
+# right: inputs -> optimization -> trajectory
+set_text(rrect(s, 7.8, 2.45, 4.95, 0.7, line=DRED),
+         "inputs:  grasp pose  +  start & goal EE poses", size=12)
+arrow(s, 10.27, 3.15, 10.27, 3.48)
+set_text(rrect(s, 8.25, 3.5, 4.05, 0.95, line=RED),
+         [[("Spill-free trajectory optimization", {"bold": True})],
+          [("(CHOMP + spill cost — ours)", {"size": 11})]], size=12.5)
+arrow(s, 10.27, 4.45, 10.27, 4.78)
+# trajectory output icon (editable shapes)
+yb = 6.0
+arc_curve(s, 8.85, 11.7, yb, 0.95, RED, w=2.6, n=16)
+oval(s, 8.85, yb, 0.18, GREEN)
+oval(s, 11.7, yb, 0.18, NAVY)
+textbox(s, "start", 8.5, yb + 0.08, 0.9, 0.3, size=9.5, color=GREEN, align=PP_ALIGN.CENTER)
+textbox(s, "goal", 11.35, yb + 0.08, 0.9, 0.3, size=9.5, color=NAVY, align=PP_ALIGN.CENTER)
+textbox(s, "no-spill SE(3) carry trajectory", 7.8, 6.15, 4.95, 0.35, size=10.5,
+        color=DRED, bold=True, align=PP_ALIGN.CENTER)
 pagenum(s, 2)
 
 # ========================= SLIDE 3 — Problem ============================
