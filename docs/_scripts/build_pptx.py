@@ -186,6 +186,34 @@ def bar(s, x, y, w, h, color):
     return sp
 
 
+def gripper(s, cx, cytop):
+    bar(s, cx - 0.28, cytop, 0.56, 0.14, SLATE)            # palm
+    bar(s, cx - 0.28, cytop - 0.32, 0.13, 0.34, SLATE)     # left finger
+    bar(s, cx + 0.15, cytop - 0.32, 0.13, 0.34, SLATE)     # right finger
+
+
+def cup_shape(s, cx, ytop, w, h, color):
+    sp = s.shapes.add_shape(MSO_SHAPE.TRAPEZOID, Inches(cx - w / 2), Inches(ytop),
+                            Inches(w), Inches(h))
+    sp.rotation = 180  # wide side up -> cup opening on top
+    sp.fill.solid(); sp.fill.fore_color.rgb = RGBColor(0xEE, 0xF2, 0xF7)
+    sp.line.color.rgb = color; sp.line.width = Pt(1.75); sp.shadow.inherit = False
+    return sp
+
+
+def rot_arc(s, cx, cy, r, color, w=2.0):
+    """Small rotation arc (alpha) drawn as connectors with an end arrowhead."""
+    angs = np.linspace(np.radians(205), np.radians(335), 6)
+    pts = [(cx + r * np.cos(a), cy - r * np.sin(a)) for a in angs]
+    for i in range(len(pts) - 1):
+        cn = s.shapes.add_connector(MSO_CONNECTOR.STRAIGHT, Inches(pts[i][0]), Inches(pts[i][1]),
+                                    Inches(pts[i + 1][0]), Inches(pts[i + 1][1]))
+        cn.line.color.rgb = color; cn.line.width = Pt(w)
+        if i == len(pts) - 2:
+            ln = cn.line._get_or_add_ln()
+            ln.append(ln.makeelement(qn("a:tailEnd"), {"type": "triangle"}))
+
+
 def crop_thumb(src, dst, thr=20, pad=8):
     im = Image.open(src).convert("RGB")
     a = np.asarray(im).astype(int)
@@ -302,7 +330,44 @@ pagenum(s, 3)
 # ==================== SLIDE 4 — Why grasp matters =======================
 s = slide()
 t = title(s, "Why the grasp matters — it reshapes the spill margin")
-b = place_image(s, "grasp_mechanism.png", t + 0.05, max_w=10.5, max_h=3.05)
+
+# native mechanism diagram (each part editable): two grips, same arm motion
+dv = s.shapes.add_shape(MSO_SHAPE.RECTANGLE, Inches(6.62), Inches(1.7), Pt(1.2), Inches(2.3))
+dv.fill.solid(); dv.fill.fore_color.rgb = RGBColor(0xDD, 0xDD, 0xDD)
+dv.line.fill.background(); dv.shadow.inherit = False
+
+# handle panel — large offset r
+textbox(s, "handle grip  —  large offset r", 1.55, 1.6, 3.6, 0.4, size=12.5,
+        color=GREEN, bold=True, align=PP_ALIGN.CENTER)
+gripper(s, 2.15, 3.55)
+textbox(s, "EE / wrist", 1.5, 3.72, 1.3, 0.3, size=9.5, color=SLATE, align=PP_ALIGN.CENTER)
+cup_shape(s, 3.75, 2.0, 0.82, 1.0, GREEN)
+arrow(s, 2.35, 3.5, 3.55, 2.95, color=GREEN, w=2.0, dashed=True)
+textbox(s, "r", 2.88, 2.92, 0.3, 0.3, size=14, color=GREEN, bold=True)
+arrow(s, 3.75, 2.45, 4.7, 2.45, color=RED, w=2.6)
+textbox(s, "a_cup", 4.72, 2.28, 0.9, 0.3, size=11, color=RED)
+rot_arc(s, 2.15, 3.28, 0.3, BLUE)
+textbox(s, "α (same)", 0.95, 2.82, 1.1, 0.3, size=10, color=BLUE, align=PP_ALIGN.RIGHT)
+
+# body panel — small offset r
+textbox(s, "body grip  —  small offset r", 7.4, 1.6, 3.6, 0.4, size=12.5,
+        color=RED, bold=True, align=PP_ALIGN.CENTER)
+gripper(s, 8.7, 3.55)
+textbox(s, "EE / wrist", 8.05, 3.72, 1.3, 0.3, size=9.5, color=SLATE, align=PP_ALIGN.CENTER)
+cup_shape(s, 8.98, 2.35, 0.74, 0.9, RED)
+arrow(s, 8.8, 3.5, 8.98, 3.25, color=RED, w=2.0, dashed=True)
+textbox(s, "r", 8.48, 3.0, 0.3, 0.3, size=13, color=RED, bold=True)
+arrow(s, 8.98, 2.82, 9.5, 2.82, color=RED, w=2.6)
+textbox(s, "a_cup", 9.52, 2.65, 0.9, 0.3, size=11, color=RED)
+rot_arc(s, 8.7, 3.28, 0.3, BLUE)
+textbox(s, "α (same)", 7.5, 2.82, 1.1, 0.3, size=10, color=BLUE, align=PP_ALIGN.RIGHT)
+
+# shared equation
+textbox(s, [[("a = a_ee + α×r + ω×(ω×r)", {"bold": True, "color": NAVY, "size": 15}),
+             ("      same arm motion, different offset r → different acceleration at the liquid",
+              {"size": 12})]],
+        0.7, 4.05, 12.0, 0.45, align=PP_ALIGN.CENTER)
+b = 4.45
 textbox(s, [
     [("•  Grasp reshapes the margin", {"bold": True, "color": NAVY}),
      (" — it sets the cup's offset r (lever effect on  a_cup) and how easily the arm "
@@ -318,13 +383,13 @@ s = slide()
 title(s, "Related work & the gap")
 rows = [
     ["Line of work", "What they do", "Gap"],
-    ["Anti-slosh / spill-free planning\n(Muchacho '22, Gandhi '24)",
+    ["Anti-slosh / spill-free planning\n(Muchacho '22, Abderezaei '24)",
      "spill-free trajectory for a fixed container pose",
      "grasp is a fixed boundary condition"],
     ["Waiter / non-prehensile\n(Heins '23, Selvaggio '23)",
      "keep object from tipping / sliding (friction cone)",
      "rigid object, no liquid, no grasp choice"],
-    ["Affordance / task-oriented grasping\n(\"Grasping for a Purpose\" '14, Dang '12)",
+    ["Affordance / task-oriented grasping\n(Dang & Allen '12, Quispe & Stilman '16)",
      "pick a task-appropriate grasp",
      "stops at selection — never carries it"],
 ]
@@ -357,64 +422,58 @@ textbox(s, [[("Nobody connects grasp choice to a physical spill margin. ",
         0.7, 5.05, 12.0, 0.9, size=16, color=SLATE)
 pagenum(s, 5)
 
-# ================== SLIDE 6 — Method: spill-aware CHOMP =================
+# ====== SLIDE 6 — Method: spill-aware CHOMP, run per grasp (merged) ======
 s = slide()
-t = title(s, "Method — spill-aware CHOMP")
-b = place_image(s, "method_pipeline.png", t + 0.1, max_w=12.2, max_h=3.0)
-textbox(s, [[("J(ξ) = J_smooth + J_obs + λₛ · J_spill",
-              {"bold": True, "size": 20, "color": NAVY}),
-             ("          ξ ← ξ − η A⁻¹ ∇J(ξ)",
-              {"size": 18, "color": SLATE})]],
-        0.7, b + 0.2, 12.0, 0.6, size=20, align=PP_ALIGN.CENTER)
-textbox(s, [[("Course CHOMP (Lecture 8) + ", {}),
-             ("one differentiable spill term", {"bold": True, "color": DRED}),
-             (".  a_cup comes from finite differences of ξ — the same operator as the "
-              "smoothness term, so the spill gradient is analytic.", {})]],
-        0.7, b + 0.95, 12.0, 0.8, size=14, color=SLATE, align=PP_ALIGN.CENTER)
-pagenum(s, 6)
+title(s, "Method — spill-aware CHOMP, run per grasp as an evaluator")
 
-# ============ SLIDE 7 — Method: grasp evaluator (native, editable) ======
-s = slide()
-title(s, "Method — the optimizer as a grasp evaluator")
+# cost formulation header (2 lines: objective + update, then spill-cost definition)
+textbox(s, [
+    [("J(ξ) = J_smooth + J_obs + λₛ J_spill",
+      {"bold": True, "color": NAVY, "size": 16}),
+     ("     (course CHOMP, Lec. 8  +  our spill term) ;     ξ ← ξ − η A⁻¹ ∇J",
+      {"size": 12.5, "color": SLATE})],
+    [("J_spill = Σₜ max( 0,  cos θmax − n·û )² ,    û = (a − g) / ‖a − g‖ ,    n = cup axis",
+      {"bold": True, "color": DRED, "size": 13.5})],
+], 0.5, 1.48, 12.3, 0.9, align=PP_ALIGN.CENTER, line_spacing=1.15)
 
 # left: candidate grasps
-textbox(s, "candidate grasps\n(taxonomy / region)", 0.45, 1.6, 3.0, 0.7, size=12.5,
+textbox(s, "candidate grasps\n(taxonomy / region)", 0.45, 2.52, 3.0, 0.6, size=12,
         color=SLATE, bold=True, align=PP_ALIGN.CENTER)
-cand = [("handle grip", GREEN, 2.55), ("rim grip", BLUE, 3.45), ("body grip", RED, 4.35)]
+cand = [("handle grip", GREEN, 3.05), ("rim grip", BLUE, 3.85), ("body grip", RED, 4.65)]
 for name, col, yy in cand:
-    set_text(rrect(s, 0.6, yy, 2.45, 0.62, line=col),
+    set_text(rrect(s, 0.6, yy, 2.45, 0.58, line=col),
              [[(name, {"bold": True, "color": col})]], size=13)
 
 # middle: per-grasp planner box
-box = rrect(s, 3.95, 3.0, 2.35, 1.35, line=RED)
+box = rrect(s, 3.95, 3.4, 2.35, 1.2, line=RED)
 set_text(box, [[("Spill-aware CHOMP", {"bold": True})], [("(per grasp)", {"size": 11})]], size=13)
 for _, col, yy in cand:
-    arrow(s, 3.07, yy + 0.31, 3.93, 3.68, color=col, w=1.5)
+    arrow(s, 3.07, yy + 0.29, 3.93, 4.0, color=col, w=1.5)
 
 # right: achievable-margin bars
-textbox(s, "achievable spill margin  θmax  (score)", 6.9, 1.62, 5.9, 0.45, size=12.5,
+textbox(s, "achievable margin to spill cone  (score)", 6.9, 2.57, 5.9, 0.4, size=12,
         color=NAVY, bold=True, align=PP_ALIGN.CENTER)
-arrow(s, 6.32, 3.68, 7.45, 3.68, color=LGRAY, w=2.0)
+arrow(s, 6.32, 4.0, 7.45, 4.0, color=LGRAY, w=2.0)
 bx0, maxw = 7.55, 4.55
-for name, col, val, yy in [("handle", GREEN, 32, 2.5), ("rim", BLUE, 22, 3.45),
-                           ("body", RED, 12, 4.4)]:
+for name, col, val, yy in [("handle", GREEN, 32, 3.05), ("rim", BLUE, 22, 3.85),
+                           ("body", RED, 12, 4.65)]:
     w = maxw * val / 34.0
-    bar(s, bx0, yy, w, 0.6, col)
-    textbox(s, name, bx0 + 0.08, yy + 0.02, 1.4, 0.55, size=12, color=WHITE, bold=True,
+    bar(s, bx0, yy, w, 0.55, col)
+    textbox(s, name, bx0 + 0.08, yy, 1.4, 0.55, size=12, color=WHITE, bold=True,
             anchor=MSO_ANCHOR.MIDDLE)
-    textbox(s, str(val), bx0 + w + 0.08, yy + 0.02, 0.7, 0.55, size=13, color=col, bold=True,
+    textbox(s, str(val), bx0 + w + 0.08, yy, 0.7, 0.55, size=13, color=col, bold=True,
             anchor=MSO_ANCHOR.MIDDLE)
-textbox(s, "wider margin = easier, safer carry  (illustrative)", 7.5, 5.2, 5.2, 0.4,
+textbox(s, "wider margin = easier, safer carry  (illustrative)", 7.5, 5.35, 5.2, 0.4,
         size=10, color=GRAY, italic=True)
 
 # bottom: feedback loop (future / thesis)
-arrow(s, 11.6, 5.95, 1.8, 5.95, color=NAVY, w=1.8, dashed=True)
+arrow(s, 11.6, 5.85, 1.8, 5.85, color=NAVY, w=1.8, dashed=True)
 textbox(s, [[("future (thesis): spill margin → grasp-generation reward — close the loop",
               {"italic": True, "color": NAVY, "size": 12})]],
-        1.5, 6.12, 10.4, 0.4, align=PP_ALIGN.CENTER)
-pagenum(s, 7)
+        1.5, 6.03, 10.4, 0.4, align=PP_ALIGN.CENTER)
+pagenum(s, 6)
 
-# ===================== SLIDE 8 — Evaluation & plan =====================
+# ===================== SLIDE 7 — Evaluation & plan =====================
 s = slide()
 t = title(s, "Evaluation & plan")
 b = place_image(s, "ablation_plan.png", t + 0.05, max_w=11.5, max_h=3.0)
@@ -429,7 +488,7 @@ textbox(s, [
     [("• Timeline: ", {"bold": True}),
      ("implementation + ablation within ~1 week  (proposal 06-08 → report 06-15).", {})],
 ], 0.7, b + 0.12, 12.1, 2.1, size=14.5, color=SLATE, line_spacing=1.12)
-pagenum(s, 8)
+pagenum(s, 7)
 
 out = os.path.join(DOCS, "slides_proposal_editable.pptx")
 prs.save(out)
