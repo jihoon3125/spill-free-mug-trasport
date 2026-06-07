@@ -209,8 +209,8 @@ s = slide()
 title(s, "My thesis picks the grasp — this project plans the carry")
 
 # region backgrounds
-rrect(s, 0.30, 1.55, 7.05, 4.95, fill=THBG, line=None)
-rrect(s, 7.55, 1.55, 5.45, 4.95, fill=PRBG, line=None)
+rrect(s, 0.30, 1.55, 7.05, 4.80, fill=THBG, line=None)
+rrect(s, 7.55, 1.55, 5.45, 4.80, fill=PRBG, line=None)
 textbox(s, [[("MY THESIS", {"bold": True, "color": NAVY, "size": 13}),
              ("  ·  Affordance & taxonomy-aware grasp pose generation",
               {"color": NAVY, "size": 12.5})]],
@@ -265,8 +265,17 @@ oval(s, 8.85, yb, 0.18, GREEN)
 oval(s, 11.7, yb, 0.18, NAVY)
 textbox(s, "start", 8.5, yb + 0.08, 0.9, 0.3, size=9.5, color=GREEN, align=PP_ALIGN.CENTER)
 textbox(s, "goal", 11.35, yb + 0.08, 0.9, 0.3, size=9.5, color=NAVY, align=PP_ALIGN.CENTER)
-textbox(s, "no-spill SE(3) carry trajectory", 7.8, 6.15, 4.95, 0.35, size=10.5,
+textbox(s, "no-spill SE(3) carry trajectory", 7.8, 6.10, 4.95, 0.32, size=10.5,
         color=DRED, bold=True, align=PP_ALIGN.CENTER)
+
+# bottom synthesis band: thesis + project merge into one outcome
+arrow(s, 3.8, 6.40, 6.2, 6.52, color=NAVY, w=2.0)
+arrow(s, 10.2, 6.40, 7.4, 6.52, color=NAVY, w=2.0)
+band = rrect(s, 1.5, 6.55, 10.3, 0.62, fill=NAVY, line=None)
+set_text(band, [[("⟹  Together: a motion-aware grasp-pose selector",
+                  {"bold": True, "color": WHITE, "size": 14}),
+                 ("   — pick the grasp the spill-free planner carries with the largest margin",
+                  {"color": WHITE, "size": 11.5})]], align=PP_ALIGN.CENTER)
 pagenum(s, 2)
 
 # ========================= SLIDE 3 — Problem ============================

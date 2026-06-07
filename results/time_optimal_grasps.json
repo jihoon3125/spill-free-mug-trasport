@@ -1,0 +1,79 @@
+[
+  {
+    "grasp_name": "mug_0_left_2finger_0",
+    "taxonomy": "2finger",
+    "idx": 0,
+    "T_min": 1.021875,
+    "ik_fail": false
+  },
+  {
+    "grasp_name": "mug_0_left_2finger_113",
+    "taxonomy": "2finger",
+    "idx": 113,
+    "T_min": null,
+    "ik_fail": true
+  },
+  {
+    "grasp_name": "mug_0_left_2finger_200",
+    "taxonomy": "2finger",
+    "idx": 200,
+    "T_min": null,
+    "ik_fail": true
+  },
+  {
+    "grasp_name": "mug_0_left_3finger_0",
+    "taxonomy": "3finger",
+    "idx": 0,
+    "T_min": 0.78125,
+    "ik_fail": false
+  },
+  {
+    "grasp_name": "mug_0_left_3finger_100",
+    "taxonomy": "3finger",
+    "idx": 100,
+    "T_min": null,
+    "ik_fail": true
+  },
+  {
+    "grasp_name": "mug_0_left_3finger_200",
+    "taxonomy": "3finger",
+    "idx": 200,
+    "T_min": null,
+    "ik_fail": false
+  },
+  {
+    "grasp_name": "mug_0_left_whole_50",
+    "taxonomy": "whole",
+    "idx": 50,
+    "T_min": 0.746875,
+    "ik_fail": false
+  },
+  {
+    "grasp_name": "mug_0_left_whole_100",
+    "taxonomy": "whole",
+    "idx": 100,
+    "T_min": null,
+    "ik_fail": false
+  },
+  {
+    "grasp_name": "mug_0_left_whole_150",
+    "taxonomy": "whole",
+    "idx": 150,
+    "T_min": 0.91875,
+    "ik_fail": false
+  },
+  {
+    "grasp_name": "mug_0_left_whole_200",
+    "taxonomy": "whole",
+    "idx": 200,
+    "T_min": 0.78125,
+    "ik_fail": false
+  },
+  {
+    "grasp_name": "mug_0_left_whole_280",
+    "taxonomy": "whole",
+    "idx": 280,
+    "T_min": null,
+    "ik_fail": true
+  }
+]
