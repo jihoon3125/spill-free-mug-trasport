@@ -33,7 +33,20 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 from sim.scene import look_at_quat
-from mp.constants import R_UPRIGHT
+
+# Verified by ray-casting from cup interior:
+#   ray (+y) from (0,0,0) hits walls at y ≈ 0.07  → mesh +y is the BOTTOM
+#   ray (-y) from (0,0,0) MISSES the mesh entirely → mesh -y is the OPENING
+# So the cup "up" axis (opening direction) in mesh local frame is -y.
+MUG_UP_LOCAL = np.array([0.0, -1.0, 0.0])
+
+# Rotation that orients the cup upright in world: maps mesh -y → world +z.
+# That is R @ (0,-1,0) = (0,0,+1)  →  R column 1 = (0,0,-1)  →  R = RX(-π/2).
+R_UPRIGHT = np.array([
+    [1, 0, 0],
+    [0, 0, 1],
+    [0, -1, 0],
+], dtype=float)
 
 G_WORLD = np.array([0.0, 0.0, -9.81])
 
@@ -61,16 +74,20 @@ def build_scene(n_particles=40, mug_scale=0.12):
 
     rng = np.random.default_rng(0)
     pts = []
+    # Cup interior (mesh frame): cylinder along y-axis. Inner radial extent
+    # ≤ 0.030 to stay well inside the wall. y range: bottom (interior floor)
+    # at y ≈ +0.05; opening (rim) at y ≈ -0.07. Water sits between, e.g.
+    # y ∈ [-0.04, +0.03] is a "half-fill" water level (water below the rim).
     while len(pts) < n_particles:
-        x = rng.uniform(-0.045, 0.045); z = rng.uniform(-0.045, 0.045)
-        if x*x + z*z <= 0.045**2:
-            pts.append([x, rng.uniform(-0.05, 0.035), z])
+        x = rng.uniform(-0.030, 0.030); z = rng.uniform(-0.030, 0.030)
+        if x*x + z*z <= 0.030**2:
+            pts.append([x, rng.uniform(-0.04, 0.03), z])
     pts = np.asarray(pts)
     mat = sapien.render.RenderMaterial(base_color=[0.15, 0.55, 0.95, 1.0], roughness=0.3)
     particles = []
     for i in range(n_particles):
         pb = scene.create_actor_builder()
-        pb.add_sphere_visual(radius=0.014, material=mat)
+        pb.add_sphere_visual(radius=0.008, material=mat)
         particles.append(pb.build_kinematic(name=f"p_{i}"))
 
     cam = scene.add_camera("cam", 720, 540, fovy=0.7, near=0.05, far=10.0)
@@ -95,12 +112,13 @@ def simulate(scene, mug, particles, pts_local, cam,
     N = path.shape[0]; M = len(pts_local)
     released = np.zeros(M, dtype=bool)
     p_w = np.zeros((M, 3)); v_w = np.zeros((M, 3))
-    mug_up_local = np.array([0.0, 1.0, 0.0])
+    # mesh -y is the opening direction (verified by ray-cast)
+    mug_up_local = MUG_UP_LOCAL
     cos_thmax = np.cos(np.radians(theta_max_deg))
     R_mug = R_UPRIGHT
     qxyzw = R.from_matrix(R_mug).as_quat()
     mug_quat = [qxyzw[3], qxyzw[0], qxyzw[1], qxyzw[2]]
-    mug_up_w = R_mug @ mug_up_local
+    mug_up_w = R_mug @ mug_up_local   # → world +z (UP) when R_mug = R_UPRIGHT
 
     accel_max = 0.0
     frames = []

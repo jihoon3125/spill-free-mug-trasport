@@ -34,20 +34,20 @@ def panel(ax, cx, title, r_len, cup_dx, cup_dy, col):
     ax.add_patch(Arc((wx,wy+0.55),0.9,0.9, angle=0, theta1=20, theta2=140, color=BLUE, lw=2.2))
     ax.add_patch(FancyArrowPatch((wx-0.32,wy+0.78),(wx-0.45,wy+0.62),color=BLUE,
                  arrowstyle="-|>", mutation_scale=12, lw=2))
-    ax.text(wx-0.1, wy+1.15, r"$\alpha$ (same)", color=BLUE, fontsize=11, ha="center")
+    ax.text(wx-0.5, wy+0.45, r"$\alpha$ (same)", color=BLUE, fontsize=11, ha="right")
     # induced cup acceleration ~ alpha x r  (length grows with r)
     ax.add_patch(FancyArrowPatch((ccx, ccy+0.5),(ccx+ r_len, ccy+0.5),
                  color=RED, arrowstyle="-|>", mutation_scale=16, lw=2.6))
     ax.text(ccx+r_len+0.1, ccy+0.5, r"$a_{cup}$", color=RED, fontsize=12, va="center")
-    ax.text(cx, 3.85, title, ha="center", fontsize=12, color=col, fontweight="bold")
+    ax.text(cx, 4.55, title, ha="center", fontsize=12, color=col, fontweight="bold")
 
 def main():
-    fig, ax = plt.subplots(figsize=(11.5, 4.5))
-    ax.set_xlim(0,11.5); ax.set_ylim(-0.2,4.2); ax.axis("off"); ax.set_aspect("equal")
-    panel(ax, 3.0, "handle grip  ->  large offset r", 1.25, 0.9, 2.0, GREEN)
+    fig, ax = plt.subplots(figsize=(11.5, 4.8))
+    ax.set_xlim(0,11.5); ax.set_ylim(-0.3,4.85); ax.axis("off"); ax.set_aspect("equal")
+    panel(ax, 3.0, "handle grip  ->  large offset r", 1.25, 0.9, 1.7, GREEN)
     ax.axvline(5.9, color="#dddddd", lw=1.2)
-    panel(ax, 8.6, "body grip  ->  small offset r", 0.55, -0.2, 1.0, RED)
-    ax.text(5.75, -0.05,
+    panel(ax, 8.6, "body grip  ->  small offset r", 0.55, -0.2, 0.85, RED)
+    ax.text(5.75, -0.15,
             r"$a_{cup} = a_{ee} + \alpha \times r + \omega \times (\omega \times r)$"
             "      same arm motion, different grasp offset r  ->  different acceleration at the liquid",
             ha="center", fontsize=12.5, color=NAVY)
