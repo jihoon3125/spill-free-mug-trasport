@@ -67,11 +67,25 @@ T=0.5/0.8/1.0/1.5/2.0s 에서 spill ratio:
 - STOMP+spill: 16 → 28 → 34 → 48 → 40%
 - **CHOMP+spill (ours): 0 → 4 → 0 → 0 → 0%** ← 모든 T 에서 견고
 
-### ⏳ 남은 작업 (우선순위 순)
-1. Animation GIF (3-method side-by-side) — proposal 영상 / Marp video 슬라이드
-2. Obstacle scenario (SDF cost) — Day 2 추가 ablation, paper rigor 강화
-3. Quantitative particle spill metric (단순 binary 가 아닌 회복 가능 비율 등)
-4. Plan-time 그래프 (CHOMP iter 별 수렴 곡선)
+### ✅ 추가 완료 (저녁 D-C-B-A 진행 후)
+1. ✅ figs/README.md 갱신 — 자료 세션 매핑 가이드
+2. ✅ Git initial commit (543d087) + 메모리 갱신
+3. ✅ Animation GIF (3-method side-by-side, 50frame, 25fps)
+4. ✅ Obstacle scenario (SDF cost) — 3-way trade-off 검증
+
+### 📊 Obstacle scenario 결과
+| Method | Spill | Collision |
+|---|---|---|
+| Min-jerk | 32% | **25%** (penetrates) |
+| CHOMP smooth+obs | **53%** | 0% (detour induces spill!) |
+| **CHOMP+obs+spill (ours)** | **0%** | **0%** |
+
+→ Obstacle 만 막으면 우회 → 더 큰 spill. Spill+Obstacle 동시 처리가 필요한 사실.
+
+### ⏳ 남은 작업 (선택)
+1. Quantitative particle spill metric (단순 binary 가 아닌 회복 가능 비율)
+2. Plan-time 그래프 (CHOMP iter 별 수렴 곡선)
+3. 다양한 grasp pose 로 robust 성 평가
 
 ## 핵심 수식 (spill cost)
 

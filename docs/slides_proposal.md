@@ -9,7 +9,7 @@ style: |
   h1 { color: #1a365d; }
   h2 { color: #2c3e50; border-bottom: 2px solid #ccc; padding-bottom: 4px; }
   table { font-size: 0.84em; }
-  img { max-height: 470px; }
+  img { max-height: 500px; }
   .small { font-size: 0.8em; color: #555; }
   .hl { color: #c0392b; font-weight: bold; }
   .sub { font-size: 1.15em; color: #2c3e50; }
@@ -32,26 +32,11 @@ style: |
 
 ---
 
-## Context — my thesis: task-conditional grasp generation
+## Where this project fits — from grasp generation to the carry
 
-<div class="cols">
-<div>
+![w:1120](figs/overview_thesis_project.png)
 
-![w:560](figs/thesis_taskgrasp.png)
-
-<span class="small">Same 900 mug grasps; the task selects a different one. (my thesis, Stage 1)</span>
-
-</div>
-<div>
-
-- **Input:** object mesh + a natural-language **task**
-- **Output:** dexterous (multi-finger) **grasp pose** — which fingers, where on the object
-- Same mug, **task changes → grasp changes** (affordance / grasp taxonomy)
-
-</div>
-</div>
-
-**This project starts where the grasp ends → the _carry_.**
+<span class="small"><b>My thesis (left):</b> object mesh + a natural-language task → a dexterous grasp (same mug, the task picks a different grasp). &nbsp; <b>This project (right):</b> take that grasp + start/goal poses → plan a <b>spill-free</b> carry trajectory.</span>
 
 ---
 

@@ -70,7 +70,23 @@
 | STOMP+spill | K=50 samples, n_iter=200, σ_init=0.04, decay=0.995, λ=0.2, γ_spill=5.0, noise correlated by Σ=M⁻¹ |
 | **CHOMP+spill (ours)** | α_smooth=1.0, γ_spill=2.0, Adam lr=0.003, 1000 iter |
 
-## 곧 추가 예정 (코딩 세션 진행 중)
+## Obstacle scenario (NEW)
 
-- `anim_3way.gif` — sapien 3-method GIF
-- `fig_obstacle_scene.png` + `fig_obstacle_*.png` — obstacle SDF cost 시나리오
+`results/obstacle.npz` 기반 figure:
+
+| 파일 | 용도 | 비고 |
+|---|---|---|
+| `fig_obstacle_metrics.png` | ★ 3-way spill+collision bar | 32%/25% / 53%/0% / **0%/0%** |
+| `fig_obstacle_3d.png` | mug 중심 3D path + box | obstacle 회피 시각화 |
+
+**핵심 story**: obstacle cost 만 추가하면 우회 → 더 큰 spill 발생 (32→53%).
+spill cost 도 함께 추가하면 **둘 다 0%** 달성. → "두 cost 의 simultaneous optimization 이 필요한 사실" 증명.
+
+## Animation GIF (NEW)
+
+| 파일 | 용도 | 비고 |
+|---|---|---|
+| `anim_3way.gif` | ★ 3-method side-by-side 50frame@25fps GIF | 슬라이드/web 용 |
+| `anim_minjerk.gif` / `anim_chomp.gif` / `anim_chomp_spill.gif` | per-method GIF | 개별 |
+
+각 GIF 에 method label (상단) + 실시간 tilt 값 (하단, spill 시 빨강) annotation.
