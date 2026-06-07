@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+*.egg-info/
+
+# Editor cruft
+.vscode/
+.idea/
+*.swp
+
+# Large binary outputs we re-generate
+figs/_*.png
+
+# OS junk
+.DS_Store

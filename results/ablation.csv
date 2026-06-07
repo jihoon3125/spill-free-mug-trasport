@@ -1,0 +1,5 @@
+method,spill_ratio,max_tilt_deg,mean_tilt_deg,traj_len_rad,jerk_int,plan_time_s
+minjerk,0.660,38.75,23.31,2.815,2.581e+05,0.00
+chomp,0.420,21.22,15.56,2.815,1.046e-04,0.06
+chomp_spill,0.000,15.14,11.64,2.858,2.029e+04,2.27
+stomp_spill,0.140,32.09,11.92,32.973,8.380e+10,12.32
