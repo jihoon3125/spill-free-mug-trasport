@@ -1,8 +1,8 @@
 """Project-wide constants.
 
 mug_mesh.obj is a closed solid (no modeled cavity). Its OPENING direction is
-mesh local -y (verified by raycast + by side-view render: with the old +y-up
-convention the cup rendered upside-down). So in the mug's *local* frame:
+mesh local -y, established by a side-view render: under the old +y-up convention
+the cup rendered upside-down, so -y is the opening. In the mug's *local* frame:
   -y  →  cup opening (the "up" direction when the cup stands upright)
   +y  →  cup base
   +x  →  body lateral

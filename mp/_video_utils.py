@@ -2,7 +2,7 @@
 orientation (opening up).
 
 Convention:
-  - Mesh -y is the cup opening direction (verified by raycast).
+  - Mesh -y is the cup opening direction (established by side-view render).
   - To render any mug pose visually upright, apply a 'mesh flip'
     R_x_mesh_180 on the right side of the world rotation:
         T_render = T_mug_world @ R_x_mesh_180

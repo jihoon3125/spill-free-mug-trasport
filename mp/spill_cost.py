@@ -61,15 +61,11 @@ class SpillCost:
     def _per_waypoint(self, q: torch.Tensor):
         """q: (N, n_dof) → (mug_pos: (N,3), mug_up: (N,3))."""
         T = self.fk(q)                                  # (N, 4, 4)
-        R_ee = T[:, :3, 3 - 3:3]                        # (N, 3, 3)  same as T[:, :3, :3]
-        R_ee = T[:, :3, :3]
+        R_ee = T[:, :3, :3]                             # (N, 3, 3)
         t_ee = T[:, :3, 3]                              # (N, 3)
-        # mug center in world = R_ee @ t_em + t_ee
         t_em = self.T_em[:3, 3]
         R_em = self.T_em[:3, :3]
-        p_mug = (R_ee @ t_em).squeeze(-1) + t_ee \
-            if t_em.dim() == 2 else (R_ee @ t_em) + t_ee
-        # Simpler: matrix-vector
+        # mug center in world = R_ee @ t_em + t_ee
         p_mug = torch.einsum("nij,j->ni", R_ee, t_em) + t_ee
         up_w = torch.einsum("nij,jk,k->ni", R_ee, R_em, self.up_local)
         # normalize up just in case (should be unit anyway)

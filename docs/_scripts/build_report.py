@@ -361,6 +361,22 @@ mpara("Feasibility is the central subtlety. The spill cost constrains only the d
      "Scope: a single mug instance. We found and fixed an inverted cup up-axis convention "
      "midway; all numbers use the corrected convention.")
 
+mpara("Several modeling choices should be read with care. (a) The mug acceleration uses a "
+      "central second difference with the two endpoints copied from their neighbors, which "
+      "understates the launch/braking accelerations of the rest-to-rest motion, so absolute "
+      "spill ratios are mildly optimistic (the relative method ordering is unaffected). "
+      "(b) We apply the CHOMP M^{−1} metric to the gradient but optimize with Adam and "
+      "gradient clipping, so the metric-vs-no-metric ablation (ours vs vanilla-grad) is not "
+      "a clean isolation of the covariant step; the advantage of ours is, however, "
+      "corroborated independently by feasibility. (c) The joint velocity/acceleration limits "
+      "(3.3 rad/s, 20 rad/s^{2}) are nominal rather than datasheet-exact and set the "
+      "absolute feasibility and T* values. (d) The fill-level axis in Fig. 6 is a nominal "
+      "reparameterization of θ_{max} (the mesh is a closed solid with no modeled cavity); "
+      "the spill-free fractions are real but the “% full” labels are approximate. "
+      "(e) Reachability is decided by IK position error alone (no joint-limit, collision, or "
+      "orientation gating), so the 36% figure conflates true infeasibility with "
+      "IK-convergence limits.")
+
 # ===== 6 Conclusion =====
 heading("6", "Conclusion and Future Work")
 para("We built a spill-aware planner that, at a feasible budget, uniquely achieves both "
