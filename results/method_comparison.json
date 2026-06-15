@@ -1,0 +1,4318 @@
+{
+  "T": 1.0,
+  "n_grasps": 77,
+  "per_grasp": [
+    {
+      "grasp_name": "mug_0_left_2finger_0",
+      "taxonomy": "2finger",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.7799999713897705,
+          "max_tilt": 30.032664874085803,
+          "jerk": 174717.1314686111,
+          "traj_len": 2.461146902776238,
+          "max_qvel": 3.113824843709165,
+          "max_qacc": 9.569339578538656,
+          "feasible": true,
+          "plan_time": 0.0010547637939453125
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.0,
+          "max_tilt": 8.375773308059816,
+          "jerk": 120594.29133941857,
+          "traj_len": 2.4611539748786364,
+          "max_qvel": 1.6611677689868367,
+          "max_qacc": 1.418169958493554,
+          "feasible": true,
+          "plan_time": 0.23231267929077148
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.47999998927116394,
+          "max_tilt": 37.81555795573922,
+          "jerk": 78922801956.55542,
+          "traj_len": 28.765499503882534,
+          "max_qvel": 38.37842778102964,
+          "max_qacc": 1042.6630308094007,
+          "feasible": false,
+          "plan_time": 12.227221250534058
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.8199999928474426,
+          "max_tilt": 107.8798526637763,
+          "jerk": 24954417959.963764,
+          "traj_len": 4.0063249281498505,
+          "max_qvel": 12.274134445388052,
+          "max_qacc": 772.0561055817595,
+          "feasible": false,
+          "plan_time": 2.6403121948242188
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 7.710880694689757,
+          "jerk": 29065.047290681294,
+          "traj_len": 2.4801240613603484,
+          "max_qvel": 1.767890689552131,
+          "max_qacc": 1.7484563147009253,
+          "feasible": true,
+          "plan_time": 2.6484270095825195
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_2finger_8",
+      "taxonomy": "2finger",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.7799999713897705,
+          "max_tilt": 24.703470832152114,
+          "jerk": 73961.2082459085,
+          "traj_len": 1.6012966320703597,
+          "max_qvel": 1.9401156698331596,
+          "max_qacc": 5.96232177406643,
+          "feasible": true,
+          "plan_time": 0.0010213851928710938
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.0,
+          "max_tilt": 9.808835487285585,
+          "jerk": 165263.11794182804,
+          "traj_len": 1.6013105892791837,
+          "max_qvel": 1.0350157102362114,
+          "max_qacc": 2.2626951214966193,
+          "feasible": true,
+          "plan_time": 0.23792052268981934
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.4000000059604645,
+          "max_tilt": 46.310056774478454,
+          "jerk": 62277980622.775856,
+          "traj_len": 35.26835657025224,
+          "max_qvel": 60.9418828677263,
+          "max_qacc": 768.5411988290984,
+          "feasible": false,
+          "plan_time": 12.962402582168579
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.6600000262260437,
+          "max_tilt": 102.19542240876127,
+          "jerk": 9380279827.074318,
+          "traj_len": 1.9871369817074076,
+          "max_qvel": 13.092605283052649,
+          "max_qacc": 673.9178017230587,
+          "feasible": false,
+          "plan_time": 2.958101987838745
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 9.996765807432219,
+          "jerk": 341106.08802583505,
+          "traj_len": 1.6559519384759014,
+          "max_qvel": 1.1610758876324683,
+          "max_qacc": 6.420842556985281,
+          "feasible": true,
+          "plan_time": 2.966585636138916
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_2finger_15",
+      "taxonomy": "2finger",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.6600000262260437,
+          "max_tilt": 27.48539492945248,
+          "jerk": 173640.78935582022,
+          "traj_len": 2.4535542629291194,
+          "max_qvel": 2.88695170375826,
+          "max_qacc": 8.87211792144212,
+          "feasible": true,
+          "plan_time": 0.0009713172912597656
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.0,
+          "max_tilt": 10.207091942678579,
+          "jerk": 80562.40550031414,
+          "traj_len": 2.4535612791019257,
+          "max_qvel": 1.5401351590451755,
+          "max_qacc": 1.5677280434084362,
+          "feasible": true,
+          "plan_time": 0.24139189720153809
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.41999998688697815,
+          "max_tilt": 37.18887904439071,
+          "jerk": 52761736109.47526,
+          "traj_len": 26.5550352311158,
+          "max_qvel": 40.46256667616305,
+          "max_qacc": 716.842513929565,
+          "feasible": false,
+          "plan_time": 13.355828523635864
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.7799999713897705,
+          "max_tilt": 103.12085659574863,
+          "jerk": 33661001820.917362,
+          "traj_len": 4.274057532935721,
+          "max_qvel": 12.991764305171793,
+          "max_qacc": 907.3831421041602,
+          "feasible": false,
+          "plan_time": 2.9573659896850586
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 7.6993363673216075,
+          "jerk": 33739.38775344577,
+          "traj_len": 2.493979545369136,
+          "max_qvel": 1.7619283112602355,
+          "max_qacc": 1.7216477091304436,
+          "feasible": true,
+          "plan_time": 2.969022035598755
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_2finger_31",
+      "taxonomy": "2finger",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.800000011920929,
+          "max_tilt": 28.687886265701785,
+          "jerk": 193760.78587007866,
+          "traj_len": 2.5918074578934798,
+          "max_qvel": 3.2743289957730526,
+          "max_qacc": 10.062597488650393,
+          "feasible": true,
+          "plan_time": 0.0010180473327636719
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.0,
+          "max_tilt": 9.31576717075581,
+          "jerk": 89146.9010911858,
+          "traj_len": 2.5918132117807184,
+          "max_qvel": 1.7467937555402304,
+          "max_qacc": 1.9582323512022026,
+          "feasible": true,
+          "plan_time": 0.23763036727905273
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.36000001430511475,
+          "max_tilt": 28.876314765227587,
+          "jerk": 38059453809.35711,
+          "traj_len": 20.08644392740535,
+          "max_qvel": 30.456467756159274,
+          "max_qacc": 553.0569975144595,
+          "feasible": false,
+          "plan_time": 12.659104824066162
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.800000011920929,
+          "max_tilt": 105.42791011678568,
+          "jerk": 52737768928.22489,
+          "traj_len": 5.9496013415781395,
+          "max_qvel": 13.305688997925925,
+          "max_qacc": 852.7290262098616,
+          "feasible": false,
+          "plan_time": 2.9680254459381104
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 9.643736625636405,
+          "jerk": 10650.102626255124,
+          "traj_len": 2.6015076176806478,
+          "max_qvel": 1.7714939334096071,
+          "max_qacc": 1.2065959788314171,
+          "feasible": true,
+          "plan_time": 2.975994348526001
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_2finger_61",
+      "taxonomy": "2finger",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.6399999856948853,
+          "max_tilt": 27.95902993712234,
+          "jerk": 141682.38376394013,
+          "traj_len": 2.216295778043624,
+          "max_qvel": 2.769923692537267,
+          "max_qacc": 8.512469952855025,
+          "feasible": true,
+          "plan_time": 0.0010023117065429688
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.0,
+          "max_tilt": 6.317886527136966,
+          "jerk": 30363.43806121074,
+          "traj_len": 2.216300365111451,
+          "max_qvel": 1.4777028868184086,
+          "max_qacc": 1.4519447382036763,
+          "feasible": true,
+          "plan_time": 0.23611211776733398
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.46000000834465027,
+          "max_tilt": 36.848618430734255,
+          "jerk": 58539934292.95409,
+          "traj_len": 27.91772106080956,
+          "max_qvel": 31.487713397658734,
+          "max_qacc": 758.9588543851692,
+          "feasible": false,
+          "plan_time": 13.306203842163086
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.7799999713897705,
+          "max_tilt": 95.33463929274785,
+          "jerk": 31061113542.51196,
+          "traj_len": 4.526014079355365,
+          "max_qvel": 15.655368722551787,
+          "max_qacc": 907.10762363036,
+          "feasible": false,
+          "plan_time": 2.9720234870910645
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 12.66779469954478,
+          "jerk": 481013.95798372896,
+          "traj_len": 2.2717339044918914,
+          "max_qvel": 1.763248251749139,
+          "max_qacc": 6.083019261632352,
+          "feasible": true,
+          "plan_time": 2.961902379989624
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_2finger_69",
+      "taxonomy": "2finger",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.8600000143051147,
+          "max_tilt": 32.54982998189201,
+          "jerk": 378192.99406366213,
+          "traj_len": 3.6209833785521823,
+          "max_qvel": 3.7592349372863167,
+          "max_qacc": 11.552800005136742,
+          "feasible": false,
+          "plan_time": 0.001010894775390625
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.7400000095367432,
+          "max_tilt": 30.662562932799855,
+          "jerk": 461219.2487834031,
+          "traj_len": 3.6210009692650913,
+          "max_qvel": 2.0054820766445927,
+          "max_qacc": 4.489856530828277,
+          "feasible": true,
+          "plan_time": 0.23794102668762207
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.46000000834465027,
+          "max_tilt": 31.87037984902895,
+          "jerk": 23081637604.363354,
+          "traj_len": 22.81231623370949,
+          "max_qvel": 25.520554603715944,
+          "max_qacc": 553.1067664338644,
+          "feasible": false,
+          "plan_time": 12.99840235710144
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.8600000143051147,
+          "max_tilt": 88.1292027705717,
+          "jerk": 33724336927.200512,
+          "traj_len": 5.60793430743264,
+          "max_qvel": 18.96702797167791,
+          "max_qacc": 1018.1790161949594,
+          "feasible": false,
+          "plan_time": 2.9615986347198486
+        },
+        "ours": {
+          "spill_ratio": 0.03999999910593033,
+          "max_tilt": 18.004143490779686,
+          "jerk": 31262.31257435456,
+          "traj_len": 3.6703852347848054,
+          "max_qvel": 2.2861645655297953,
+          "max_qacc": 1.8718570822995184,
+          "feasible": true,
+          "plan_time": 2.9700701236724854
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_2finger_77",
+      "taxonomy": "2finger",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.7799999713897705,
+          "max_tilt": 28.311236910050123,
+          "jerk": 126753.50743572591,
+          "traj_len": 2.096282382266364,
+          "max_qvel": 2.580978489167765,
+          "max_qacc": 7.931807615205382,
+          "feasible": true,
+          "plan_time": 0.0010180473327636719
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.0,
+          "max_tilt": 8.84240781163353,
+          "jerk": 3545.880552372806,
+          "traj_len": 2.0962827515095013,
+          "max_qvel": 1.3769041271912976,
+          "max_qacc": 0.31722469514960056,
+          "feasible": true,
+          "plan_time": 0.23894762992858887
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.2199999988079071,
+          "max_tilt": 36.33744325452736,
+          "jerk": 33532749748.767197,
+          "traj_len": 24.33193858917121,
+          "max_qvel": 39.633657294157146,
+          "max_qacc": 537.5497741698478,
+          "feasible": false,
+          "plan_time": 12.928464889526367
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.7599999904632568,
+          "max_tilt": 102.56593926288751,
+          "jerk": 33558481682.79607,
+          "traj_len": 4.4674701820292295,
+          "max_qvel": 12.110064879896752,
+          "max_qacc": 997.5542395235827,
+          "feasible": false,
+          "plan_time": 2.9874818325042725
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 7.715937639150254,
+          "jerk": 130881.960082066,
+          "traj_len": 2.117800479784068,
+          "max_qvel": 1.5090722689517457,
+          "max_qacc": 4.2075635551117125,
+          "feasible": true,
+          "plan_time": 2.9836997985839844
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_2finger_84",
+      "taxonomy": "2finger",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.6000000238418579,
+          "max_tilt": 24.714674570571418,
+          "jerk": 64817.25437081207,
+          "traj_len": 1.4990465073153099,
+          "max_qvel": 1.810579588858064,
+          "max_qacc": 5.56423427436985,
+          "feasible": true,
+          "plan_time": 0.0010242462158203125
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.0,
+          "max_tilt": 7.967286201539164,
+          "jerk": 341265.76406145,
+          "traj_len": 1.4990816644373246,
+          "max_qvel": 0.987918560355549,
+          "max_qacc": 2.778687265668177,
+          "feasible": true,
+          "plan_time": 0.23604798316955566
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.47999998927116394,
+          "max_tilt": 38.99380472635566,
+          "jerk": 88954211879.33893,
+          "traj_len": 28.196923219652714,
+          "max_qvel": 37.72605532072145,
+          "max_qacc": 894.8108182726771,
+          "feasible": false,
+          "plan_time": 13.016318082809448
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.7400000095367432,
+          "max_tilt": 91.01545087500732,
+          "jerk": 698214221.016643,
+          "traj_len": 1.6912136958883923,
+          "max_qvel": 3.099007456148868,
+          "max_qacc": 119.21289915100563,
+          "feasible": false,
+          "plan_time": 2.963561773300171
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 5.346193430909863,
+          "jerk": 175285.90140617453,
+          "traj_len": 1.5315744008850611,
+          "max_qvel": 1.1233081794961182,
+          "max_qacc": 3.8934834089028105,
+          "feasible": true,
+          "plan_time": 2.969672918319702
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_2finger_92",
+      "taxonomy": "2finger",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.3400000035762787,
+          "max_tilt": 28.81383466748934,
+          "jerk": 260214.00831142438,
+          "traj_len": 3.003551810899773,
+          "max_qvel": 3.502858684523406,
+          "max_qacc": 10.764910015910468,
+          "feasible": false,
+          "plan_time": 0.0010294914245605469
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.0,
+          "max_tilt": 16.176774877102293,
+          "jerk": 6651.511773620056,
+          "traj_len": 3.0035521104914147,
+          "max_qvel": 1.8687101035248233,
+          "max_qacc": 0.5919670089310167,
+          "feasible": true,
+          "plan_time": 0.23850321769714355
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.4000000059604645,
+          "max_tilt": 33.16043449314649,
+          "jerk": 31476778775.83414,
+          "traj_len": 27.865569046779942,
+          "max_qvel": 37.126214244879094,
+          "max_qacc": 737.45851987179,
+          "feasible": false,
+          "plan_time": 13.023354053497314
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.6399999856948853,
+          "max_tilt": 84.05470167855094,
+          "jerk": 29803265102.226864,
+          "traj_len": 5.1977925161973655,
+          "max_qvel": 12.402390640596236,
+          "max_qacc": 889.155586899046,
+          "feasible": false,
+          "plan_time": 2.9565229415893555
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 15.647893405438477,
+          "jerk": 1883.1001019259065,
+          "traj_len": 3.006121776684478,
+          "max_qvel": 1.872228964579653,
+          "max_qacc": 0.5344702938052813,
+          "feasible": true,
+          "plan_time": 2.9661741256713867
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_2finger_100",
+      "taxonomy": "2finger",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.5600000023841858,
+          "max_tilt": 28.631550501244103,
+          "jerk": 113805.74996864166,
+          "traj_len": 1.9863322512967603,
+          "max_qvel": 2.3965828263752638,
+          "max_qacc": 7.365126827866171,
+          "feasible": true,
+          "plan_time": 0.0010221004486083984
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.0,
+          "max_tilt": 6.02000459419569,
+          "jerk": 214423.49725078946,
+          "traj_len": 1.9863454164380425,
+          "max_qvel": 1.2785324630333978,
+          "max_qacc": 2.820219622728967,
+          "feasible": true,
+          "plan_time": 0.23261284828186035
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.8199999928474426,
+          "max_tilt": 43.09082626149154,
+          "jerk": 161550801274.24255,
+          "traj_len": 35.20951726302829,
+          "max_qvel": 62.02246461388097,
+          "max_qacc": 1626.231647833921,
+          "feasible": false,
+          "plan_time": 13.144880533218384
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.8799999952316284,
+          "max_tilt": 123.07318405585552,
+          "jerk": 1400858553.5568683,
+          "traj_len": 2.3471049639800206,
+          "max_qvel": 2.507602442381086,
+          "max_qacc": 133.3036410721011,
+          "feasible": false,
+          "plan_time": 2.9570698738098145
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 8.973240092264666,
+          "jerk": 56708.84406881699,
+          "traj_len": 2.012259827445224,
+          "max_qvel": 1.5580567131195497,
+          "max_qacc": 1.8363809135693898,
+          "feasible": true,
+          "plan_time": 2.9637537002563477
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_2finger_115",
+      "taxonomy": "2finger",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.6600000262260437,
+          "max_tilt": 31.444563985727818,
+          "jerk": 234676.59314545844,
+          "traj_len": 2.8523622429138054,
+          "max_qvel": 3.408526937875792,
+          "max_qacc": 10.47501171975873,
+          "feasible": false,
+          "plan_time": 0.001020193099975586
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.03999999910593033,
+          "max_tilt": 20.574821458672123,
+          "jerk": 414977.7581650934,
+          "traj_len": 2.85238304911256,
+          "max_qvel": 1.8183858672596442,
+          "max_qacc": 4.511890652104803,
+          "feasible": true,
+          "plan_time": 0.2403545379638672
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.4399999976158142,
+          "max_tilt": 33.82732745430708,
+          "jerk": 42857253024.78701,
+          "traj_len": 24.47606663033601,
+          "max_qvel": 30.464228582989204,
+          "max_qacc": 764.6406958647277,
+          "feasible": false,
+          "plan_time": 13.14218258857727
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.8999999761581421,
+          "max_tilt": 92.5960016105571,
+          "jerk": 25427081449.417923,
+          "traj_len": 4.882406377743949,
+          "max_qvel": 16.967692237771182,
+          "max_qacc": 971.9116292935798,
+          "feasible": false,
+          "plan_time": 2.960042953491211
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 16.257406779065185,
+          "jerk": 1972.3078433342066,
+          "traj_len": 2.8540840028229657,
+          "max_qvel": 1.8188379920718398,
+          "max_qacc": 0.4210355159953019,
+          "feasible": true,
+          "plan_time": 2.968815565109253
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_2finger_123",
+      "taxonomy": "2finger",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.5,
+          "max_tilt": 27.07394859547164,
+          "jerk": 98923.6422759323,
+          "traj_len": 1.8519098461658623,
+          "max_qvel": 2.3830973284144488,
+          "max_qacc": 7.323683485401765,
+          "feasible": true,
+          "plan_time": 0.0009989738464355469
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.0,
+          "max_tilt": 5.722014121540738,
+          "jerk": 27688.440693981873,
+          "traj_len": 1.851911877548813,
+          "max_qvel": 1.2713382001298381,
+          "max_qacc": 0.6053524167416838,
+          "feasible": true,
+          "plan_time": 0.23877668380737305
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.6200000047683716,
+          "max_tilt": 36.82604357878758,
+          "jerk": 90734965914.57019,
+          "traj_len": 36.49685339604816,
+          "max_qvel": 52.248962574449074,
+          "max_qacc": 796.3603514964923,
+          "feasible": false,
+          "plan_time": 13.045718669891357
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.7400000095367432,
+          "max_tilt": 99.60842797448366,
+          "jerk": 1013418934.7636108,
+          "traj_len": 2.0455989578057143,
+          "max_qvel": 2.398788007022036,
+          "max_qacc": 100.9182774259666,
+          "feasible": false,
+          "plan_time": 2.9604671001434326
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 6.342710408923331,
+          "jerk": 4803.6191126981985,
+          "traj_len": 1.8543234690764225,
+          "max_qvel": 1.2759001967964556,
+          "max_qacc": 0.8863415231523215,
+          "feasible": true,
+          "plan_time": 2.970912218093872
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_2finger_130",
+      "taxonomy": "2finger",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.47999998927116394,
+          "max_tilt": 27.128071357737177,
+          "jerk": 85584.28028651029,
+          "traj_len": 1.7225299944035242,
+          "max_qvel": 2.090029624352174,
+          "max_qacc": 6.423034116718945,
+          "feasible": true,
+          "plan_time": 0.0010139942169189453
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.0,
+          "max_tilt": 4.655398623646263,
+          "jerk": 205750.7867711819,
+          "traj_len": 1.7225495233928252,
+          "max_qvel": 1.1149920186473956,
+          "max_qacc": 2.053698316006495,
+          "feasible": true,
+          "plan_time": 0.24235320091247559
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.6000000238418579,
+          "max_tilt": 35.60054362968797,
+          "jerk": 97225802776.91583,
+          "traj_len": 29.599841969025018,
+          "max_qvel": 51.84021518949564,
+          "max_qacc": 996.540141761787,
+          "feasible": false,
+          "plan_time": 12.91937804222107
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.8399999737739563,
+          "max_tilt": 91.03829988672504,
+          "jerk": 674691403.1602541,
+          "traj_len": 1.9185035840716205,
+          "max_qvel": 2.547853461239873,
+          "max_qacc": 117.28474157368306,
+          "feasible": false,
+          "plan_time": 2.9558379650115967
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 9.390293017312667,
+          "jerk": 48730.09402412252,
+          "traj_len": 1.7486506804937587,
+          "max_qvel": 1.3075548105912773,
+          "max_qacc": 1.4765033369238532,
+          "feasible": true,
+          "plan_time": 2.9646520614624023
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_2finger_138",
+      "taxonomy": "2finger",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.7799999713897705,
+          "max_tilt": 26.36184955770529,
+          "jerk": 126020.0778896269,
+          "traj_len": 2.090208759588226,
+          "max_qvel": 2.5486642530915655,
+          "max_qacc": 7.8325001994851995,
+          "feasible": true,
+          "plan_time": 0.0010139942169189453
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.0,
+          "max_tilt": 9.809619108230596,
+          "jerk": 3163.0485759632425,
+          "traj_len": 2.090209260748222,
+          "max_qvel": 1.3596650819194775,
+          "max_qacc": 0.4487407811811063,
+          "feasible": true,
+          "plan_time": 0.24079442024230957
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.41999998688697815,
+          "max_tilt": 38.93065234817094,
+          "jerk": 34390649717.876755,
+          "traj_len": 24.098209528723046,
+          "max_qvel": 29.3132103226804,
+          "max_qacc": 715.8842027219437,
+          "feasible": false,
+          "plan_time": 13.07450795173645
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.6800000071525574,
+          "max_tilt": 101.78933711575739,
+          "jerk": 29930081375.97708,
+          "traj_len": 3.63130190472736,
+          "max_qvel": 11.964239011872856,
+          "max_qacc": 752.1063954342167,
+          "feasible": false,
+          "plan_time": 2.962139844894409
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 8.670093836004934,
+          "jerk": 5533.702904536344,
+          "traj_len": 2.092126245074435,
+          "max_qvel": 1.3947622904664645,
+          "max_qacc": 0.7816313459212056,
+          "feasible": true,
+          "plan_time": 2.975106716156006
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_2finger_161",
+      "taxonomy": "2finger",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.800000011920929,
+          "max_tilt": 29.41257378186823,
+          "jerk": 187207.58717542407,
+          "traj_len": 2.5476016091996505,
+          "max_qvel": 3.2105708322694886,
+          "max_qacc": 9.866657271043126,
+          "feasible": true,
+          "plan_time": 0.0010228157043457031
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.0,
+          "max_tilt": 10.017635783436644,
+          "jerk": 4551.042579719853,
+          "traj_len": 2.5476020091889473,
+          "max_qvel": 1.7127799585099188,
+          "max_qacc": 0.37609034791790813,
+          "feasible": true,
+          "plan_time": 0.23995208740234375
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.36000001430511475,
+          "max_tilt": 31.977906832572575,
+          "jerk": 22685500105.842575,
+          "traj_len": 19.58886977934318,
+          "max_qvel": 20.973844034874286,
+          "max_qacc": 571.1994759243621,
+          "feasible": false,
+          "plan_time": 13.055975914001465
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.8199999928474426,
+          "max_tilt": 98.12741307897862,
+          "jerk": 59186966919.755295,
+          "traj_len": 7.006895299499423,
+          "max_qvel": 16.516468839294237,
+          "max_qacc": 977.5906445381606,
+          "feasible": false,
+          "plan_time": 2.958207607269287
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 9.837807318101238,
+          "jerk": 3756.7866486976964,
+          "traj_len": 2.5511164715520342,
+          "max_qvel": 1.7651744244040566,
+          "max_qacc": 0.8565186779043141,
+          "feasible": true,
+          "plan_time": 2.9808146953582764
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_2finger_169",
+      "taxonomy": "2finger",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.7599999904632568,
+          "max_tilt": 23.77074942320385,
+          "jerk": 83275.26327116704,
+          "traj_len": 1.6991346591503735,
+          "max_qvel": 1.9879247487311582,
+          "max_qacc": 6.10924760768831,
+          "feasible": true,
+          "plan_time": 0.0010204315185546875
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.0,
+          "max_tilt": 7.6921788915588065,
+          "jerk": 82389.21007042447,
+          "traj_len": 1.699143698275729,
+          "max_qvel": 1.0605209624009146,
+          "max_qacc": 1.525056379805088,
+          "feasible": true,
+          "plan_time": 0.23687267303466797
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.5400000214576721,
+          "max_tilt": 44.12458966321979,
+          "jerk": 53783614291.00702,
+          "traj_len": 25.299659704468226,
+          "max_qvel": 30.14061271257868,
+          "max_qacc": 698.3872408150111,
+          "feasible": false,
+          "plan_time": 13.160752296447754
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.6800000071525574,
+          "max_tilt": 96.10676782778808,
+          "jerk": 541626575.0035608,
+          "traj_len": 1.8373880794807105,
+          "max_qvel": 2.111053482746521,
+          "max_qacc": 81.62264199074374,
+          "feasible": false,
+          "plan_time": 2.9598453044891357
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 5.745308867089621,
+          "jerk": 7506.870171038566,
+          "traj_len": 1.7068167631595303,
+          "max_qvel": 1.0779214063777056,
+          "max_qacc": 1.042579590694343,
+          "feasible": true,
+          "plan_time": 2.964864492416382
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_2finger_176",
+      "taxonomy": "2finger",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.7799999713897705,
+          "max_tilt": 28.23834085652909,
+          "jerk": 133494.81653334366,
+          "traj_len": 2.1513050316842803,
+          "max_qvel": 2.541794960107426,
+          "max_qacc": 7.8113896359415715,
+          "feasible": true,
+          "plan_time": 0.0010619163513183594
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.0,
+          "max_tilt": 12.46396452712323,
+          "jerk": 37466.64600701495,
+          "traj_len": 2.1513105642526185,
+          "max_qvel": 1.3560004415901483,
+          "max_qacc": 1.6543916473475235,
+          "feasible": true,
+          "plan_time": 0.2432248592376709
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.5,
+          "max_tilt": 37.84922702512911,
+          "jerk": 44628026766.075386,
+          "traj_len": 27.605812469172022,
+          "max_qvel": 35.621949336156966,
+          "max_qacc": 614.0420082118527,
+          "feasible": false,
+          "plan_time": 13.135093927383423
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.7200000286102295,
+          "max_tilt": 108.50235273716501,
+          "jerk": 29428710025.989304,
+          "traj_len": 3.7048939053803416,
+          "max_qvel": 12.768471017184883,
+          "max_qacc": 747.6362895124881,
+          "feasible": false,
+          "plan_time": 2.958038568496704
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 11.08980131411056,
+          "jerk": 7503.533740824767,
+          "traj_len": 2.1544019021797194,
+          "max_qvel": 1.389390695100679,
+          "max_qacc": 0.8213652516813996,
+          "feasible": true,
+          "plan_time": 2.9626686573028564
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_2finger_192",
+      "taxonomy": "2finger",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.7799999713897705,
+          "max_tilt": 31.201751340722538,
+          "jerk": 188594.3308378823,
+          "traj_len": 2.557019902839917,
+          "max_qvel": 3.045746132495961,
+          "max_qacc": 9.36012154657758,
+          "feasible": true,
+          "plan_time": 0.0009944438934326172
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.0,
+          "max_tilt": 12.420794543058618,
+          "jerk": 6027.581530285175,
+          "traj_len": 2.557020216632087,
+          "max_qvel": 1.6248490399324365,
+          "max_qacc": 0.5219928252110909,
+          "feasible": true,
+          "plan_time": 0.23672699928283691
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.4399999976158142,
+          "max_tilt": 32.74169310899965,
+          "jerk": 32324029514.093872,
+          "traj_len": 22.881376313240093,
+          "max_qvel": 26.177349643412306,
+          "max_qacc": 543.617023753027,
+          "feasible": false,
+          "plan_time": 13.218316316604614
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.6000000238418579,
+          "max_tilt": 107.96237352599249,
+          "jerk": 36103425160.95012,
+          "traj_len": 4.0460613780598775,
+          "max_qvel": 15.14184746638514,
+          "max_qacc": 1130.223988246921,
+          "feasible": false,
+          "plan_time": 2.9589929580688477
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 9.238018972458777,
+          "jerk": 5841.342590618306,
+          "traj_len": 2.566837266492114,
+          "max_qvel": 1.6852465082198667,
+          "max_qacc": 0.8410099786536875,
+          "feasible": true,
+          "plan_time": 2.967170000076294
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_2finger_199",
+      "taxonomy": "2finger",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.7799999713897705,
+          "max_tilt": 25.18280374510838,
+          "jerk": 128877.20852536941,
+          "traj_len": 2.1137705943845777,
+          "max_qvel": 2.6399909150758774,
+          "max_qacc": 8.113163334044156,
+          "feasible": true,
+          "plan_time": 0.0009920597076416016
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.0,
+          "max_tilt": 8.534070895746979,
+          "jerk": 27752.477561913227,
+          "traj_len": 2.1137745304079387,
+          "max_qvel": 1.4083861612839754,
+          "max_qacc": 1.241906429847828,
+          "feasible": true,
+          "plan_time": 0.2407240867614746
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.41999998688697815,
+          "max_tilt": 35.17305069127394,
+          "jerk": 44780204827.847855,
+          "traj_len": 26.558359520445205,
+          "max_qvel": 29.43432056381792,
+          "max_qacc": 653.3051823961727,
+          "feasible": false,
+          "plan_time": 13.205368995666504
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.699999988079071,
+          "max_tilt": 110.42736142790525,
+          "jerk": 31509014826.14639,
+          "traj_len": 3.88000548840245,
+          "max_qvel": 10.420479404008331,
+          "max_qacc": 927.4402513757323,
+          "feasible": false,
+          "plan_time": 2.9594433307647705
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 8.269717262753204,
+          "jerk": 15323.473005299687,
+          "traj_len": 2.1205649974831533,
+          "max_qvel": 1.4781825446355754,
+          "max_qacc": 1.3223127208223386,
+          "feasible": true,
+          "plan_time": 2.968959331512451
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_2finger_222",
+      "taxonomy": "2finger",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.7799999713897705,
+          "max_tilt": 23.965291118334783,
+          "jerk": 97795.84437690115,
+          "traj_len": 1.8413230593454184,
+          "max_qvel": 1.9169275928600187,
+          "max_qacc": 5.891060674336058,
+          "feasible": true,
+          "plan_time": 0.0010161399841308594
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.0,
+          "max_tilt": 9.987381410485964,
+          "jerk": 99158.4929835567,
+          "traj_len": 1.841330192812418,
+          "max_qvel": 1.0226471829639723,
+          "max_qacc": 2.0388960727003544,
+          "feasible": true,
+          "plan_time": 0.23882794380187988
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.41999998688697815,
+          "max_tilt": 43.62398364498415,
+          "jerk": 70545229500.50313,
+          "traj_len": 35.247406652969765,
+          "max_qvel": 68.98687299902373,
+          "max_qacc": 883.7394690705136,
+          "feasible": false,
+          "plan_time": 12.903601169586182
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.800000011920929,
+          "max_tilt": 92.03240692489165,
+          "jerk": 1509063269.3033373,
+          "traj_len": 2.072383093724166,
+          "max_qvel": 2.722749679187721,
+          "max_qacc": 189.87340511186773,
+          "feasible": false,
+          "plan_time": 2.965137481689453
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 6.144828041501051,
+          "jerk": 236924.5303365053,
+          "traj_len": 1.8736071694031025,
+          "max_qvel": 1.1708056341203923,
+          "max_qacc": 5.140040070250309,
+          "feasible": true,
+          "plan_time": 2.9750030040740967
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_2finger_238",
+      "taxonomy": "2finger",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.6000000238418579,
+          "max_tilt": 31.61079152178547,
+          "jerk": 128097.78115496003,
+          "traj_len": 2.1073690388567745,
+          "max_qvel": 2.532731742695363,
+          "max_qacc": 7.783536751003152,
+          "feasible": true,
+          "plan_time": 0.001026153564453125
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.0,
+          "max_tilt": 13.299846754018029,
+          "jerk": 0.017304987763548343,
+          "traj_len": 2.1073690388595847,
+          "max_qvel": 1.3511653832923298,
+          "max_qacc": 0.0011921466562578866,
+          "feasible": true,
+          "plan_time": 0.2372722625732422
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.3400000035762787,
+          "max_tilt": 30.850540374639852,
+          "jerk": 21397805801.829967,
+          "traj_len": 17.69443325622547,
+          "max_qvel": 20.670802541528765,
+          "max_qacc": 472.22084291215043,
+          "feasible": false,
+          "plan_time": 12.833022594451904
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.8399999737739563,
+          "max_tilt": 96.59036304190126,
+          "jerk": 29617347483.388496,
+          "traj_len": 3.9010493540296443,
+          "max_qvel": 18.065061874634555,
+          "max_qacc": 847.0005276269154,
+          "feasible": false,
+          "plan_time": 2.9610204696655273
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 10.717839624888702,
+          "jerk": 38047.70597436367,
+          "traj_len": 2.1224097152884505,
+          "max_qvel": 1.5264296932814185,
+          "max_qacc": 2.349693975030236,
+          "feasible": true,
+          "plan_time": 2.9680371284484863
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_2finger_245",
+      "taxonomy": "2finger",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.800000011920929,
+          "max_tilt": 30.728808338660865,
+          "jerk": 142764.87338256036,
+          "traj_len": 2.224746200966045,
+          "max_qvel": 2.8289629083764796,
+          "max_qacc": 8.693908001934098,
+          "feasible": true,
+          "plan_time": 0.0010182857513427734
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.0,
+          "max_tilt": 14.535743439919841,
+          "jerk": 67093.91435711265,
+          "traj_len": 2.224750556067874,
+          "max_qvel": 1.509199212842176,
+          "max_qacc": 1.7121478535819084,
+          "feasible": true,
+          "plan_time": 0.23752450942993164
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.5400000214576721,
+          "max_tilt": 33.12974551276075,
+          "jerk": 75018372931.87105,
+          "traj_len": 26.80279454096349,
+          "max_qvel": 38.885587502184784,
+          "max_qacc": 1015.5955069580743,
+          "feasible": false,
+          "plan_time": 13.123517036437988
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.8600000143051147,
+          "max_tilt": 101.16066321207984,
+          "jerk": 2596825734.4462733,
+          "traj_len": 2.520718315641127,
+          "max_qvel": 3.200063868238983,
+          "max_qacc": 216.04992329469837,
+          "feasible": false,
+          "plan_time": 2.9623100757598877
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 8.156623312578965,
+          "jerk": 991.5969889688176,
+          "traj_len": 2.22693129844814,
+          "max_qvel": 1.5939358992443455,
+          "max_qacc": 0.38346630234484735,
+          "feasible": true,
+          "plan_time": 2.9681994915008545
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_2finger_253",
+      "taxonomy": "2finger",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.8199999928474426,
+          "max_tilt": 28.737996797005895,
+          "jerk": 225356.54462773155,
+          "traj_len": 2.795148456020357,
+          "max_qvel": 3.6670914946372792,
+          "max_qacc": 11.269626757796232,
+          "feasible": false,
+          "plan_time": 0.000993967056274414
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.0,
+          "max_tilt": 9.849082836567922,
+          "jerk": 80348.3396013026,
+          "traj_len": 2.7951524054839867,
+          "max_qvel": 1.9563252599529581,
+          "max_qacc": 1.023423599684819,
+          "feasible": true,
+          "plan_time": 0.23661041259765625
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.5199999809265137,
+          "max_tilt": 33.210638104839134,
+          "jerk": 56034170842.40764,
+          "traj_len": 24.193185771272322,
+          "max_qvel": 39.49658439333486,
+          "max_qacc": 694.917668518683,
+          "feasible": false,
+          "plan_time": 12.946384906768799
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.699999988079071,
+          "max_tilt": 87.95323582364765,
+          "jerk": 11854094018.657675,
+          "traj_len": 3.6232419133444114,
+          "max_qvel": 13.24886172132773,
+          "max_qacc": 745.0144765310156,
+          "feasible": false,
+          "plan_time": 2.960989236831665
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 9.307286116046718,
+          "jerk": 654.1995945522765,
+          "traj_len": 2.7955993406406483,
+          "max_qvel": 1.967170192397037,
+          "max_qacc": 0.2713515248839388,
+          "feasible": true,
+          "plan_time": 2.9698567390441895
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_2finger_261",
+      "taxonomy": "2finger",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.8199999928474426,
+          "max_tilt": 27.960573765557236,
+          "jerk": 163239.46718652456,
+          "traj_len": 2.3789339042487985,
+          "max_qvel": 2.734633120706094,
+          "max_qacc": 8.40401572606911,
+          "feasible": true,
+          "plan_time": 0.0009922981262207031
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.0,
+          "max_tilt": 16.654516035860738,
+          "jerk": 172669.25709505889,
+          "traj_len": 2.3789426007644443,
+          "max_qvel": 1.4588760216550045,
+          "max_qacc": 3.0169908133550942,
+          "feasible": true,
+          "plan_time": 0.2349681854248047
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.4399999976158142,
+          "max_tilt": 33.72733637408497,
+          "jerk": 70692485093.4288,
+          "traj_len": 29.568416468901635,
+          "max_qvel": 36.38063201440497,
+          "max_qacc": 767.3259296728104,
+          "feasible": false,
+          "plan_time": 13.100816249847412
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.8799999952316284,
+          "max_tilt": 107.52480305242256,
+          "jerk": 815305387.5341163,
+          "traj_len": 2.619213184051161,
+          "max_qvel": 3.046447843087388,
+          "max_qacc": 151.13553288854786,
+          "feasible": false,
+          "plan_time": 2.954606533050537
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 14.611648367618965,
+          "jerk": 1210496.0935781861,
+          "traj_len": 2.499397642285186,
+          "max_qvel": 2.392427720027028,
+          "max_qacc": 12.02208357191018,
+          "feasible": true,
+          "plan_time": 2.9622926712036133
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_2finger_268",
+      "taxonomy": "2finger",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.47999998927116394,
+          "max_tilt": 38.28827047485704,
+          "jerk": 301434.07058451296,
+          "traj_len": 3.2327041499680336,
+          "max_qvel": 4.43260250982334,
+          "max_qacc": 13.622178755132381,
+          "feasible": false,
+          "plan_time": 0.001003265380859375
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.1599999964237213,
+          "max_tilt": 18.85212564560439,
+          "jerk": 32809.45871206428,
+          "traj_len": 3.2327061064385405,
+          "max_qvel": 2.364711180503517,
+          "max_qacc": 0.8273180888036358,
+          "feasible": true,
+          "plan_time": 0.2383270263671875
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.5799999833106995,
+          "max_tilt": 34.62869558860664,
+          "jerk": 23061383609.68289,
+          "traj_len": 21.64661987951094,
+          "max_qvel": 21.950469907832186,
+          "max_qacc": 471.190041754055,
+          "feasible": false,
+          "plan_time": 12.92667818069458
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.6000000238418579,
+          "max_tilt": 136.200421187173,
+          "jerk": 34840822500.89505,
+          "traj_len": 5.2400059305302245,
+          "max_qvel": 18.071931102165895,
+          "max_qacc": 1126.9401067458537,
+          "feasible": false,
+          "plan_time": 2.956054210662842
+        },
+        "ours": {
+          "spill_ratio": 0.019999999552965164,
+          "max_tilt": 18.0107550901351,
+          "jerk": 233965.71979466095,
+          "traj_len": 3.241717658540076,
+          "max_qvel": 2.4347838751651505,
+          "max_qacc": 4.993665654032103,
+          "feasible": true,
+          "plan_time": 2.9646482467651367
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_2finger_276",
+      "taxonomy": "2finger",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.7599999904632568,
+          "max_tilt": 25.534162940484013,
+          "jerk": 114491.22969542716,
+          "traj_len": 1.9923053517030198,
+          "max_qvel": 2.1617567605670267,
+          "max_qacc": 6.643464409970022,
+          "feasible": true,
+          "plan_time": 0.0010144710540771484
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.0,
+          "max_tilt": 8.215038422980092,
+          "jerk": 273.1127143817963,
+          "traj_len": 1.9923053697548292,
+          "max_qvel": 1.15325711473414,
+          "max_qacc": 0.1189862070011434,
+          "feasible": true,
+          "plan_time": 0.23927068710327148
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.5199999809265137,
+          "max_tilt": 37.00880323251216,
+          "jerk": 58394333748.409096,
+          "traj_len": 28.346689115388966,
+          "max_qvel": 36.473654944796756,
+          "max_qacc": 968.5475928999442,
+          "feasible": false,
+          "plan_time": 13.062182188034058
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.7799999713897705,
+          "max_tilt": 101.17671849386612,
+          "jerk": 12663981296.11406,
+          "traj_len": 2.892313899601456,
+          "max_qvel": 11.971152710061112,
+          "max_qacc": 842.4710548970999,
+          "feasible": false,
+          "plan_time": 2.9590930938720703
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 7.387923560703413,
+          "jerk": 33764.87849933109,
+          "traj_len": 1.99570295483162,
+          "max_qvel": 1.184627013721562,
+          "max_qacc": 2.498153142074027,
+          "feasible": true,
+          "plan_time": 2.966430902481079
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_2finger_284",
+      "taxonomy": "2finger",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.5600000023841858,
+          "max_tilt": 30.79488660911962,
+          "jerk": 340209.29459960246,
+          "traj_len": 3.434336763059633,
+          "max_qvel": 3.4336837178218005,
+          "max_qacc": 10.552322995145298,
+          "feasible": false,
+          "plan_time": 0.0010480880737304688
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.11999999731779099,
+          "max_tilt": 19.035189259347547,
+          "jerk": 208616.46710862406,
+          "traj_len": 3.434345948341378,
+          "max_qvel": 1.8318065425112346,
+          "max_qacc": 2.3833350958020154,
+          "feasible": true,
+          "plan_time": 0.2424154281616211
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.5799999833106995,
+          "max_tilt": 39.73623173343953,
+          "jerk": 28178955418.1074,
+          "traj_len": 25.87269675341941,
+          "max_qvel": 31.923664660908127,
+          "max_qacc": 569.8944044639302,
+          "feasible": false,
+          "plan_time": 13.288571834564209
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.6600000262260437,
+          "max_tilt": 109.77703531758209,
+          "jerk": 55247844105.07841,
+          "traj_len": 6.884616824265308,
+          "max_qvel": 17.886607190783387,
+          "max_qacc": 1175.4671087977063,
+          "feasible": false,
+          "plan_time": 2.959679365158081
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 13.826099943124662,
+          "jerk": 6355.421197112868,
+          "traj_len": 3.444998737945459,
+          "max_qvel": 1.9182302198563719,
+          "max_qacc": 1.0226552682346768,
+          "feasible": true,
+          "plan_time": 2.964168071746826
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_2finger_291",
+      "taxonomy": "2finger",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.46000000834465027,
+          "max_tilt": 30.02800227397531,
+          "jerk": 330562.7669055616,
+          "traj_len": 3.385296865426395,
+          "max_qvel": 4.034835489333824,
+          "max_qacc": 12.399769697700897,
+          "feasible": false,
+          "plan_time": 0.0010221004486083984
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.25999999046325684,
+          "max_tilt": 20.91684427049027,
+          "jerk": 377.69176478686614,
+          "traj_len": 3.385296881201748,
+          "max_qvel": 2.15250985667566,
+          "max_qacc": 0.14210294260543369,
+          "feasible": true,
+          "plan_time": 0.24108600616455078
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.5799999833106995,
+          "max_tilt": 31.05785483200006,
+          "jerk": 30808887953.430023,
+          "traj_len": 24.811732221456044,
+          "max_qvel": 27.19429873409041,
+          "max_qacc": 634.431190791623,
+          "feasible": false,
+          "plan_time": 13.510630369186401
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.8199999928474426,
+          "max_tilt": 101.53804679531522,
+          "jerk": 52361644268.76691,
+          "traj_len": 5.040165387980067,
+          "max_qvel": 18.1972543987911,
+          "max_qacc": 1067.1740117697557,
+          "feasible": false,
+          "plan_time": 2.9563679695129395
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 17.97258636949932,
+          "jerk": 6082.861159639218,
+          "traj_len": 3.3881345059104695,
+          "max_qvel": 2.181385374401276,
+          "max_qacc": 0.7630691871842055,
+          "feasible": true,
+          "plan_time": 2.9680635929107666
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_3finger_0",
+      "taxonomy": "3finger",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.800000011920929,
+          "max_tilt": 29.027279816461494,
+          "jerk": 176129.16297791363,
+          "traj_len": 2.4710721564202154,
+          "max_qvel": 3.0672153930971384,
+          "max_qacc": 9.42610041678018,
+          "feasible": true,
+          "plan_time": 0.0009987354278564453
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.0,
+          "max_tilt": 16.08615420411271,
+          "jerk": 1852.6384042787704,
+          "traj_len": 2.4710723363032128,
+          "max_qvel": 1.6363024920450975,
+          "max_qacc": 0.2336872054309856,
+          "feasible": true,
+          "plan_time": 0.2411479949951172
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.5,
+          "max_tilt": 30.911744132666353,
+          "jerk": 35884582806.7015,
+          "traj_len": 26.457207221975143,
+          "max_qvel": 30.084315307819473,
+          "max_qacc": 582.3888010477895,
+          "feasible": false,
+          "plan_time": 13.320642471313477
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.7799999713897705,
+          "max_tilt": 105.1843139656117,
+          "jerk": 39371872129.5699,
+          "traj_len": 5.718272423261461,
+          "max_qvel": 13.955644225618736,
+          "max_qacc": 865.0605938854363,
+          "feasible": false,
+          "plan_time": 2.9534008502960205
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 11.036953921841121,
+          "jerk": 3228.153764272222,
+          "traj_len": 2.477127959708228,
+          "max_qvel": 1.6666336157579182,
+          "max_qacc": 0.889858421886534,
+          "feasible": true,
+          "plan_time": 2.9625730514526367
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_3finger_8",
+      "taxonomy": "3finger",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.6000000238418579,
+          "max_tilt": 42.03293137344136,
+          "jerk": 339824.03985954047,
+          "traj_len": 3.4323916820172347,
+          "max_qvel": 4.581576630201921,
+          "max_qacc": 14.08000281970436,
+          "feasible": false,
+          "plan_time": 0.0009784698486328125
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.46000000834465027,
+          "max_tilt": 26.754903328874715,
+          "jerk": 109153.91213784962,
+          "traj_len": 3.432399099455933,
+          "max_qvel": 2.4441861091226063,
+          "max_qacc": 2.0699480141658455,
+          "feasible": true,
+          "plan_time": 0.23880434036254883
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.6399999856948853,
+          "max_tilt": 42.76435416660807,
+          "jerk": 133675970629.07922,
+          "traj_len": 35.852270521137044,
+          "max_qvel": 61.1507621793789,
+          "max_qacc": 1085.4001695988102,
+          "feasible": false,
+          "plan_time": 13.13102912902832
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.5799999833106995,
+          "max_tilt": 103.02757692148519,
+          "jerk": 9152800102.506195,
+          "traj_len": 3.8424034932252797,
+          "max_qvel": 9.860926391564153,
+          "max_qacc": 575.1470039289105,
+          "feasible": false,
+          "plan_time": 2.957592010498047
+        },
+        "ours": {
+          "spill_ratio": 0.05999999865889549,
+          "max_tilt": 18.000886475597795,
+          "jerk": 3247479.0307660494,
+          "traj_len": 3.859070455478253,
+          "max_qvel": 3.302778262317617,
+          "max_qacc": 19.813430572395653,
+          "feasible": false,
+          "plan_time": 2.964766502380371
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_3finger_31",
+      "taxonomy": "3finger",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.699999988079071,
+          "max_tilt": 37.219247889504345,
+          "jerk": 171568.61943596706,
+          "traj_len": 2.4388703837336845,
+          "max_qvel": 2.908941030980761,
+          "max_qacc": 8.939695049204916,
+          "feasible": true,
+          "plan_time": 0.0009915828704833984
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.03999999910593033,
+          "max_tilt": 28.672292366353464,
+          "jerk": 379817.6669131721,
+          "traj_len": 2.4388928744108447,
+          "max_qvel": 1.5518660570491245,
+          "max_qacc": 3.764418681467187,
+          "feasible": true,
+          "plan_time": 0.23728561401367188
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.6200000047683716,
+          "max_tilt": 32.729311498114185,
+          "jerk": 137070827038.02081,
+          "traj_len": 35.667665667005515,
+          "max_qvel": 47.50500539387163,
+          "max_qacc": 910.8563536510126,
+          "feasible": false,
+          "plan_time": 13.195972204208374
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.8600000143051147,
+          "max_tilt": 95.33019756314351,
+          "jerk": 2595087550.1477284,
+          "traj_len": 2.764107905260923,
+          "max_qvel": 4.070950387532638,
+          "max_qacc": 156.30551258297243,
+          "feasible": false,
+          "plan_time": 2.9554524421691895
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 10.92026487090275,
+          "jerk": 1066.7534041285903,
+          "traj_len": 2.4427512442587265,
+          "max_qvel": 1.645982121594014,
+          "max_qacc": 0.6282620809051599,
+          "feasible": true,
+          "plan_time": 2.9623866081237793
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_3finger_38",
+      "taxonomy": "3finger",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.5600000023841858,
+          "max_tilt": 29.826992305497694,
+          "jerk": 148279.38901335798,
+          "traj_len": 2.26730625164775,
+          "max_qvel": 2.318082436515282,
+          "max_qacc": 7.123881117100772,
+          "feasible": true,
+          "plan_time": 0.001016378402709961
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.0,
+          "max_tilt": 16.012028031339984,
+          "jerk": 7906.0011416551615,
+          "traj_len": 2.2673067094720976,
+          "max_qvel": 1.2366539618223342,
+          "max_qacc": 0.6498000655268604,
+          "feasible": true,
+          "plan_time": 0.23768234252929688
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.3400000035762787,
+          "max_tilt": 28.930542255114588,
+          "jerk": 20473297012.233036,
+          "traj_len": 19.219654512492774,
+          "max_qvel": 20.668863661115846,
+          "max_qacc": 494.52787231118947,
+          "feasible": false,
+          "plan_time": 12.809489965438843
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.7799999713897705,
+          "max_tilt": 96.83542857938417,
+          "jerk": 16165374390.457922,
+          "traj_len": 3.7115508951943226,
+          "max_qvel": 13.524006936646789,
+          "max_qacc": 1072.232100076979,
+          "feasible": false,
+          "plan_time": 2.9544146060943604
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 13.643565948547273,
+          "jerk": 1025.078538813611,
+          "traj_len": 2.2698720642739056,
+          "max_qvel": 1.2368593686537812,
+          "max_qacc": 0.44396253115776807,
+          "feasible": true,
+          "plan_time": 2.962178945541382
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_3finger_46",
+      "taxonomy": "3finger",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.47999998927116394,
+          "max_tilt": 37.94991637898184,
+          "jerk": 194432.08294233802,
+          "traj_len": 2.596293320136691,
+          "max_qvel": 2.8201122329899677,
+          "max_qacc": 8.66670829657812,
+          "feasible": true,
+          "plan_time": 0.0009737014770507812
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.4000000059604645,
+          "max_tilt": 22.060143953223736,
+          "jerk": 33659.561724580155,
+          "traj_len": 2.596295464791921,
+          "max_qvel": 1.5044775417707967,
+          "max_qacc": 1.1660714784976143,
+          "feasible": true,
+          "plan_time": 0.23825645446777344
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.5400000214576721,
+          "max_tilt": 37.57900105332307,
+          "jerk": 30493760974.92321,
+          "traj_len": 23.059684612752978,
+          "max_qvel": 33.4935629938604,
+          "max_qacc": 674.572790956429,
+          "feasible": false,
+          "plan_time": 13.228171110153198
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.7400000095367432,
+          "max_tilt": 97.92756937009386,
+          "jerk": 52658095445.784645,
+          "traj_len": 5.5407215874412135,
+          "max_qvel": 14.801048569090357,
+          "max_qacc": 1124.6217051621923,
+          "feasible": false,
+          "plan_time": 2.9566280841827393
+        },
+        "ours": {
+          "spill_ratio": 0.019999999552965164,
+          "max_tilt": 18.019129692314852,
+          "jerk": 2622934.150810602,
+          "traj_len": 2.6381678632558843,
+          "max_qvel": 1.7414845310223133,
+          "max_qacc": 15.43285010543871,
+          "feasible": true,
+          "plan_time": 2.96279239654541
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_3finger_61",
+      "taxonomy": "3finger",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.8600000143051147,
+          "max_tilt": 38.43071386404983,
+          "jerk": 361638.49263472005,
+          "traj_len": 3.540846636935162,
+          "max_qvel": 3.4142393759189713,
+          "max_qacc": 10.492567061564007,
+          "feasible": false,
+          "plan_time": 0.0010294914245605469
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.8199999928474426,
+          "max_tilt": 33.203192347707855,
+          "jerk": 0.0031878980463806114,
+          "traj_len": 3.540846636935414,
+          "max_qvel": 1.821433346946528,
+          "max_qacc": 0.00034336656285915984,
+          "feasible": true,
+          "plan_time": 0.23775362968444824
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.5799999833106995,
+          "max_tilt": 42.74349417990341,
+          "jerk": 45350174306.224754,
+          "traj_len": 29.065009039896136,
+          "max_qvel": 31.941013711485198,
+          "max_qacc": 678.8114236298619,
+          "feasible": false,
+          "plan_time": 13.067680835723877
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.7200000286102295,
+          "max_tilt": 89.34179349777584,
+          "jerk": 50515099946.53153,
+          "traj_len": 7.889186550815417,
+          "max_qvel": 22.23724552656186,
+          "max_qacc": 917.1741671607891,
+          "feasible": false,
+          "plan_time": 2.9594218730926514
+        },
+        "ours": {
+          "spill_ratio": 0.07999999821186066,
+          "max_tilt": 18.053863146149624,
+          "jerk": 21286.716650148443,
+          "traj_len": 3.6219803022263317,
+          "max_qvel": 2.3034471293398333,
+          "max_qacc": 2.0608316462952017,
+          "feasible": true,
+          "plan_time": 2.969139814376831
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_3finger_107",
+      "taxonomy": "3finger",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.7400000095367432,
+          "max_tilt": 33.520461875569254,
+          "jerk": 252591.029591007,
+          "traj_len": 2.9592302183747377,
+          "max_qvel": 3.5909163461384246,
+          "max_qacc": 11.035526928800781,
+          "feasible": false,
+          "plan_time": 0.0010063648223876953
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.30000001192092896,
+          "max_tilt": 19.524086924781223,
+          "jerk": 5216.75396888337,
+          "traj_len": 2.95923046064208,
+          "max_qvel": 1.9156872318571174,
+          "max_qacc": 0.5278749876308295,
+          "feasible": true,
+          "plan_time": 0.23502278327941895
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.5199999809265137,
+          "max_tilt": 37.39661845247246,
+          "jerk": 118716161683.60434,
+          "traj_len": 34.61598293818545,
+          "max_qvel": 44.18372922489391,
+          "max_qacc": 1154.3421653559785,
+          "feasible": false,
+          "plan_time": 13.27794337272644
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.7599999904632568,
+          "max_tilt": 94.15306255325399,
+          "jerk": 4584390076.98751,
+          "traj_len": 3.462220676724978,
+          "max_qvel": 4.962639982454094,
+          "max_qacc": 381.4543945751858,
+          "feasible": false,
+          "plan_time": 2.963977813720703
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 15.373691181298016,
+          "jerk": 403362.89175689255,
+          "traj_len": 2.9728772514690327,
+          "max_qvel": 2.0329844805560997,
+          "max_qacc": 7.778965244011505,
+          "feasible": true,
+          "plan_time": 2.972857713699341
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_3finger_123",
+      "taxonomy": "3finger",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.46000000834465027,
+          "max_tilt": 38.42533572176843,
+          "jerk": 260184.01847485625,
+          "traj_len": 3.0033787252461805,
+          "max_qvel": 3.845710609739714,
+          "max_qacc": 11.818555182941285,
+          "feasible": false,
+          "plan_time": 0.0010266304016113281
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.4000000059604645,
+          "max_tilt": 21.96823208047766,
+          "jerk": 24210.610099408088,
+          "traj_len": 3.0033799708144864,
+          "max_qvel": 2.051615243117068,
+          "max_qacc": 0.9136425252698974,
+          "feasible": true,
+          "plan_time": 0.2378988265991211
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.5600000023841858,
+          "max_tilt": 29.340445197154104,
+          "jerk": 35287839675.7137,
+          "traj_len": 24.704185713428274,
+          "max_qvel": 28.131989376658808,
+          "max_qacc": 610.3666110133103,
+          "feasible": false,
+          "plan_time": 13.163575649261475
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.800000011920929,
+          "max_tilt": 103.85111774238233,
+          "jerk": 37636925331.33348,
+          "traj_len": 5.3811166183633565,
+          "max_qvel": 14.877487979950677,
+          "max_qacc": 1044.7720643794678,
+          "feasible": false,
+          "plan_time": 2.981433629989624
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 17.123645617391098,
+          "jerk": 670878.2592274552,
+          "traj_len": 3.1205788249082675,
+          "max_qvel": 2.2721388224673995,
+          "max_qacc": 8.366472723913136,
+          "feasible": true,
+          "plan_time": 2.961081027984619
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_3finger_153",
+      "taxonomy": "3finger",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.7400000095367432,
+          "max_tilt": 34.448678741224754,
+          "jerk": 198468.6668811894,
+          "traj_len": 2.62310555920345,
+          "max_qvel": 3.1528022989306588,
+          "max_qacc": 9.689124256111118,
+          "feasible": true,
+          "plan_time": 0.0010352134704589844
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.36000001430511475,
+          "max_tilt": 20.207689682065194,
+          "jerk": 9770.129600318263,
+          "traj_len": 2.6231061180885806,
+          "max_qvel": 1.6819615180192884,
+          "max_qacc": 0.6630634587988543,
+          "feasible": true,
+          "plan_time": 0.23784852027893066
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.4399999976158142,
+          "max_tilt": 33.38553306408689,
+          "jerk": 92451336742.59613,
+          "traj_len": 29.540049513614136,
+          "max_qvel": 35.75828210360089,
+          "max_qacc": 1118.1252001006917,
+          "feasible": false,
+          "plan_time": 12.895798206329346
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.800000011920929,
+          "max_tilt": 87.63680578821294,
+          "jerk": 318632459.2064382,
+          "traj_len": 2.711289230966483,
+          "max_qvel": 3.31391358513796,
+          "max_qacc": 61.21353365611665,
+          "feasible": false,
+          "plan_time": 2.959038257598877
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 16.46025414984139,
+          "jerk": 887204.4984734639,
+          "traj_len": 2.6439921158802258,
+          "max_qvel": 1.939322516477065,
+          "max_qacc": 11.613877919920657,
+          "feasible": true,
+          "plan_time": 2.9649291038513184
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_3finger_161",
+      "taxonomy": "3finger",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.8199999928474426,
+          "max_tilt": 28.788647651678044,
+          "jerk": 178390.90392963847,
+          "traj_len": 2.486887529948835,
+          "max_qvel": 2.7020172482250593,
+          "max_qacc": 8.303781327832832,
+          "feasible": true,
+          "plan_time": 0.0010297298431396484
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.0,
+          "max_tilt": 13.209490973988887,
+          "jerk": 21664.794222766213,
+          "traj_len": 2.486888672087597,
+          "max_qvel": 1.4414760589588516,
+          "max_qacc": 1.0753105363432676,
+          "feasible": true,
+          "plan_time": 0.23690056800842285
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.5600000023841858,
+          "max_tilt": 41.143927041576575,
+          "jerk": 116617886876.89299,
+          "traj_len": 34.74951890560292,
+          "max_qvel": 42.22252495230679,
+          "max_qacc": 1051.458733881973,
+          "feasible": false,
+          "plan_time": 13.163344621658325
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.7400000095367432,
+          "max_tilt": 102.02353684289366,
+          "jerk": 360263052.2783172,
+          "traj_len": 2.587973493733692,
+          "max_qvel": 2.9956851715166484,
+          "max_qacc": 53.0157246935731,
+          "feasible": false,
+          "plan_time": 2.9640042781829834
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 11.643192777770086,
+          "jerk": 45385.951150447196,
+          "traj_len": 2.498925730742182,
+          "max_qvel": 1.6167324751878698,
+          "max_qacc": 1.8471159358727745,
+          "feasible": true,
+          "plan_time": 2.968724489212036
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_3finger_169",
+      "taxonomy": "3finger",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.800000011920929,
+          "max_tilt": 31.606693562339647,
+          "jerk": 213390.53563880874,
+          "traj_len": 2.7199277526805044,
+          "max_qvel": 3.4664448555638048,
+          "max_qacc": 10.653003819461137,
+          "feasible": false,
+          "plan_time": 0.0009958744049072266
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.0,
+          "max_tilt": 12.106834838820424,
+          "jerk": 69748.37700366501,
+          "traj_len": 2.719932167957518,
+          "max_qvel": 1.849284001528362,
+          "max_qacc": 1.5202547628107572,
+          "feasible": true,
+          "plan_time": 0.23800921440124512
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.47999998927116394,
+          "max_tilt": 30.7091598536552,
+          "jerk": 28793739407.616295,
+          "traj_len": 20.55997243904755,
+          "max_qvel": 27.841010026274667,
+          "max_qacc": 659.8684429992346,
+          "feasible": false,
+          "plan_time": 13.01390552520752
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.8199999928474426,
+          "max_tilt": 89.86625129265225,
+          "jerk": 54586676519.47796,
+          "traj_len": 7.515127217852658,
+          "max_qvel": 17.96010364787687,
+          "max_qacc": 1096.116746055021,
+          "feasible": false,
+          "plan_time": 2.9552342891693115
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 16.27908023583406,
+          "jerk": 1845545.5498972638,
+          "traj_len": 2.783319535555816,
+          "max_qvel": 2.13896927079334,
+          "max_qacc": 12.159742991772232,
+          "feasible": true,
+          "plan_time": 2.963655471801758
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_3finger_184",
+      "taxonomy": "3finger",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.7200000286102295,
+          "max_tilt": 27.614855443943025,
+          "jerk": 220347.18819857435,
+          "traj_len": 2.7639077780690897,
+          "max_qvel": 3.430424487569865,
+          "max_qacc": 10.54230679879343,
+          "feasible": false,
+          "plan_time": 0.0010194778442382812
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.0,
+          "max_tilt": 10.136288213115467,
+          "jerk": 54027.90915738739,
+          "traj_len": 2.763911930054318,
+          "max_qvel": 1.8300678036553333,
+          "max_qacc": 1.228682335150241,
+          "feasible": true,
+          "plan_time": 0.23858046531677246
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.4000000059604645,
+          "max_tilt": 38.96264519042893,
+          "jerk": 111374511248.31935,
+          "traj_len": 33.13774781483854,
+          "max_qvel": 36.30073061213996,
+          "max_qacc": 859.8120687986428,
+          "feasible": false,
+          "plan_time": 12.7881498336792
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.7799999713897705,
+          "max_tilt": 100.28609131036518,
+          "jerk": 38080705570.31764,
+          "traj_len": 4.84326768455683,
+          "max_qvel": 14.74314022276221,
+          "max_qacc": 986.2124181359038,
+          "feasible": false,
+          "plan_time": 2.9704809188842773
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 10.380925219951132,
+          "jerk": 3551.6256184776857,
+          "traj_len": 2.76546534345576,
+          "max_qvel": 1.8407004306370534,
+          "max_qacc": 0.8140750879648195,
+          "feasible": true,
+          "plan_time": 2.978745937347412
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_3finger_207",
+      "taxonomy": "3finger",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.8600000143051147,
+          "max_tilt": 33.79316131653104,
+          "jerk": 402350.3717311721,
+          "traj_len": 3.7348399449589587,
+          "max_qvel": 3.9701019094946473,
+          "max_qacc": 12.20083185157652,
+          "feasible": false,
+          "plan_time": 0.0009989738464355469
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.7599999904632568,
+          "max_tilt": 28.76699557215617,
+          "jerk": 4121.529940693221,
+          "traj_len": 3.734840109276599,
+          "max_qvel": 2.1179756931316938,
+          "max_qacc": 0.4495065597015194,
+          "feasible": true,
+          "plan_time": 0.2383255958557129
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.5799999833106995,
+          "max_tilt": 32.01425588578634,
+          "jerk": 29328250554.426727,
+          "traj_len": 23.290576541488413,
+          "max_qvel": 26.390704140310056,
+          "max_qacc": 526.2457277726043,
+          "feasible": false,
+          "plan_time": 12.950720310211182
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.7599999904632568,
+          "max_tilt": 98.9342422815621,
+          "jerk": 41931190254.74123,
+          "traj_len": 6.135749881649964,
+          "max_qvel": 18.572993848920383,
+          "max_qacc": 892.0978279368502,
+          "feasible": false,
+          "plan_time": 2.9602932929992676
+        },
+        "ours": {
+          "spill_ratio": 0.019999999552965164,
+          "max_tilt": 18.032974927512566,
+          "jerk": 31172.177956509688,
+          "traj_len": 3.7754440605194883,
+          "max_qvel": 2.306727676355524,
+          "max_qacc": 1.6821841111839178,
+          "feasible": true,
+          "plan_time": 2.9696714878082275
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_3finger_215",
+      "taxonomy": "3finger",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.4000000059604645,
+          "max_tilt": 36.85135996190182,
+          "jerk": 237198.4159308179,
+          "traj_len": 2.8676469605436528,
+          "max_qvel": 4.110411517639096,
+          "max_qacc": 12.632028323393389,
+          "feasible": false,
+          "plan_time": 0.0010533332824707031
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.0,
+          "max_tilt": 16.829479362399315,
+          "jerk": 10515.536627735264,
+          "traj_len": 2.8676476949656826,
+          "max_qvel": 2.1928282652664293,
+          "max_qacc": 0.8008318949692168,
+          "feasible": true,
+          "plan_time": 0.23651504516601562
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.41999998688697815,
+          "max_tilt": 30.961971688926848,
+          "jerk": 26023601865.17162,
+          "traj_len": 20.380190576248516,
+          "max_qvel": 26.057350297291517,
+          "max_qacc": 509.82505173424795,
+          "feasible": false,
+          "plan_time": 12.669653177261353
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.7599999904632568,
+          "max_tilt": 90.92560958529431,
+          "jerk": 25073283216.668606,
+          "traj_len": 3.9732090680639227,
+          "max_qvel": 15.896186316781879,
+          "max_qacc": 1086.6562193414034,
+          "feasible": false,
+          "plan_time": 2.9581141471862793
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 14.976927442812944,
+          "jerk": 7144.738506285737,
+          "traj_len": 2.869717395818596,
+          "max_qvel": 2.228736473014176,
+          "max_qacc": 0.9133320984774451,
+          "feasible": true,
+          "plan_time": 2.9646410942077637
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_3finger_222",
+      "taxonomy": "3finger",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.7400000095367432,
+          "max_tilt": 26.684124040966264,
+          "jerk": 216177.97461717736,
+          "traj_len": 2.7376348033282407,
+          "max_qvel": 3.2890166532788285,
+          "max_qacc": 10.107735281988269,
+          "feasible": true,
+          "plan_time": 0.001020669937133789
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.0,
+          "max_tilt": 9.253764314048672,
+          "jerk": 126428.88355263686,
+          "traj_len": 2.7376407911865117,
+          "max_qvel": 1.754629348251814,
+          "max_qacc": 2.525197846125861,
+          "feasible": true,
+          "plan_time": 0.24225234985351562
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.5799999833106995,
+          "max_tilt": 36.86702821925222,
+          "jerk": 76487561429.65671,
+          "traj_len": 30.900789871317876,
+          "max_qvel": 37.79743756408079,
+          "max_qacc": 753.4565025193954,
+          "feasible": false,
+          "plan_time": 13.10233759880066
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.699999988079071,
+          "max_tilt": 95.86035229013443,
+          "jerk": 36576986229.935555,
+          "traj_len": 5.002005081632602,
+          "max_qvel": 15.09983413280002,
+          "max_qacc": 803.2650000612813,
+          "feasible": false,
+          "plan_time": 2.958336114883423
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 9.812684807354154,
+          "jerk": 3593.3556111471357,
+          "traj_len": 2.7387271084502616,
+          "max_qvel": 1.7695635602410709,
+          "max_qacc": 0.6604006587440053,
+          "feasible": true,
+          "plan_time": 2.967329263687134
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_3finger_230",
+      "taxonomy": "3finger",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.7599999904632568,
+          "max_tilt": 38.038090783084655,
+          "jerk": 262787.1975302,
+          "traj_len": 3.018365952308311,
+          "max_qvel": 3.6081039799270127,
+          "max_qacc": 11.088347595514671,
+          "feasible": false,
+          "plan_time": 0.0010223388671875
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.0,
+          "max_tilt": 17.546617666050075,
+          "jerk": 25234.649336803224,
+          "traj_len": 3.0183690104213823,
+          "max_qvel": 1.9248565155219974,
+          "max_qacc": 1.4679123938461498,
+          "feasible": true,
+          "plan_time": 0.23514914512634277
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.5600000023841858,
+          "max_tilt": 34.653053645388844,
+          "jerk": 75826318187.50793,
+          "traj_len": 27.68607943876754,
+          "max_qvel": 33.05438054056836,
+          "max_qacc": 1037.2956355239503,
+          "feasible": false,
+          "plan_time": 13.147697687149048
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.6399999856948853,
+          "max_tilt": 95.62153218880974,
+          "jerk": 17026565179.371925,
+          "traj_len": 3.6239639356348134,
+          "max_qvel": 16.510944096340385,
+          "max_qacc": 896.6927970307613,
+          "feasible": false,
+          "plan_time": 2.9708876609802246
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 11.684409032100342,
+          "jerk": 4137.108071633202,
+          "traj_len": 3.023183663268325,
+          "max_qvel": 2.051724014787505,
+          "max_qacc": 0.7575208125752588,
+          "feasible": true,
+          "plan_time": 2.9832756519317627
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_3finger_261",
+      "taxonomy": "3finger",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.5400000214576721,
+          "max_tilt": 25.491035237915877,
+          "jerk": 87479.34526483396,
+          "traj_len": 1.741496289795117,
+          "max_qvel": 2.2520156553982176,
+          "max_qacc": 6.920846105466974,
+          "feasible": true,
+          "plan_time": 0.0010318756103515625
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.0,
+          "max_tilt": 4.890546409914023,
+          "jerk": 37585.236902972865,
+          "traj_len": 1.7414999912573021,
+          "max_qvel": 1.2014085601376099,
+          "max_qacc": 0.7005161683296443,
+          "feasible": true,
+          "plan_time": 0.23864293098449707
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.8999999761581421,
+          "max_tilt": 73.58504055312422,
+          "jerk": 255270994822.5254,
+          "traj_len": 42.9730440937513,
+          "max_qvel": 63.45656636470743,
+          "max_qacc": 1478.3922203139393,
+          "feasible": false,
+          "plan_time": 12.802106857299805
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.699999988079071,
+          "max_tilt": 80.28534656394214,
+          "jerk": 242618264.91808423,
+          "traj_len": 1.8392109035482802,
+          "max_qvel": 2.364087925937258,
+          "max_qacc": 54.68288925757562,
+          "feasible": false,
+          "plan_time": 2.9666011333465576
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 5.112002479747903,
+          "jerk": 16685.80381749139,
+          "traj_len": 1.7537632639850262,
+          "max_qvel": 1.2336044304177713,
+          "max_qacc": 1.2961962243970044,
+          "feasible": true,
+          "plan_time": 2.9710640907287598
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_3finger_268",
+      "taxonomy": "3finger",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.8600000143051147,
+          "max_tilt": 34.03370135867504,
+          "jerk": 472118.50648920436,
+          "traj_len": 4.045715169566679,
+          "max_qvel": 4.811882600538442,
+          "max_qacc": 14.78777417735589,
+          "feasible": false,
+          "plan_time": 0.001003265380859375
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.8199999928474426,
+          "max_tilt": 32.71987261424297,
+          "jerk": 5569.220172030252,
+          "traj_len": 4.045715369508867,
+          "max_qvel": 2.567050070369889,
+          "max_qacc": 0.5453144485980683,
+          "feasible": true,
+          "plan_time": 0.23739385604858398
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.47999998927116394,
+          "max_tilt": 36.557276706730946,
+          "jerk": 27045518168.201157,
+          "traj_len": 25.139207546263368,
+          "max_qvel": 25.62566308973709,
+          "max_qacc": 529.3937553778198,
+          "feasible": false,
+          "plan_time": 13.63111925125122
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.7400000095367432,
+          "max_tilt": 96.43992257000752,
+          "jerk": 60518594434.80892,
+          "traj_len": 7.392472156741136,
+          "max_qvel": 18.19712539833199,
+          "max_qacc": 1008.4708335259375,
+          "feasible": false,
+          "plan_time": 2.967302083969116
+        },
+        "ours": {
+          "spill_ratio": 0.03999999910593033,
+          "max_tilt": 18.054862023529807,
+          "jerk": 140726.93834449432,
+          "traj_len": 4.104120420236323,
+          "max_qvel": 2.969909850697792,
+          "max_qacc": 3.612671696036186,
+          "feasible": true,
+          "plan_time": 2.977111577987671
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_3finger_284",
+      "taxonomy": "3finger",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.6200000047683716,
+          "max_tilt": 27.09424558199352,
+          "jerk": 200522.9513650173,
+          "traj_len": 2.636646066406714,
+          "max_qvel": 2.6889041153926563,
+          "max_qacc": 8.263482329876386,
+          "feasible": true,
+          "plan_time": 0.0009593963623046875
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.0,
+          "max_tilt": 13.05062023354578,
+          "jerk": 56018.3158776352,
+          "traj_len": 2.6366490953677815,
+          "max_qvel": 1.434480445941081,
+          "max_qacc": 1.7086217044967547,
+          "feasible": true,
+          "plan_time": 0.2389087677001953
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.5600000023841858,
+          "max_tilt": 41.87511925737598,
+          "jerk": 100901172652.22826,
+          "traj_len": 31.581676620680025,
+          "max_qvel": 41.77090486406256,
+          "max_qacc": 1205.7822658657954,
+          "feasible": false,
+          "plan_time": 13.431762456893921
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.6600000262260437,
+          "max_tilt": 157.07588029772384,
+          "jerk": 50530394544.715515,
+          "traj_len": 5.162792540449871,
+          "max_qvel": 15.47822333645222,
+          "max_qacc": 914.038025483806,
+          "feasible": false,
+          "plan_time": 2.961109161376953
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 11.84914393490831,
+          "jerk": 30880.611396879052,
+          "traj_len": 2.65622000358749,
+          "max_qvel": 1.5646891941775627,
+          "max_qacc": 1.4961929867852575,
+          "feasible": true,
+          "plan_time": 2.969008445739746
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_3finger_291",
+      "taxonomy": "3finger",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.8600000143051147,
+          "max_tilt": 33.76551672841616,
+          "jerk": 340488.88476675935,
+          "traj_len": 3.435747673353948,
+          "max_qvel": 3.359802269848266,
+          "max_qacc": 10.325272117304767,
+          "feasible": false,
+          "plan_time": 0.0010342597961425781
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.7200000286102295,
+          "max_tilt": 28.88928157934554,
+          "jerk": 1435.8933874335487,
+          "traj_len": 3.4357477330119046,
+          "max_qvel": 1.7923921610801,
+          "max_qacc": 0.27688922852723535,
+          "feasible": true,
+          "plan_time": 0.24113011360168457
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.5400000214576721,
+          "max_tilt": 37.35376558726884,
+          "jerk": 29440572547.657806,
+          "traj_len": 25.428295182939593,
+          "max_qvel": 27.930176043615308,
+          "max_qacc": 644.6197722642282,
+          "feasible": false,
+          "plan_time": 12.566142797470093
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.7200000286102295,
+          "max_tilt": 95.91494490825781,
+          "jerk": 33584082196.04168,
+          "traj_len": 7.079989795860727,
+          "max_qvel": 17.31473759801335,
+          "max_qacc": 995.6250516334412,
+          "feasible": false,
+          "plan_time": 2.954554796218872
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 17.68317681314892,
+          "jerk": 230614.51608000885,
+          "traj_len": 3.519201302025745,
+          "max_qvel": 2.392894423614532,
+          "max_qacc": 4.541834742915672,
+          "feasible": true,
+          "plan_time": 2.9615557193756104
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_whole_0",
+      "taxonomy": "whole",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.7799999713897705,
+          "max_tilt": 27.264217986602475,
+          "jerk": 88341.22250309204,
+          "traj_len": 1.750054179216244,
+          "max_qvel": 1.7879239987017668,
+          "max_qacc": 5.494609601681027,
+          "feasible": true,
+          "plan_time": 0.0010268688201904297
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.0,
+          "max_tilt": 8.227754232030927,
+          "jerk": 105237.00093857024,
+          "traj_len": 1.7500618939002608,
+          "max_qvel": 0.9836614075305126,
+          "max_qacc": 2.1965896639167597,
+          "feasible": true,
+          "plan_time": 0.23757410049438477
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.5400000214576721,
+          "max_tilt": 31.288657977857326,
+          "jerk": 125087650170.1821,
+          "traj_len": 36.87205938017476,
+          "max_qvel": 55.32884374310326,
+          "max_qacc": 1067.7701381924478,
+          "feasible": false,
+          "plan_time": 13.286847591400146
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.7400000095367432,
+          "max_tilt": 82.65636414275859,
+          "jerk": 949800827.3171651,
+          "traj_len": 2.1349325053122703,
+          "max_qvel": 3.1186952257366625,
+          "max_qacc": 241.04477978896975,
+          "feasible": false,
+          "plan_time": 2.95493483543396
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 8.576250554119651,
+          "jerk": 1412705.0274276312,
+          "traj_len": 1.832783623239271,
+          "max_qvel": 1.404299032459483,
+          "max_qacc": 9.883749882301334,
+          "feasible": true,
+          "plan_time": 2.9626567363739014
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_whole_8",
+      "taxonomy": "whole",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.5600000023841858,
+          "max_tilt": 27.307161535995366,
+          "jerk": 87576.5208389607,
+          "traj_len": 1.7424632833762477,
+          "max_qvel": 2.0729858305754316,
+          "max_qacc": 6.370655496038307,
+          "feasible": true,
+          "plan_time": 0.001013040542602539
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.0,
+          "max_tilt": 8.632459527123682,
+          "jerk": 246361.407006138,
+          "traj_len": 1.7424784255772525,
+          "max_qvel": 1.1058994709594947,
+          "max_qacc": 3.6146289953379576,
+          "feasible": true,
+          "plan_time": 0.23404407501220703
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.3400000035762787,
+          "max_tilt": 33.239211787064725,
+          "jerk": 49375540305.74372,
+          "traj_len": 26.559288284192025,
+          "max_qvel": 31.322502877668295,
+          "max_qacc": 719.6694876438457,
+          "feasible": false,
+          "plan_time": 13.013246297836304
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.7799999713897705,
+          "max_tilt": 104.15293419365426,
+          "jerk": 17476177495.50406,
+          "traj_len": 3.138378270595428,
+          "max_qvel": 11.636014768127202,
+          "max_qacc": 843.8636619318462,
+          "feasible": false,
+          "plan_time": 2.953862428665161
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 9.5917513170628,
+          "jerk": 25572.752266039843,
+          "traj_len": 1.775635787101509,
+          "max_qvel": 1.2244774581963553,
+          "max_qacc": 1.8771842905784746,
+          "feasible": true,
+          "plan_time": 2.9627931118011475
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_whole_15",
+      "taxonomy": "whole",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.6800000071525574,
+          "max_tilt": 46.9717160910771,
+          "jerk": 188013.7139433641,
+          "traj_len": 2.553080777545224,
+          "max_qvel": 2.9002716522106065,
+          "max_qacc": 8.91305250071441,
+          "feasible": true,
+          "plan_time": 0.0009794235229492188
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.699999988079071,
+          "max_tilt": 29.422030156729548,
+          "jerk": 106655.02246360591,
+          "traj_len": 2.5530891910316655,
+          "max_qvel": 1.5472411043581833,
+          "max_qacc": 1.517861324555719,
+          "feasible": true,
+          "plan_time": 0.2372269630432129
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.7599999904632568,
+          "max_tilt": 39.43692919340711,
+          "jerk": 169590423744.96515,
+          "traj_len": 38.57540145961221,
+          "max_qvel": 48.30974702252995,
+          "max_qacc": 1415.2105196740558,
+          "feasible": false,
+          "plan_time": 12.663805484771729
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.7599999904632568,
+          "max_tilt": 102.3533895006874,
+          "jerk": 3977032124.377474,
+          "traj_len": 3.067080950837784,
+          "max_qvel": 6.807428048704085,
+          "max_qacc": 513.5339933027559,
+          "feasible": false,
+          "plan_time": 2.967832565307617
+        },
+        "ours": {
+          "spill_ratio": 0.47999998927116394,
+          "max_tilt": 18.049997335362473,
+          "jerk": 27532133.537526105,
+          "traj_len": 3.6360360241048286,
+          "max_qvel": 3.8538299003646355,
+          "max_qacc": 49.54839179599487,
+          "feasible": false,
+          "plan_time": 2.9711451530456543
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_whole_23",
+      "taxonomy": "whole",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.7599999904632568,
+          "max_tilt": 26.009021617526987,
+          "jerk": 119402.04434414582,
+          "traj_len": 2.034584224991412,
+          "max_qvel": 2.2354599637204706,
+          "max_qacc": 6.869967509664313,
+          "feasible": true,
+          "plan_time": 0.0009889602661132812
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.0,
+          "max_tilt": 9.923986517840632,
+          "jerk": 189051.53990122484,
+          "traj_len": 2.0346013429267797,
+          "max_qvel": 1.1925764058614998,
+          "max_qacc": 1.8185027777795528,
+          "feasible": true,
+          "plan_time": 0.2424755096435547
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.6200000047683716,
+          "max_tilt": 34.99850904828197,
+          "jerk": 64982321448.34077,
+          "traj_len": 24.697917950659203,
+          "max_qvel": 36.72233007946814,
+          "max_qacc": 852.2775721320168,
+          "feasible": false,
+          "plan_time": 12.6195068359375
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.5799999833106995,
+          "max_tilt": 95.14661806659412,
+          "jerk": 375379460.88777953,
+          "traj_len": 2.142336616806119,
+          "max_qvel": 2.5221049902989416,
+          "max_qacc": 107.81716930804674,
+          "feasible": false,
+          "plan_time": 2.958019971847534
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 6.86308246044616,
+          "jerk": 774.4296171955696,
+          "traj_len": 2.0357079203800685,
+          "max_qvel": 1.2513709082872322,
+          "max_qacc": 0.3790043469988281,
+          "feasible": true,
+          "plan_time": 2.9628517627716064
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_whole_31",
+      "taxonomy": "whole",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.6600000262260437,
+          "max_tilt": 42.23701933075716,
+          "jerk": 317849.3663044453,
+          "traj_len": 3.3195595700628773,
+          "max_qvel": 3.8147505506770867,
+          "max_qacc": 11.723409394910583,
+          "feasible": false,
+          "plan_time": 0.001026153564453125
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.5,
+          "max_tilt": 25.229364987563578,
+          "jerk": 14007.740363360585,
+          "traj_len": 3.3195602876050443,
+          "max_qvel": 2.0350986261517923,
+          "max_qacc": 0.6547811113415086,
+          "feasible": true,
+          "plan_time": 0.2466726303100586
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.4399999976158142,
+          "max_tilt": 45.258119315351784,
+          "jerk": 66641597697.56891,
+          "traj_len": 31.990890953972606,
+          "max_qvel": 46.949336828012925,
+          "max_qacc": 940.1235234058985,
+          "feasible": false,
+          "plan_time": 13.06981086730957
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.7799999713897705,
+          "max_tilt": 101.0758105712267,
+          "jerk": 25355864584.562675,
+          "traj_len": 4.306346430404169,
+          "max_qvel": 18.274327069215694,
+          "max_qacc": 1023.2537550473018,
+          "feasible": false,
+          "plan_time": 2.9769206047058105
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 17.70257254485699,
+          "jerk": 17482.809552074574,
+          "traj_len": 3.3363453613684477,
+          "max_qvel": 2.31710915324817,
+          "max_qacc": 1.2812217789399416,
+          "feasible": true,
+          "plan_time": 2.9608712196350098
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_whole_54",
+      "taxonomy": "whole",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.5600000023841858,
+          "max_tilt": 35.57395035956146,
+          "jerk": 403432.57960353664,
+          "traj_len": 3.73985939970731,
+          "max_qvel": 4.804458477336756,
+          "max_qacc": 14.764958521512549,
+          "feasible": false,
+          "plan_time": 0.0009772777557373047
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.30000001192092896,
+          "max_tilt": 21.895833065542217,
+          "jerk": 162170.07273232177,
+          "traj_len": 3.739865700575876,
+          "max_qvel": 2.563089438415726,
+          "max_qacc": 2.9409079955317385,
+          "feasible": true,
+          "plan_time": 0.23835039138793945
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.5799999833106995,
+          "max_tilt": 39.1972372962289,
+          "jerk": 58936014328.1188,
+          "traj_len": 30.85801377629068,
+          "max_qvel": 37.93747100890893,
+          "max_qacc": 845.3957777935351,
+          "feasible": false,
+          "plan_time": 13.164851188659668
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.7200000286102295,
+          "max_tilt": 96.2915146406994,
+          "jerk": 24596522904.926746,
+          "traj_len": 4.658610711966656,
+          "max_qvel": 13.242385608108842,
+          "max_qacc": 868.1934817055907,
+          "feasible": false,
+          "plan_time": 2.9510397911071777
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 16.329200073736725,
+          "jerk": 1115.9896231418252,
+          "traj_len": 3.7430323029471175,
+          "max_qvel": 2.57110400799132,
+          "max_qacc": 0.6557714655340908,
+          "feasible": true,
+          "plan_time": 2.962811231613159
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_whole_61",
+      "taxonomy": "whole",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.7799999713897705,
+          "max_tilt": 25.02187754037443,
+          "jerk": 59181.775698586636,
+          "traj_len": 1.4323982686689567,
+          "max_qvel": 1.8009978981886194,
+          "max_qacc": 5.534788028561489,
+          "feasible": true,
+          "plan_time": 0.0010378360748291016
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.0,
+          "max_tilt": 10.659376113953787,
+          "jerk": 57645.2861720082,
+          "traj_len": 1.4324024322936078,
+          "max_qvel": 0.9838536663449405,
+          "max_qacc": 1.6964505096865297,
+          "feasible": true,
+          "plan_time": 0.23482298851013184
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.5,
+          "max_tilt": 32.22409747978974,
+          "jerk": 130307707379.94502,
+          "traj_len": 34.61169853130424,
+          "max_qvel": 46.06546742310057,
+          "max_qacc": 890.7634561542061,
+          "feasible": false,
+          "plan_time": 13.097047328948975
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.6600000262260437,
+          "max_tilt": 57.711588501266284,
+          "jerk": 348815614.84323126,
+          "traj_len": 1.623239325215927,
+          "max_qvel": 1.9170496612681502,
+          "max_qacc": 72.51762924779369,
+          "feasible": false,
+          "plan_time": 2.967589855194092
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 5.4157020268015525,
+          "jerk": 6556.859085737833,
+          "traj_len": 1.4373271456802086,
+          "max_qvel": 1.0172307705525065,
+          "max_qacc": 1.000106387018868,
+          "feasible": true,
+          "plan_time": 2.988980531692505
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_whole_77",
+      "taxonomy": "whole",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.7799999713897705,
+          "max_tilt": 25.022859145863332,
+          "jerk": 60484.43755860247,
+          "traj_len": 1.44807686399025,
+          "max_qvel": 1.8144032584906944,
+          "max_qacc": 5.5759850936973,
+          "feasible": true,
+          "plan_time": 0.0010113716125488281
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.0,
+          "max_tilt": 10.470031771390225,
+          "jerk": 39027.812250630275,
+          "traj_len": 1.448078719651398,
+          "max_qvel": 0.9776861194891989,
+          "max_qacc": 1.428016732371499,
+          "feasible": true,
+          "plan_time": 0.2398533821105957
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.6000000238418579,
+          "max_tilt": 46.07875456880977,
+          "jerk": 172545477876.47754,
+          "traj_len": 37.18718464311211,
+          "max_qvel": 57.80415290878404,
+          "max_qacc": 1198.984304123173,
+          "feasible": false,
+          "plan_time": 13.001665115356445
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.8199999928474426,
+          "max_tilt": 93.82621063974325,
+          "jerk": 464835791.6675316,
+          "traj_len": 1.6052568386462158,
+          "max_qvel": 2.5374222275356835,
+          "max_qacc": 83.28855463037323,
+          "feasible": false,
+          "plan_time": 2.9568400382995605
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 5.321401371191968,
+          "jerk": 40829.785713374484,
+          "traj_len": 1.4768725946261338,
+          "max_qvel": 1.0143288418771839,
+          "max_qacc": 2.5054477419535535,
+          "feasible": true,
+          "plan_time": 2.963531494140625
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_whole_92",
+      "taxonomy": "whole",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.8199999928474426,
+          "max_tilt": 33.55777432330513,
+          "jerk": 276756.2304174765,
+          "traj_len": 3.0975512089499433,
+          "max_qvel": 3.748410188556087,
+          "max_qacc": 11.519533620015144,
+          "feasible": false,
+          "plan_time": 0.0010228157043457031
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.0,
+          "max_tilt": 14.908539782705803,
+          "jerk": 5256.325564191047,
+          "traj_len": 3.097551445051067,
+          "max_qvel": 1.9997072740783932,
+          "max_qacc": 0.530052948364813,
+          "feasible": true,
+          "plan_time": 0.23633933067321777
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.5600000023841858,
+          "max_tilt": 29.910464929093695,
+          "jerk": 50776534908.96864,
+          "traj_len": 27.008600349337286,
+          "max_qvel": 38.817351792402086,
+          "max_qacc": 709.060994575127,
+          "feasible": false,
+          "plan_time": 12.744641780853271
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.8799999952316284,
+          "max_tilt": 111.63439566158702,
+          "jerk": 704836714.3770761,
+          "traj_len": 3.2610468187955846,
+          "max_qvel": 3.8675379072687877,
+          "max_qacc": 87.12484971486916,
+          "feasible": false,
+          "plan_time": 2.95658016204834
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 14.991090916701696,
+          "jerk": 3527.133264297427,
+          "traj_len": 3.099554544891241,
+          "max_qvel": 2.182426927889701,
+          "max_qacc": 0.9629195692942119,
+          "feasible": true,
+          "plan_time": 2.9666762351989746
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_whole_100",
+      "taxonomy": "whole",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.7200000286102295,
+          "max_tilt": 39.85102226942816,
+          "jerk": 315068.3725185513,
+          "traj_len": 3.3050055748955294,
+          "max_qvel": 4.2041283025426655,
+          "max_qacc": 12.920036732333864,
+          "feasible": false,
+          "plan_time": 0.0010211467742919922
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.019999999552965164,
+          "max_tilt": 19.69299833512723,
+          "jerk": 33006.99483859656,
+          "traj_len": 3.3050071132525316,
+          "max_qvel": 2.2428244308534317,
+          "max_qacc": 0.950415865409456,
+          "feasible": true,
+          "plan_time": 0.23841071128845215
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.5400000214576721,
+          "max_tilt": 39.987875345484994,
+          "jerk": 58196350968.16475,
+          "traj_len": 27.671493322512394,
+          "max_qvel": 42.12203377916405,
+          "max_qacc": 724.9160419601419,
+          "feasible": false,
+          "plan_time": 12.926608800888062
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.699999988079071,
+          "max_tilt": 106.24449341267426,
+          "jerk": 28678695960.86385,
+          "traj_len": 4.2787127076059255,
+          "max_qvel": 14.74900722078082,
+          "max_qacc": 939.8452275519412,
+          "feasible": false,
+          "plan_time": 2.951538324356079
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 11.844036598406975,
+          "jerk": 1286.0266324465133,
+          "traj_len": 3.3090850452678766,
+          "max_qvel": 2.2638062180512826,
+          "max_qacc": 0.7006448785861822,
+          "feasible": true,
+          "plan_time": 2.961836099624634
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_whole_107",
+      "taxonomy": "whole",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.46000000834465027,
+          "max_tilt": 31.70697490777383,
+          "jerk": 361334.98220747,
+          "traj_len": 3.5393604712224755,
+          "max_qvel": 4.376614471618389,
+          "max_qacc": 13.45011751957519,
+          "feasible": false,
+          "plan_time": 0.0010378360748291016
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.47999998927116394,
+          "max_tilt": 30.99724638019418,
+          "jerk": 129709.84883976137,
+          "traj_len": 3.5393657039123756,
+          "max_qvel": 2.3348426011251178,
+          "max_qacc": 2.6086416971206194,
+          "feasible": true,
+          "plan_time": 0.23696398735046387
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.6399999856948853,
+          "max_tilt": 32.407383449695914,
+          "jerk": 80526355405.4926,
+          "traj_len": 28.261170380912795,
+          "max_qvel": 31.54463400936131,
+          "max_qacc": 1049.1596704692795,
+          "feasible": false,
+          "plan_time": 13.184691667556763
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.6000000238418579,
+          "max_tilt": 90.2489441714908,
+          "jerk": 34033010278.486458,
+          "traj_len": 5.17819334596432,
+          "max_qvel": 14.703160138676976,
+          "max_qacc": 1053.3657045777331,
+          "feasible": false,
+          "plan_time": 2.95993709564209
+        },
+        "ours": {
+          "spill_ratio": 0.019999999552965164,
+          "max_tilt": 21.948211224116417,
+          "jerk": 133090009.30098073,
+          "traj_len": 3.8428545501068023,
+          "max_qvel": 4.541963947415805,
+          "max_qacc": 161.82377640841065,
+          "feasible": false,
+          "plan_time": 2.970818042755127
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_whole_115",
+      "taxonomy": "whole",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.6600000262260437,
+          "max_tilt": 25.842373012693397,
+          "jerk": 55444.28090475732,
+          "traj_len": 1.386430708607646,
+          "max_qvel": 1.7321682706778503,
+          "max_qacc": 5.323262296776562,
+          "feasible": true,
+          "plan_time": 0.0009946823120117188
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.0,
+          "max_tilt": 7.3737057512799105,
+          "jerk": 193924.37112026958,
+          "traj_len": 1.3864539141232117,
+          "max_qvel": 0.9289183730776879,
+          "max_qacc": 1.8448857857158176,
+          "feasible": true,
+          "plan_time": 0.2385237216949463
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.6200000047683716,
+          "max_tilt": 31.750388369696932,
+          "jerk": 157608401681.89856,
+          "traj_len": 33.85325582615685,
+          "max_qvel": 42.19802616381628,
+          "max_qacc": 1004.6212221891943,
+          "feasible": false,
+          "plan_time": 12.957679748535156
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.800000011920929,
+          "max_tilt": 91.10530189506241,
+          "jerk": 1660249012.9725194,
+          "traj_len": 1.7656819258013452,
+          "max_qvel": 2.517862156530805,
+          "max_qacc": 158.1301852374474,
+          "feasible": false,
+          "plan_time": 2.96203875541687
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 5.420446163670669,
+          "jerk": 44380.27036870513,
+          "traj_len": 1.4074258938415127,
+          "max_qvel": 0.9431082683386244,
+          "max_qacc": 2.553611534342978,
+          "feasible": true,
+          "plan_time": 2.962336301803589
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_whole_123",
+      "taxonomy": "whole",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.800000011920929,
+          "max_tilt": 29.272367094347274,
+          "jerk": 189088.0022669163,
+          "traj_len": 2.5603643900906525,
+          "max_qvel": 3.260635642798493,
+          "max_qacc": 10.02051537062523,
+          "feasible": true,
+          "plan_time": 0.0010085105895996094
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.0,
+          "max_tilt": 8.985018097960529,
+          "jerk": 223235.9104512573,
+          "traj_len": 2.560380756881883,
+          "max_qvel": 1.7394886058441639,
+          "max_qacc": 1.8315516190380718,
+          "feasible": true,
+          "plan_time": 0.24020791053771973
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.5199999809265137,
+          "max_tilt": 40.41362652541731,
+          "jerk": 64898893246.39957,
+          "traj_len": 29.40437849486146,
+          "max_qvel": 38.79531890339883,
+          "max_qacc": 743.6483452686124,
+          "feasible": false,
+          "plan_time": 13.030521392822266
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.7599999904632568,
+          "max_tilt": 120.03196266229325,
+          "jerk": 45699573964.62437,
+          "traj_len": 4.901357766614159,
+          "max_qvel": 11.899537959062503,
+          "max_qacc": 728.4054147892687,
+          "feasible": false,
+          "plan_time": 2.9544894695281982
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 8.916978567372835,
+          "jerk": 1549.8750925372224,
+          "traj_len": 2.5633492540091347,
+          "max_qvel": 1.7922055789167455,
+          "max_qacc": 0.384728800227257,
+          "feasible": true,
+          "plan_time": 2.9624834060668945
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_whole_130",
+      "taxonomy": "whole",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.7799999713897705,
+          "max_tilt": 55.48457208851882,
+          "jerk": 353260.36060660804,
+          "traj_len": 3.4995906339528418,
+          "max_qvel": 4.724071473430383,
+          "max_qacc": 14.517914909012976,
+          "feasible": false,
+          "plan_time": 0.0010347366333007812
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.5799999833106995,
+          "max_tilt": 26.999949704156304,
+          "jerk": 6292.677778369157,
+          "traj_len": 3.4995909090279436,
+          "max_qvel": 2.5202044636220693,
+          "max_qacc": 0.39142490265824625,
+          "feasible": true,
+          "plan_time": 0.24136948585510254
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.5,
+          "max_tilt": 32.5995774839367,
+          "jerk": 72828834521.99007,
+          "traj_len": 34.35460902263172,
+          "max_qvel": 39.221547993760176,
+          "max_qacc": 695.9473853947071,
+          "feasible": false,
+          "plan_time": 12.904205083847046
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.7599999904632568,
+          "max_tilt": 98.80681041930703,
+          "jerk": 25947022034.84033,
+          "traj_len": 4.385467079842633,
+          "max_qvel": 14.191666061959193,
+          "max_qacc": 944.7262500143727,
+          "feasible": false,
+          "plan_time": 2.9568984508514404
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 16.335057850520467,
+          "jerk": 7029374.444652845,
+          "traj_len": 3.5486484305595654,
+          "max_qvel": 3.3459105522296535,
+          "max_qacc": 32.536652825357045,
+          "feasible": false,
+          "plan_time": 2.9653940200805664
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_whole_138",
+      "taxonomy": "whole",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.7200000286102295,
+          "max_tilt": 26.550121678509704,
+          "jerk": 72848.62959215778,
+          "traj_len": 1.5892070564727327,
+          "max_qvel": 1.6696403125213541,
+          "max_qacc": 5.131102719800253,
+          "feasible": true,
+          "plan_time": 0.0010271072387695312
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.0,
+          "max_tilt": 7.655143579322066,
+          "jerk": 98817.14736242058,
+          "traj_len": 1.5892162980655729,
+          "max_qvel": 0.8915000646209811,
+          "max_qacc": 1.7093129823464972,
+          "feasible": true,
+          "plan_time": 0.2358105182647705
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.6200000047683716,
+          "max_tilt": 45.28686435678664,
+          "jerk": 176961109634.0856,
+          "traj_len": 33.46186244144083,
+          "max_qvel": 45.64903144849968,
+          "max_qacc": 1380.8746033141401,
+          "feasible": false,
+          "plan_time": 12.996716499328613
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.7200000286102295,
+          "max_tilt": 94.17773520761078,
+          "jerk": 1150529746.2854946,
+          "traj_len": 1.8513604851608834,
+          "max_qvel": 2.032060445115861,
+          "max_qacc": 157.1916200645946,
+          "feasible": false,
+          "plan_time": 2.9518189430236816
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 5.48613633444981,
+          "jerk": 37226.74510349032,
+          "traj_len": 1.6118862817994297,
+          "max_qvel": 0.9424819665925995,
+          "max_qacc": 2.50025776709059,
+          "feasible": true,
+          "plan_time": 2.9617772102355957
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_whole_146",
+      "taxonomy": "whole",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.800000011920929,
+          "max_tilt": 28.470177712907308,
+          "jerk": 195577.25848445544,
+          "traj_len": 2.6039279822491292,
+          "max_qvel": 3.2871388112062867,
+          "max_qacc": 10.10196433809479,
+          "feasible": true,
+          "plan_time": 0.0010323524475097656
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.0,
+          "max_tilt": 9.008433369032653,
+          "jerk": 119103.12696895955,
+          "traj_len": 2.6039361608799916,
+          "max_qvel": 1.7536275543543753,
+          "max_qacc": 1.457074335706857,
+          "feasible": true,
+          "plan_time": 0.23949193954467773
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.47999998927116394,
+          "max_tilt": 40.96648458390089,
+          "jerk": 74969057175.20735,
+          "traj_len": 29.718511902869157,
+          "max_qvel": 41.96889541935655,
+          "max_qacc": 769.3270507313629,
+          "feasible": false,
+          "plan_time": 12.969444036483765
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.6600000262260437,
+          "max_tilt": 114.2795062205948,
+          "jerk": 51821306306.270004,
+          "traj_len": 6.010718527438058,
+          "max_qvel": 12.878104676523193,
+          "max_qacc": 885.290550875262,
+          "feasible": false,
+          "plan_time": 2.953619956970215
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 8.585422069440009,
+          "jerk": 2905.6469525794682,
+          "traj_len": 2.6076623307424427,
+          "max_qvel": 1.8323613712877436,
+          "max_qacc": 0.5695810270112357,
+          "feasible": true,
+          "plan_time": 2.9643373489379883
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_whole_153",
+      "taxonomy": "whole",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.7799999713897705,
+          "max_tilt": 53.46700795063863,
+          "jerk": 311850.1436902757,
+          "traj_len": 3.2880829551199895,
+          "max_qvel": 4.351621703034414,
+          "max_qacc": 13.373310280378542,
+          "feasible": false,
+          "plan_time": 0.0010330677032470703
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.6000000238418579,
+          "max_tilt": 25.81004008912614,
+          "jerk": 131316.2750223725,
+          "traj_len": 3.288089364296032,
+          "max_qvel": 2.3215094228915216,
+          "max_qacc": 1.8179944179931637,
+          "feasible": true,
+          "plan_time": 0.23586678504943848
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.6200000047683716,
+          "max_tilt": 39.54922637949251,
+          "jerk": 96052181383.45683,
+          "traj_len": 32.15108863989501,
+          "max_qvel": 42.20668947628425,
+          "max_qacc": 1021.1691758508446,
+          "feasible": false,
+          "plan_time": 13.017041206359863
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.7799999713897705,
+          "max_tilt": 107.85400512308046,
+          "jerk": 20358961243.817677,
+          "traj_len": 3.980862584612127,
+          "max_qvel": 14.637588097958464,
+          "max_qacc": 820.6379803673709,
+          "feasible": false,
+          "plan_time": 2.9527060985565186
+        },
+        "ours": {
+          "spill_ratio": 0.03999999910593033,
+          "max_tilt": 20.577100869812455,
+          "jerk": 10344602.66885092,
+          "traj_len": 3.3786842959490633,
+          "max_qvel": 3.1527628906608496,
+          "max_qacc": 39.651178904966,
+          "feasible": false,
+          "plan_time": 2.960005521774292
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_whole_169",
+      "taxonomy": "whole",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.6200000047683716,
+          "max_tilt": 24.565208888169803,
+          "jerk": 69049.69696173178,
+          "traj_len": 1.547215045869075,
+          "max_qvel": 1.857709566223485,
+          "max_qacc": 5.70907310775854,
+          "feasible": true,
+          "plan_time": 0.0009961128234863281
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.0,
+          "max_tilt": 6.0218921809556285,
+          "jerk": 180760.1902415219,
+          "traj_len": 1.5472338599881137,
+          "max_qvel": 0.9966998238977113,
+          "max_qacc": 1.49462289993725,
+          "feasible": true,
+          "plan_time": 0.23786568641662598
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.4000000059604645,
+          "max_tilt": 28.397640285120893,
+          "jerk": 27991376454.836994,
+          "traj_len": 23.887899400888077,
+          "max_qvel": 38.90226219711407,
+          "max_qacc": 460.24457369464426,
+          "feasible": false,
+          "plan_time": 13.239777326583862
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.7200000286102295,
+          "max_tilt": 86.96186256674571,
+          "jerk": 279458008.8805633,
+          "traj_len": 1.6572348352559145,
+          "max_qvel": 2.155995204246942,
+          "max_qacc": 77.60865800006512,
+          "feasible": false,
+          "plan_time": 2.953979253768921
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 5.946645140797171,
+          "jerk": 3647.554187103133,
+          "traj_len": 1.5504405118857483,
+          "max_qvel": 1.0653938014788544,
+          "max_qacc": 0.5817243016182366,
+          "feasible": true,
+          "plan_time": 2.963679552078247
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_whole_176",
+      "taxonomy": "whole",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.699999988079071,
+          "max_tilt": 38.75080951028545,
+          "jerk": 192883.48029848267,
+          "traj_len": 2.5859332383519957,
+          "max_qvel": 3.226126113867288,
+          "max_qacc": 9.914461428091446,
+          "feasible": true,
+          "plan_time": 0.0010225772857666016
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.23999999463558197,
+          "max_tilt": 18.896465714622327,
+          "jerk": 0.20408134622644186,
+          "traj_len": 2.585933238378182,
+          "max_qvel": 1.7210784125735687,
+          "max_qacc": 0.003972685682644307,
+          "feasible": true,
+          "plan_time": 0.233184814453125
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.5799999833106995,
+          "max_tilt": 40.76997218186851,
+          "jerk": 34079222392.83082,
+          "traj_len": 24.228519176054498,
+          "max_qvel": 28.17632730687172,
+          "max_qacc": 689.0415422044712,
+          "feasible": false,
+          "plan_time": 12.934640407562256
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.8600000143051147,
+          "max_tilt": 110.48618794871246,
+          "jerk": 46842593058.921486,
+          "traj_len": 5.217498949966916,
+          "max_qvel": 13.184886186773882,
+          "max_qacc": 1103.944267171742,
+          "feasible": false,
+          "plan_time": 2.9647090435028076
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 15.278860763008229,
+          "jerk": 8396.07780889679,
+          "traj_len": 2.601217770809665,
+          "max_qvel": 1.8385781066077393,
+          "max_qacc": 1.1162672282278845,
+          "feasible": true,
+          "plan_time": 2.973680019378662
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_whole_184",
+      "taxonomy": "whole",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.6600000262260437,
+          "max_tilt": 45.93726393340298,
+          "jerk": 288469.1982282417,
+          "traj_len": 3.162419762434294,
+          "max_qvel": 3.8358544292036925,
+          "max_qacc": 11.788265380772227,
+          "feasible": false,
+          "plan_time": 0.0010161399841308594
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.699999988079071,
+          "max_tilt": 29.507392464975137,
+          "jerk": 1999.2624235217677,
+          "traj_len": 3.162420201392458,
+          "max_qvel": 2.046357153708346,
+          "max_qacc": 0.6715567612556582,
+          "feasible": true,
+          "plan_time": 0.23731017112731934
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.3400000035762787,
+          "max_tilt": 34.80186155941717,
+          "jerk": 39638089664.03494,
+          "traj_len": 23.009039452085336,
+          "max_qvel": 25.249214630417576,
+          "max_qacc": 575.6586538370514,
+          "feasible": false,
+          "plan_time": 12.940975427627563
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.7599999904632568,
+          "max_tilt": 106.02084440284689,
+          "jerk": 47071282907.34179,
+          "traj_len": 5.596447012194881,
+          "max_qvel": 14.140017301901874,
+          "max_qacc": 848.5257243247737,
+          "feasible": false,
+          "plan_time": 2.9566051959991455
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 16.987212607621636,
+          "jerk": 220080.08128962616,
+          "traj_len": 3.249632404308597,
+          "max_qvel": 2.06439323019953,
+          "max_qacc": 4.059414354689994,
+          "feasible": true,
+          "plan_time": 2.9640614986419678
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_whole_192",
+      "taxonomy": "whole",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.699999988079071,
+          "max_tilt": 30.496176585031893,
+          "jerk": 154743.94768777434,
+          "traj_len": 2.316203041563577,
+          "max_qvel": 2.709492509757008,
+          "max_qacc": 8.326754140893073,
+          "feasible": true,
+          "plan_time": 0.0010416507720947266
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.0,
+          "max_tilt": 14.683497089409805,
+          "jerk": 15312.953777697325,
+          "traj_len": 2.3162039511675605,
+          "max_qvel": 1.4454639722632032,
+          "max_qacc": 0.8138595739140257,
+          "feasible": true,
+          "plan_time": 0.24370384216308594
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.41999998688697815,
+          "max_tilt": 41.6758684488878,
+          "jerk": 32455262367.767162,
+          "traj_len": 23.200223422783772,
+          "max_qvel": 28.295545288339195,
+          "max_qacc": 618.3487060712649,
+          "feasible": false,
+          "plan_time": 12.845041751861572
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.6800000071525574,
+          "max_tilt": 109.22360284831197,
+          "jerk": 27979230149.007023,
+          "traj_len": 4.027459912768207,
+          "max_qvel": 11.596525488121754,
+          "max_qacc": 760.0025801432412,
+          "feasible": false,
+          "plan_time": 2.9632112979888916
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 12.938401202392033,
+          "jerk": 4562.035176221536,
+          "traj_len": 2.3191350883430726,
+          "max_qvel": 1.4911153768939867,
+          "max_qacc": 0.6401897736148251,
+          "feasible": true,
+          "plan_time": 2.97090482711792
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_whole_207",
+      "taxonomy": "whole",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.6200000047683716,
+          "max_tilt": 37.5408491884882,
+          "jerk": 358761.62514889863,
+          "traj_len": 3.5267346349198108,
+          "max_qvel": 4.566922826152707,
+          "max_qacc": 14.03496906408285,
+          "feasible": false,
+          "plan_time": 0.0010344982147216797
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.03999999910593033,
+          "max_tilt": 21.327797076246355,
+          "jerk": 59981.09565484397,
+          "traj_len": 3.526736981684512,
+          "max_qvel": 2.436368576601868,
+          "max_qacc": 1.5875391275046895,
+          "feasible": true,
+          "plan_time": 0.2393174171447754
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.4399999976158142,
+          "max_tilt": 29.436047016484082,
+          "jerk": 47476027272.92454,
+          "traj_len": 29.640090042845795,
+          "max_qvel": 31.20153550085748,
+          "max_qacc": 707.6403737418055,
+          "feasible": false,
+          "plan_time": 13.175723791122437
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.6600000262260437,
+          "max_tilt": 99.53025922225372,
+          "jerk": 22348172951.021564,
+          "traj_len": 4.202428422659825,
+          "max_qvel": 11.64460087829945,
+          "max_qacc": 951.0430032852121,
+          "feasible": false,
+          "plan_time": 2.9567558765411377
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 13.403639188741911,
+          "jerk": 616.2169610522112,
+          "traj_len": 3.5293377229244376,
+          "max_qvel": 2.444015035395352,
+          "max_qacc": 0.5209687847664722,
+          "feasible": true,
+          "plan_time": 2.9618489742279053
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_whole_215",
+      "taxonomy": "whole",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.8199999928474426,
+          "max_tilt": 36.09269419358768,
+          "jerk": 325493.57624351064,
+          "traj_len": 3.3592397647079273,
+          "max_qvel": 4.10589899207595,
+          "max_qacc": 12.618160526828934,
+          "feasible": false,
+          "plan_time": 0.0010199546813964844
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.0,
+          "max_tilt": 16.64250921567898,
+          "jerk": 119373.0543481055,
+          "traj_len": 3.3592447505385854,
+          "max_qvel": 2.19042091662021,
+          "max_qacc": 2.5204182518617557,
+          "feasible": true,
+          "plan_time": 0.23444461822509766
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.30000001192092896,
+          "max_tilt": 36.05922664594406,
+          "jerk": 49219191270.21434,
+          "traj_len": 28.357107114659605,
+          "max_qvel": 42.29271258703056,
+          "max_qacc": 588.907800742959,
+          "feasible": false,
+          "plan_time": 13.588424444198608
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.8199999928474426,
+          "max_tilt": 99.28673974193957,
+          "jerk": 2027141596.8327224,
+          "traj_len": 3.5809926833469365,
+          "max_qvel": 4.907300760887468,
+          "max_qacc": 162.14512631424182,
+          "feasible": false,
+          "plan_time": 2.9558894634246826
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 16.543398482440445,
+          "jerk": 1661.188058473078,
+          "traj_len": 3.361163744571892,
+          "max_qvel": 2.3072077306405205,
+          "max_qacc": 0.47233463463202197,
+          "feasible": true,
+          "plan_time": 2.9628231525421143
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_whole_230",
+      "taxonomy": "whole",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.6600000262260437,
+          "max_tilt": 39.169300119175446,
+          "jerk": 370919.3385398683,
+          "traj_len": 3.5859937632331933,
+          "max_qvel": 4.59533970644136,
+          "max_qacc": 14.122299209769722,
+          "feasible": false,
+          "plan_time": 0.0010044574737548828
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.0,
+          "max_tilt": 17.670987086703075,
+          "jerk": 62381.127800484435,
+          "traj_len": 3.585996916651636,
+          "max_qvel": 2.451528454886618,
+          "max_qacc": 1.0862189940980413,
+          "feasible": true,
+          "plan_time": 0.23611783981323242
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.4000000059604645,
+          "max_tilt": 30.99362683251385,
+          "jerk": 42341778659.403625,
+          "traj_len": 26.414918262400043,
+          "max_qvel": 32.415136669286426,
+          "max_qacc": 548.032759459567,
+          "feasible": false,
+          "plan_time": 13.1823148727417
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.5600000023841858,
+          "max_tilt": 110.8453433601087,
+          "jerk": 21101017373.7385,
+          "traj_len": 4.438240832856402,
+          "max_qvel": 13.903131410088696,
+          "max_qacc": 752.8606583854219,
+          "feasible": false,
+          "plan_time": 2.9532718658447266
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 13.684839569797875,
+          "jerk": 4861.514049230298,
+          "traj_len": 3.5933130895159557,
+          "max_qvel": 2.457280813306857,
+          "max_qacc": 0.9828362598338638,
+          "feasible": true,
+          "plan_time": 2.9625091552734375
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_whole_238",
+      "taxonomy": "whole",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.7599999904632568,
+          "max_tilt": 33.373380823642535,
+          "jerk": 240000.61771916444,
+          "traj_len": 2.8845360522491132,
+          "max_qvel": 3.442976433445221,
+          "max_qacc": 10.580881169055527,
+          "feasible": false,
+          "plan_time": 0.0010025501251220703
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.0,
+          "max_tilt": 13.800949488494878,
+          "jerk": 20708.387630195208,
+          "traj_len": 2.8845373910806598,
+          "max_qvel": 1.8367640338457818,
+          "max_qacc": 0.7692369338192284,
+          "feasible": true,
+          "plan_time": 0.23466897010803223
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.47999998927116394,
+          "max_tilt": 33.131815770322014,
+          "jerk": 25536790262.099205,
+          "traj_len": 21.035428184503257,
+          "max_qvel": 27.113574265856215,
+          "max_qacc": 562.5908646642838,
+          "feasible": false,
+          "plan_time": 13.195803880691528
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.6800000071525574,
+          "max_tilt": 94.97318223410038,
+          "jerk": 57535127690.150734,
+          "traj_len": 7.503196713293655,
+          "max_qvel": 16.090579217639792,
+          "max_qacc": 1053.7117286516375,
+          "feasible": false,
+          "plan_time": 2.971513271331787
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 10.31583339066578,
+          "jerk": 5236.387822574249,
+          "traj_len": 2.8904337083857707,
+          "max_qvel": 1.9120357561360513,
+          "max_qacc": 0.8270001493244254,
+          "feasible": true,
+          "plan_time": 2.9819231033325195
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_whole_261",
+      "taxonomy": "whole",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.800000011920929,
+          "max_tilt": 35.489419187196674,
+          "jerk": 252498.73288243802,
+          "traj_len": 2.9586895179306945,
+          "max_qvel": 2.7425849133201843,
+          "max_qacc": 8.42845300420743,
+          "feasible": true,
+          "plan_time": 0.0009739398956298828
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.30000001192092896,
+          "max_tilt": 19.099241888921927,
+          "jerk": 549.518634571823,
+          "traj_len": 2.958689543345521,
+          "max_qvel": 1.463118155448373,
+          "max_qacc": 0.17092928044583292,
+          "feasible": true,
+          "plan_time": 0.23632025718688965
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.3400000035762787,
+          "max_tilt": 41.33834692493128,
+          "jerk": 33105959793.97513,
+          "traj_len": 25.25107524569413,
+          "max_qvel": 30.154941806149168,
+          "max_qacc": 631.0212388519027,
+          "feasible": false,
+          "plan_time": 12.86378026008606
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.5400000214576721,
+          "max_tilt": 100.60965262550948,
+          "jerk": 63350473599.400734,
+          "traj_len": 5.551785511979129,
+          "max_qvel": 16.60831497268568,
+          "max_qacc": 942.0360467426959,
+          "feasible": false,
+          "plan_time": 2.956174373626709
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 14.189197562190275,
+          "jerk": 579105.0347345916,
+          "traj_len": 3.0238864780961636,
+          "max_qvel": 1.8375581004531174,
+          "max_qacc": 7.323543450587029,
+          "feasible": true,
+          "plan_time": 2.9663078784942627
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_whole_268",
+      "taxonomy": "whole",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.7599999904632568,
+          "max_tilt": 24.426038071099804,
+          "jerk": 100867.76911565442,
+          "traj_len": 1.8700189151357567,
+          "max_qvel": 2.3169184151722004,
+          "max_qacc": 7.120303871728541,
+          "feasible": true,
+          "plan_time": 0.0010159015655517578
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.0,
+          "max_tilt": 8.943342462435195,
+          "jerk": 177010.75016994326,
+          "traj_len": 1.8700330032801311,
+          "max_qvel": 1.2360329780372945,
+          "max_qacc": 2.2128973754205257,
+          "feasible": true,
+          "plan_time": 0.23630237579345703
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.30000001192092896,
+          "max_tilt": 34.109664507963004,
+          "jerk": 20613046644.017803,
+          "traj_len": 23.070790268031825,
+          "max_qvel": 34.58751535641367,
+          "max_qacc": 476.83692414547755,
+          "feasible": false,
+          "plan_time": 13.072048425674438
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.6600000262260437,
+          "max_tilt": 96.05377224992327,
+          "jerk": 22543095506.150906,
+          "traj_len": 3.523843447250295,
+          "max_qvel": 12.891873082218641,
+          "max_qacc": 1145.3502942570042,
+          "feasible": false,
+          "plan_time": 2.9709208011627197
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 9.928024259428135,
+          "jerk": 150176.33898801997,
+          "traj_len": 1.9110594378709835,
+          "max_qvel": 1.5167280170929487,
+          "max_qacc": 5.668931558326928,
+          "feasible": true,
+          "plan_time": 2.9785799980163574
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_whole_291",
+      "taxonomy": "whole",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.7599999904632568,
+          "max_tilt": 24.657620703957683,
+          "jerk": 98660.64777559935,
+          "traj_len": 1.8494465005378502,
+          "max_qvel": 1.8243573022851656,
+          "max_qacc": 5.606575647124619,
+          "feasible": true,
+          "plan_time": 0.0010051727294921875
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.0,
+          "max_tilt": 14.502056476642958,
+          "jerk": 558992.3966042185,
+          "traj_len": 1.8494902883409776,
+          "max_qvel": 1.0192590485533675,
+          "max_qacc": 3.6183242563026883,
+          "feasible": true,
+          "plan_time": 0.24034833908081055
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.6800000071525574,
+          "max_tilt": 51.87679813367805,
+          "jerk": 92451395498.8077,
+          "traj_len": 29.748672563797676,
+          "max_qvel": 55.22554205395656,
+          "max_qacc": 1230.8646148811317,
+          "feasible": false,
+          "plan_time": 13.610147953033447
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.5799999833106995,
+          "max_tilt": 56.461355372011916,
+          "jerk": 228679109.07909596,
+          "traj_len": 1.9715437098824518,
+          "max_qvel": 2.071152384801205,
+          "max_qacc": 51.673877735065965,
+          "feasible": false,
+          "plan_time": 2.955839157104492
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 6.606461552489105,
+          "jerk": 2560.570837086685,
+          "traj_len": 1.850572950652148,
+          "max_qvel": 1.0213725047473026,
+          "max_qacc": 0.5363375903535973,
+          "feasible": true,
+          "plan_time": 2.964412212371826
+        }
+      }
+    },
+    {
+      "grasp_name": "mug_0_left_whole_299",
+      "taxonomy": "whole",
+      "methods": {
+        "min-jerk": {
+          "spill_ratio": 0.7799999713897705,
+          "max_tilt": 25.518745817015006,
+          "jerk": 90124.83313029417,
+          "traj_len": 1.7676327051881133,
+          "max_qvel": 1.8430062074780935,
+          "max_qacc": 5.663887061708507,
+          "feasible": true,
+          "plan_time": 0.0010051727294921875
+        },
+        "chomp-smooth": {
+          "spill_ratio": 0.0,
+          "max_tilt": 13.193667892745742,
+          "jerk": 485585.85865792044,
+          "traj_len": 1.7676623616181255,
+          "max_qvel": 1.0050268077807774,
+          "max_qacc": 4.1166038430360485,
+          "feasible": true,
+          "plan_time": 0.2375166416168213
+        },
+        "stomp-spill": {
+          "spill_ratio": 0.3199999928474426,
+          "max_tilt": 29.326809145170003,
+          "jerk": 26491846074.64016,
+          "traj_len": 20.588397159336576,
+          "max_qvel": 26.85218637301189,
+          "max_qacc": 641.3477976437773,
+          "feasible": false,
+          "plan_time": 13.13023591041565
+        },
+        "vanilla-grad": {
+          "spill_ratio": 0.6600000262260437,
+          "max_tilt": 58.62349715579011,
+          "jerk": 465771976.5650755,
+          "traj_len": 1.897206585279729,
+          "max_qvel": 2.4348910373764237,
+          "max_qacc": 91.15460856547894,
+          "feasible": false,
+          "plan_time": 2.954758405685425
+        },
+        "ours": {
+          "spill_ratio": 0.0,
+          "max_tilt": 6.82867006139822,
+          "jerk": 4993.360522511094,
+          "traj_len": 1.7721764108584745,
+          "max_qvel": 1.0338706914212001,
+          "max_qacc": 0.7171838176237159,
+          "feasible": true,
+          "plan_time": 2.9605655670166016
+        }
+      }
+    }
+  ]
+}

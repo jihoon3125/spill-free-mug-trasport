@@ -32,7 +32,7 @@ from mp._video_utils import (
     R_X_MESH_180, MUG_UP_LOCAL,
     flip_pose_for_render, mat_to_sapien_pose, sample_water_particles,
     compute_spill_state, render_camera, take_rgb, annotate_frame, save_gif,
-    ROOT as VU_ROOT,
+    make_floor_cost, ROOT as VU_ROOT,
 )
 
 JOINT_ORDER = [
@@ -120,9 +120,10 @@ def main():
     xhand_qpos = np.load(VU_ROOT / "data/xhand_qpos.npy")
     fk = URDFForwardKinematics(URDF, base_link="base_link", ee_link="base")
 
-    # Task — bring upright cup to a tilted pouring posture
-    p_start = (0.5, -0.3, 0.30)
-    p_goal = (0.5, 0.3, 0.40)
+    # Task — bring upright cup to a tilted pouring posture (raised workspace
+    # to keep the arm well above the table)
+    p_start = (0.5, -0.25, 0.40)
+    p_goal = (0.5, 0.25, 0.50)
     tilt_goal_deg = 70.0
     T_start = upright_pose(p_start)
     T_goal = tilted_pose(p_goal, tilt_deg=tilt_goal_deg, axis="x")
@@ -145,9 +146,10 @@ def main():
     # correctness with our new convention we pass mug_up_local explicitly.
     sp = SpillCost(SpillConfig(T_ee_to_mug=T_em, theta_max_deg=schedule,
                                  mug_up_local=MUG_UP_LOCAL, dt=dt), fk)
+    floor_cost = make_floor_cost(fk, T_em, z_floor=0.05, margin=0.05)
     cfg = CHOMPConfig(N=N, dt=dt, n_iters=1500, alpha_smooth=1.0,
-                      gamma_spill=5.0, step_size=0.003)
-    res = chomp_optimize(fk, q_start, q_goal, cfg, spill=sp)
+                      gamma_spill=5.0, beta_obs=300.0, step_size=0.003)
+    res = chomp_optimize(fk, q_start, q_goal, cfg, spill=sp, obs_cost_fn=floor_cost)
     q_traj = res["q_traj"]
     d = res["spill_diag"]
     print(f"Pouring CHOMP+spill (timed): spill_ratio={d['spill_ratio']:.1%}  "

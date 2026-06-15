@@ -27,14 +27,14 @@ from .kinematics import URDFForwardKinematics
 @dataclass
 class SpillConfig:
     T_ee_to_mug: np.ndarray            # (4,4)
-    mug_up_local: np.ndarray = None    # default = [0,1,0] (mesh +y is up)
+    mug_up_local: np.ndarray = None    # default = [0,-1,0] (mesh -y is the cup opening / up)
     dt: float = 0.05                   # seconds per waypoint
     theta_max_deg: float = 25.0        # scalar OR np.ndarray (N,) for time-varying
     g: float = 9.81
 
     def __post_init__(self):
         if self.mug_up_local is None:
-            self.mug_up_local = np.array([0.0, 1.0, 0.0])
+            self.mug_up_local = np.array([0.0, -1.0, 0.0])
 
 
 class SpillCost:

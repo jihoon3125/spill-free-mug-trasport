@@ -1,0 +1,2018 @@
+{
+  "TS": [
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    1.0,
+    1.2,
+    1.4,
+    1.6
+  ],
+  "gamma": 1.0,
+  "rows": [
+    {
+      "grasp_name": "mug_0_left_2finger_0",
+      "taxonomy": "2finger",
+      "offset_r": 14.259627666630795,
+      "spills": [
+        0.11999999731779099,
+        0.019999999552965164,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 1.0
+    },
+    {
+      "grasp_name": "mug_0_left_2finger_8",
+      "taxonomy": "2finger",
+      "offset_r": 13.587652851442536,
+      "spills": [
+        0.019999999552965164,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.8
+    },
+    {
+      "grasp_name": "mug_0_left_2finger_15",
+      "taxonomy": "2finger",
+      "offset_r": 20.2774774867648,
+      "spills": [
+        0.05999999865889549,
+        0.03999999910593033,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.8
+    },
+    {
+      "grasp_name": "mug_0_left_2finger_31",
+      "taxonomy": "2finger",
+      "offset_r": 13.35832371697448,
+      "spills": [
+        0.20000000298023224,
+        0.03999999910593033,
+        0.0,
+        0.03999999910593033,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 1.0
+    },
+    {
+      "grasp_name": "mug_0_left_2finger_61",
+      "taxonomy": "2finger",
+      "offset_r": 15.065652960538362,
+      "spills": [
+        0.019999999552965164,
+        0.18000000715255737,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.9
+    },
+    {
+      "grasp_name": "mug_0_left_2finger_69",
+      "taxonomy": "2finger",
+      "offset_r": 13.622531724418147,
+      "spills": [
+        0.05999999865889549,
+        0.2199999988079071,
+        0.019999999552965164,
+        0.14000000059604645,
+        0.03999999910593033,
+        0.0,
+        0.019999999552965164,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 1.2
+    },
+    {
+      "grasp_name": "mug_0_left_2finger_77",
+      "taxonomy": "2finger",
+      "offset_r": 10.947670036723785,
+      "spills": [
+        0.03999999910593033,
+        0.0,
+        0.03999999910593033,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.9
+    },
+    {
+      "grasp_name": "mug_0_left_2finger_84",
+      "taxonomy": "2finger",
+      "offset_r": 10.620469585060892,
+      "spills": [
+        0.14000000059604645,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.7
+    },
+    {
+      "grasp_name": "mug_0_left_2finger_92",
+      "taxonomy": "2finger",
+      "offset_r": 14.728441420968089,
+      "spills": [
+        0.03999999910593033,
+        0.03999999910593033,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.8
+    },
+    {
+      "grasp_name": "mug_0_left_2finger_100",
+      "taxonomy": "2finger",
+      "offset_r": 19.41462704203906,
+      "spills": [
+        0.03999999910593033,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 1.0
+    },
+    {
+      "grasp_name": "mug_0_left_2finger_115",
+      "taxonomy": "2finger",
+      "offset_r": 12.003684169729855,
+      "spills": [
+        0.07999999821186066,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.9
+    },
+    {
+      "grasp_name": "mug_0_left_2finger_123",
+      "taxonomy": "2finger",
+      "offset_r": 14.089228234112403,
+      "spills": [
+        0.019999999552965164,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.8
+    },
+    {
+      "grasp_name": "mug_0_left_2finger_130",
+      "taxonomy": "2finger",
+      "offset_r": 14.175077783800024,
+      "spills": [
+        0.03999999910593033,
+        0.0,
+        0.03999999910593033,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.9
+    },
+    {
+      "grasp_name": "mug_0_left_2finger_138",
+      "taxonomy": "2finger",
+      "offset_r": 11.39970383063194,
+      "spills": [
+        0.1599999964237213,
+        0.0,
+        0.03999999910593033,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.9
+    },
+    {
+      "grasp_name": "mug_0_left_2finger_161",
+      "taxonomy": "2finger",
+      "offset_r": 14.794706986076338,
+      "spills": [
+        0.23999999463558197,
+        0.11999999731779099,
+        0.11999999731779099,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.9
+    },
+    {
+      "grasp_name": "mug_0_left_2finger_169",
+      "taxonomy": "2finger",
+      "offset_r": 11.04360707461096,
+      "spills": [
+        0.3400000035762787,
+        0.11999999731779099,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.8
+    },
+    {
+      "grasp_name": "mug_0_left_2finger_176",
+      "taxonomy": "2finger",
+      "offset_r": 11.28317369503849,
+      "spills": [
+        0.03999999910593033,
+        0.2199999988079071,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.9
+    },
+    {
+      "grasp_name": "mug_0_left_2finger_192",
+      "taxonomy": "2finger",
+      "offset_r": 15.495147462229939,
+      "spills": [
+        0.18000000715255737,
+        0.18000000715255737,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.9
+    },
+    {
+      "grasp_name": "mug_0_left_2finger_199",
+      "taxonomy": "2finger",
+      "offset_r": 11.033143025155132,
+      "spills": [
+        0.0,
+        0.07999999821186066,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.8
+    },
+    {
+      "grasp_name": "mug_0_left_2finger_222",
+      "taxonomy": "2finger",
+      "offset_r": 16.797166769941633,
+      "spills": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.9
+    },
+    {
+      "grasp_name": "mug_0_left_2finger_238",
+      "taxonomy": "2finger",
+      "offset_r": 17.532371597054063,
+      "spills": [
+        0.1599999964237213,
+        0.07999999821186066,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.9
+    },
+    {
+      "grasp_name": "mug_0_left_2finger_245",
+      "taxonomy": "2finger",
+      "offset_r": 13.732448173100689,
+      "spills": [
+        0.20000000298023224,
+        0.019999999552965164,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.8
+    },
+    {
+      "grasp_name": "mug_0_left_2finger_253",
+      "taxonomy": "2finger",
+      "offset_r": 11.230394664457801,
+      "spills": [
+        0.0,
+        0.2800000011920929,
+        0.019999999552965164,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.8
+    },
+    {
+      "grasp_name": "mug_0_left_2finger_261",
+      "taxonomy": "2finger",
+      "offset_r": 11.166873229323786,
+      "spills": [
+        0.05999999865889549,
+        0.18000000715255737,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.8
+    },
+    {
+      "grasp_name": "mug_0_left_2finger_268",
+      "taxonomy": "2finger",
+      "offset_r": 16.585873031610614,
+      "spills": [
+        0.18000000715255737,
+        0.11999999731779099,
+        0.10000000149011612,
+        0.0,
+        0.019999999552965164,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.9
+    },
+    {
+      "grasp_name": "mug_0_left_2finger_276",
+      "taxonomy": "2finger",
+      "offset_r": 10.624078070097875,
+      "spills": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.8
+    },
+    {
+      "grasp_name": "mug_0_left_2finger_284",
+      "taxonomy": "2finger",
+      "offset_r": 17.376052962853052,
+      "spills": [
+        0.2199999988079071,
+        0.10000000149011612,
+        0.10000000149011612,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.9
+    },
+    {
+      "grasp_name": "mug_0_left_2finger_291",
+      "taxonomy": "2finger",
+      "offset_r": 11.77357817815869,
+      "spills": [
+        0.25999999046325684,
+        0.03999999910593033,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.03999999910593033,
+        0.05999999865889549
+      ],
+      "feas": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.8
+    },
+    {
+      "grasp_name": "mug_0_left_3finger_0",
+      "taxonomy": "3finger",
+      "offset_r": 11.261745919484584,
+      "spills": [
+        0.0,
+        0.05999999865889549,
+        0.11999999731779099,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.9
+    },
+    {
+      "grasp_name": "mug_0_left_3finger_8",
+      "taxonomy": "3finger",
+      "offset_r": 13.309581226009778,
+      "spills": [
+        0.019999999552965164,
+        0.0,
+        0.0,
+        0.0,
+        0.05999999865889549,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.9
+    },
+    {
+      "grasp_name": "mug_0_left_3finger_31",
+      "taxonomy": "3finger",
+      "offset_r": 13.434255300545708,
+      "spills": [
+        0.18000000715255737,
+        0.05999999865889549,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.8
+    },
+    {
+      "grasp_name": "mug_0_left_3finger_38",
+      "taxonomy": "3finger",
+      "offset_r": 14.740782167546532,
+      "spills": [
+        0.11999999731779099,
+        0.03999999910593033,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.8
+    },
+    {
+      "grasp_name": "mug_0_left_3finger_46",
+      "taxonomy": "3finger",
+      "offset_r": 14.981493257709808,
+      "spills": [
+        0.019999999552965164,
+        0.0,
+        0.03999999910593033,
+        0.0,
+        0.019999999552965164,
+        0.0,
+        0.0,
+        0.03999999910593033
+      ],
+      "feas": [
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.9
+    },
+    {
+      "grasp_name": "mug_0_left_3finger_61",
+      "taxonomy": "3finger",
+      "offset_r": 12.292001039027607,
+      "spills": [
+        0.11999999731779099,
+        0.05999999865889549,
+        0.1599999964237213,
+        0.0,
+        0.07999999821186066,
+        0.07999999821186066,
+        0.03999999910593033,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 1.6
+    },
+    {
+      "grasp_name": "mug_0_left_3finger_107",
+      "taxonomy": "3finger",
+      "offset_r": 14.037643828125375,
+      "spills": [
+        0.019999999552965164,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.8
+    },
+    {
+      "grasp_name": "mug_0_left_3finger_123",
+      "taxonomy": "3finger",
+      "offset_r": 10.648232529999893,
+      "spills": [
+        0.03999999910593033,
+        0.019999999552965164,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.14000000059604645
+      ],
+      "feas": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.8
+    },
+    {
+      "grasp_name": "mug_0_left_3finger_153",
+      "taxonomy": "3finger",
+      "offset_r": 17.04218889819652,
+      "spills": [
+        0.07999999821186066,
+        0.019999999552965164,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.8
+    },
+    {
+      "grasp_name": "mug_0_left_3finger_161",
+      "taxonomy": "3finger",
+      "offset_r": 12.883046387655611,
+      "spills": [
+        0.03999999910593033,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.7
+    },
+    {
+      "grasp_name": "mug_0_left_3finger_169",
+      "taxonomy": "3finger",
+      "offset_r": 14.28301707210007,
+      "spills": [
+        0.2199999988079071,
+        0.4399999976158142,
+        0.05999999865889549,
+        0.10000000149011612,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 1.0
+    },
+    {
+      "grasp_name": "mug_0_left_3finger_184",
+      "taxonomy": "3finger",
+      "offset_r": 16.258399849017387,
+      "spills": [
+        0.03999999910593033,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.9
+    },
+    {
+      "grasp_name": "mug_0_left_3finger_207",
+      "taxonomy": "3finger",
+      "offset_r": 13.757134743862483,
+      "spills": [
+        0.20000000298023224,
+        0.10000000149011612,
+        0.14000000059604645,
+        0.10000000149011612,
+        0.019999999552965164,
+        0.0,
+        0.0,
+        0.14000000059604645
+      ],
+      "feas": [
+        false,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
+      "tstar": 1.0
+    },
+    {
+      "grasp_name": "mug_0_left_3finger_215",
+      "taxonomy": "3finger",
+      "offset_r": 14.139887902226628,
+      "spills": [
+        0.019999999552965164,
+        0.07999999821186066,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.8
+    },
+    {
+      "grasp_name": "mug_0_left_3finger_222",
+      "taxonomy": "3finger",
+      "offset_r": 15.490415730995736,
+      "spills": [
+        0.03999999910593033,
+        0.11999999731779099,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.9
+    },
+    {
+      "grasp_name": "mug_0_left_3finger_230",
+      "taxonomy": "3finger",
+      "offset_r": 13.43961779767614,
+      "spills": [
+        0.14000000059604645,
+        0.03999999910593033,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.8
+    },
+    {
+      "grasp_name": "mug_0_left_3finger_261",
+      "taxonomy": "3finger",
+      "offset_r": 15.061352691084398,
+      "spills": [
+        0.0,
+        0.0,
+        0.0,
+        0.019999999552965164,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.7
+    },
+    {
+      "grasp_name": "mug_0_left_3finger_268",
+      "taxonomy": "3finger",
+      "offset_r": 12.261032022921011,
+      "spills": [
+        0.11999999731779099,
+        0.10000000149011612,
+        0.3400000035762787,
+        0.019999999552965164,
+        0.03999999910593033,
+        0.07999999821186066,
+        0.05999999865889549,
+        0.10000000149011612
+      ],
+      "feas": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true
+      ],
+      "tstar": null
+    },
+    {
+      "grasp_name": "mug_0_left_3finger_284",
+      "taxonomy": "3finger",
+      "offset_r": 13.850364108643575,
+      "spills": [
+        0.05999999865889549,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.8
+    },
+    {
+      "grasp_name": "mug_0_left_3finger_291",
+      "taxonomy": "3finger",
+      "offset_r": 14.678983850300986,
+      "spills": [
+        0.11999999731779099,
+        0.2199999988079071,
+        0.05999999865889549,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.03999999910593033
+      ],
+      "feas": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true
+      ],
+      "tstar": 1.0
+    },
+    {
+      "grasp_name": "mug_0_left_whole_0",
+      "taxonomy": "whole",
+      "offset_r": 13.474674782743257,
+      "spills": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.8
+    },
+    {
+      "grasp_name": "mug_0_left_whole_8",
+      "taxonomy": "whole",
+      "offset_r": 14.545823852486162,
+      "spills": [
+        0.11999999731779099,
+        0.03999999910593033,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.8
+    },
+    {
+      "grasp_name": "mug_0_left_whole_15",
+      "taxonomy": "whole",
+      "offset_r": 15.75835771046514,
+      "spills": [
+        0.019999999552965164,
+        0.0,
+        0.0,
+        0.05999999865889549,
+        0.47999998927116394,
+        0.019999999552965164,
+        0.019999999552965164,
+        0.11999999731779099
+      ],
+      "feas": [
+        false,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true
+      ],
+      "tstar": 1.2
+    },
+    {
+      "grasp_name": "mug_0_left_whole_23",
+      "taxonomy": "whole",
+      "offset_r": 16.00339251374993,
+      "spills": [
+        0.14000000059604645,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.9
+    },
+    {
+      "grasp_name": "mug_0_left_whole_31",
+      "taxonomy": "whole",
+      "offset_r": 15.47971567867456,
+      "spills": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.9
+    },
+    {
+      "grasp_name": "mug_0_left_whole_54",
+      "taxonomy": "whole",
+      "offset_r": 13.258815021379677,
+      "spills": [
+        0.05999999865889549,
+        0.05999999865889549,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.9
+    },
+    {
+      "grasp_name": "mug_0_left_whole_61",
+      "taxonomy": "whole",
+      "offset_r": 11.471114547042312,
+      "spills": [
+        0.14000000059604645,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.7
+    },
+    {
+      "grasp_name": "mug_0_left_whole_77",
+      "taxonomy": "whole",
+      "offset_r": 11.350983885895397,
+      "spills": [
+        0.05999999865889549,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.9
+    },
+    {
+      "grasp_name": "mug_0_left_whole_92",
+      "taxonomy": "whole",
+      "offset_r": 13.183540128159429,
+      "spills": [
+        0.3799999952316284,
+        0.019999999552965164,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.8
+    },
+    {
+      "grasp_name": "mug_0_left_whole_100",
+      "taxonomy": "whole",
+      "offset_r": 13.4628500142144,
+      "spills": [
+        0.05999999865889549,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.8
+    },
+    {
+      "grasp_name": "mug_0_left_whole_107",
+      "taxonomy": "whole",
+      "offset_r": 15.240061464876566,
+      "spills": [
+        0.0,
+        0.0,
+        0.03999999910593033,
+        0.1599999964237213,
+        0.019999999552965164,
+        0.019999999552965164,
+        0.18000000715255737,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true
+      ],
+      "tstar": 1.2
+    },
+    {
+      "grasp_name": "mug_0_left_whole_115",
+      "taxonomy": "whole",
+      "offset_r": 13.07711021890799,
+      "spills": [
+        0.05999999865889549,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.7
+    },
+    {
+      "grasp_name": "mug_0_left_whole_123",
+      "taxonomy": "whole",
+      "offset_r": 14.7336159067076,
+      "spills": [
+        0.03999999910593033,
+        0.03999999910593033,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.9
+    },
+    {
+      "grasp_name": "mug_0_left_whole_130",
+      "taxonomy": "whole",
+      "offset_r": 11.094849467204183,
+      "spills": [
+        0.2199999988079071,
+        0.019999999552965164,
+        0.019999999552965164,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.9
+    },
+    {
+      "grasp_name": "mug_0_left_whole_138",
+      "taxonomy": "whole",
+      "offset_r": 12.814892983599352,
+      "spills": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true
+      ],
+      "tstar": 1.0
+    },
+    {
+      "grasp_name": "mug_0_left_whole_146",
+      "taxonomy": "whole",
+      "offset_r": 12.765660561778402,
+      "spills": [
+        0.05999999865889549,
+        0.0,
+        0.03999999910593033,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.9
+    },
+    {
+      "grasp_name": "mug_0_left_whole_153",
+      "taxonomy": "whole",
+      "offset_r": 12.824863662070197,
+      "spills": [
+        0.07999999821186066,
+        0.10000000149011612,
+        0.019999999552965164,
+        0.0,
+        0.03999999910593033,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true
+      ],
+      "tstar": 1.2
+    },
+    {
+      "grasp_name": "mug_0_left_whole_169",
+      "taxonomy": "whole",
+      "offset_r": 14.944727947605143,
+      "spills": [
+        0.10000000149011612,
+        0.019999999552965164,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.9
+    },
+    {
+      "grasp_name": "mug_0_left_whole_176",
+      "taxonomy": "whole",
+      "offset_r": 12.439593843141122,
+      "spills": [
+        0.0,
+        0.0,
+        0.019999999552965164,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.9
+    },
+    {
+      "grasp_name": "mug_0_left_whole_184",
+      "taxonomy": "whole",
+      "offset_r": 14.18498007050489,
+      "spills": [
+        0.18000000715255737,
+        0.019999999552965164,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tstar": 0.8
+    },
+    {
+      "grasp_name": "mug_0_left_whole_192",
+      "taxonomy": "whole",
+      "offset_r": 12.197311821991292,
+      "spills": [
+        0.05999999865889549,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.7
+    },
+    {
+      "grasp_name": "mug_0_left_whole_207",
+      "taxonomy": "whole",
+      "offset_r": 12.452537680355693,
+      "spills": [
+        0.36000001430511475,
+        0.03999999910593033,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.9
+    },
+    {
+      "grasp_name": "mug_0_left_whole_215",
+      "taxonomy": "whole",
+      "offset_r": 12.765630060750102,
+      "spills": [
+        0.07999999821186066,
+        0.019999999552965164,
+        0.019999999552965164,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.8
+    },
+    {
+      "grasp_name": "mug_0_left_whole_230",
+      "taxonomy": "whole",
+      "offset_r": 13.677279404755568,
+      "spills": [
+        0.05999999865889549,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.9
+    },
+    {
+      "grasp_name": "mug_0_left_whole_238",
+      "taxonomy": "whole",
+      "offset_r": 15.130043557256624,
+      "spills": [
+        0.07999999821186066,
+        0.05999999865889549,
+        0.03999999910593033,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.9
+    },
+    {
+      "grasp_name": "mug_0_left_whole_261",
+      "taxonomy": "whole",
+      "offset_r": 13.904100661778848,
+      "spills": [
+        0.20000000298023224,
+        0.11999999731779099,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.9
+    },
+    {
+      "grasp_name": "mug_0_left_whole_268",
+      "taxonomy": "whole",
+      "offset_r": 15.616701843851374,
+      "spills": [
+        0.2800000011920929,
+        0.3199999928474426,
+        0.18000000715255737,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.9
+    },
+    {
+      "grasp_name": "mug_0_left_whole_291",
+      "taxonomy": "whole",
+      "offset_r": 13.978633669409145,
+      "spills": [
+        0.23999999463558197,
+        0.03999999910593033,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.8
+    },
+    {
+      "grasp_name": "mug_0_left_whole_299",
+      "taxonomy": "whole",
+      "offset_r": 15.01530820030636,
+      "spills": [
+        0.0,
+        0.14000000059604645,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "feas": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tstar": 0.8
+    }
+  ],
+  "monotonic_frac": 0.7532467532467533
+}

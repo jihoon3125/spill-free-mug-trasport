@@ -26,13 +26,11 @@ from scipy.spatial.transform import Rotation as R
 
 ROOT = Path(__file__).resolve().parents[1]
 
-# Mesh-frame rotation that flips the cup upside down within its own frame.
-# Applied at render time to make the cup look right-side-up.
-R_X_MESH_180 = np.array([
-    [1, 0, 0],
-    [0, -1, 0],
-    [0, 0, -1],
-], dtype=float)
+# When the trajectory was planned with the NEW R_UPRIGHT (RX(-π/2)), no extra
+# render-time flip is needed (cup is already upright). We keep this identity
+# matrix in place to preserve the function signatures of older scripts that
+# called `flip_pose_for_render` — those calls now become no-ops.
+R_X_MESH_180 = np.eye(3)
 
 # Cup opening direction in mesh local frame.
 MUG_UP_LOCAL = np.array([0.0, -1.0, 0.0])
@@ -145,3 +143,33 @@ def save_gif(frames: list[np.ndarray], path: Path, duration_ms: int = 100):
     pil[0].save(path, save_all=True, append_images=pil[1:],
                 duration=duration_ms, loop=0, optimize=False)
     print(f"saved {path}  ({len(pil)} frames)")
+
+
+def make_floor_cost(fk, T_em, z_floor=0.05, margin=0.04):
+    """Returns a cost fn that penalizes EE / mug going below z_floor + margin.
+    Used as `obs_cost_fn` in CHOMPConfig (one term among others)."""
+    import torch
+    T_em_t = torch.as_tensor(T_em, dtype=fk.dtype, device=fk.device)
+    z_thr = z_floor + margin
+    def cost(q_traj: torch.Tensor) -> torch.Tensor:
+        T = fk(q_traj)                          # (N, 4, 4)
+        R = T[:, :3, :3]; t = T[:, :3, 3]
+        ee_z = t[:, 2]
+        # mug center z
+        t_em_t = T_em_t[:3, 3]
+        mug_z = torch.einsum("nij,j->ni", R, t_em_t)[:, 2] + ee_z
+        ee_pen = torch.clamp(z_thr - ee_z, min=0.0)
+        mug_pen = torch.clamp(z_thr - mug_z, min=0.0)
+        return (ee_pen ** 2).sum() + (mug_pen ** 2).sum()
+    return cost
+
+
+def combined_obs_cost(*cost_fns):
+    """Sum multiple obs_cost_fn callables."""
+    def cost(q_traj):
+        total = None
+        for f in cost_fns:
+            c = f(q_traj)
+            total = c if total is None else total + c
+        return total
+    return cost

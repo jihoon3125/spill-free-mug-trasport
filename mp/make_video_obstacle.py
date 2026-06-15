@@ -30,7 +30,7 @@ from mp._video_utils import (
     R_X_MESH_180, MUG_UP_LOCAL,
     flip_pose_for_render, mat_to_sapien_pose, sample_water_particles,
     compute_spill_state, render_camera, take_rgb, annotate_frame, save_gif,
-    ROOT as VU_ROOT,
+    make_floor_cost, combined_obs_cost, ROOT as VU_ROOT,
 )
 
 JOINT_ORDER = [
@@ -176,8 +176,9 @@ def main():
     xhand_qpos = np.load(VU_ROOT / "data/xhand_qpos.npy")
     fk = URDFForwardKinematics(URDF, base_link="base_link", ee_link="base")
 
-    # Setup matches run_obstacle.py
-    p_start = (0.5, -0.3, 0.30); p_goal = (0.5, 0.4, 0.30)
+    # Workspace lifted to avoid robot–table interference (this is a pure
+    # cup-vs-box scenario)
+    p_start = (0.5, -0.3, 0.40); p_goal = (0.5, 0.4, 0.40)
     def ik(p, q_seed):
         T = upright_pose(p); T_ee = T @ np.linalg.inv(T_em)
         q, info = ik_solve(fk, torch.tensor(q_seed, dtype=torch.float64),
@@ -188,25 +189,28 @@ def main():
     q_goal = ik(p_goal, q_start)
 
     N = 60; dt = 0.025; theta_max = 18.0
-    box_center = (0.55, 0.05, 0.28); box_halfext = (0.10, 0.10, 0.10)
+    box_center = (0.55, 0.05, 0.38); box_halfext = (0.10, 0.10, 0.10)
     obs_cfg = ObstacleConfig(box_center=box_center, box_halfext=box_halfext,
-                              margin=0.04, T_ee_to_mug=T_em,
+                              margin=0.05, T_ee_to_mug=T_em,
                               mug_radius=0.07, wrist_radius=0.05)
     obs = ObstacleCost(obs_cfg, fk)
+    floor = make_floor_cost(fk, T_em, z_floor=0.05, margin=0.05)
     spill = SpillCost(SpillConfig(T_ee_to_mug=T_em, theta_max_deg=theta_max,
                                     mug_up_local=MUG_UP_LOCAL, dt=dt), fk)
+
+    combined = combined_obs_cost(obs.cost, floor)
 
     print("[plan] min-jerk")
     q_minjerk = minjerk_interp(q_start, q_goal, N)
     print("[plan] CHOMP smooth+obs")
-    cfg = CHOMPConfig(N=N, dt=dt, n_iters=600, alpha_smooth=1.0,
-                      gamma_spill=0.0, beta_obs=50.0, step_size=0.005)
-    res_obs = chomp_optimize(fk, q_start, q_goal, cfg, spill=spill, obs_cost_fn=obs.cost)
+    cfg = CHOMPConfig(N=N, dt=dt, n_iters=1500, alpha_smooth=1.0,
+                      gamma_spill=0.0, beta_obs=500.0, step_size=0.003)
+    res_obs = chomp_optimize(fk, q_start, q_goal, cfg, spill=spill, obs_cost_fn=combined)
     q_chomp_obs = res_obs["q_traj"]
     print("[plan] CHOMP smooth+obs+spill")
-    cfg = CHOMPConfig(N=N, dt=dt, n_iters=1200, alpha_smooth=1.0,
-                      gamma_spill=2.0, beta_obs=50.0, step_size=0.003)
-    res_ours = chomp_optimize(fk, q_start, q_goal, cfg, spill=spill, obs_cost_fn=obs.cost)
+    cfg = CHOMPConfig(N=N, dt=dt, n_iters=2000, alpha_smooth=1.0,
+                      gamma_spill=2.0, beta_obs=500.0, step_size=0.002)
+    res_ours = chomp_optimize(fk, q_start, q_goal, cfg, spill=spill, obs_cost_fn=combined)
     q_ours = res_ours["q_traj"]
 
     methods = [

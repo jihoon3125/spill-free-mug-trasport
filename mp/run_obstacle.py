@@ -58,7 +58,7 @@ def main():
     q_start, _ = solve_qpos_for_mug(fk, T_em, upright_pose(p_start), g['qpos'][:6])
     q_goal, _ = solve_qpos_for_mug(fk, T_em, upright_pose(p_goal), q_start)
 
-    N = 60; dt = 0.025; theta_max = 18.0
+    N = 60; dt = 0.010; theta_max = 18.0     # T ~= 0.6s (aggressive: detour induces spill)
     # Larger box so it clearly intersects the joint-space-linear mug path
     obs_cfg = ObstacleConfig(box_center=(0.55, 0.05, 0.28),
                               box_halfext=(0.10, 0.10, 0.10),

@@ -1,8 +1,10 @@
 """Project-wide constants.
 
-mug_mesh.obj has Y-up convention (verified by rendering 4 rotations and observing
-that R_x(+90°) makes the cup stand upright). So in the mug's *local* frame:
-  +y  →  cup-height (opening direction)
+mug_mesh.obj is a closed solid (no modeled cavity). Its OPENING direction is
+mesh local -y (verified by raycast + by side-view render: with the old +y-up
+convention the cup rendered upside-down). So in the mug's *local* frame:
+  -y  →  cup opening (the "up" direction when the cup stands upright)
+  +y  →  cup base
   +x  →  body lateral
   +z  →  body lateral + handle protrusion
 
@@ -12,12 +14,12 @@ explicitly when computing the cup's world-frame up vector.
 """
 import numpy as np
 
-MUG_UP_AXIS_LOCAL = np.array([0.0, 1.0, 0.0])    # +y is "up" in the mesh local frame
+MUG_UP_AXIS_LOCAL = np.array([0.0, -1.0, 0.0])   # mesh -y is the cup opening (up)
 
-# Rotation that places the mug upright in world frame: R_x(+π/2).
-# Applied as the rotation component of T_world_mug when we want mug local +y → world +z.
+# Rotation that places the mug upright in world frame: R_x(-π/2).
+# Maps mug local -y (opening) → world +z, so the cup stands opening-up.
 R_UPRIGHT = np.array([
     [1, 0, 0],
-    [0, 0, -1],
-    [0, 1, 0],
+    [0, 0, 1],
+    [0, -1, 0],
 ], dtype=float)

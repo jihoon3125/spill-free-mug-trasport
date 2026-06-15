@@ -32,7 +32,7 @@ from mp._video_utils import (
     MUG_UP_LOCAL,
     flip_pose_for_render, mat_to_sapien_pose, sample_water_particles,
     compute_spill_state, render_camera, take_rgb, annotate_frame, save_gif,
-    ROOT as VU_ROOT,
+    make_floor_cost, ROOT as VU_ROOT,
 )
 
 JOINT_ORDER = [
@@ -91,7 +91,7 @@ def plan_and_render(grasp_name, label, color_bg, T_budget=0.6, theta_max=18.0):
     T_em, xhand_qpos, ginfo = extract_ee_to_mug(grasp_name)
     fk = URDFForwardKinematics(URDF, base_link="base_link", ee_link="base")
 
-    p_start = (0.5, -0.3, 0.25); p_goal = (0.5, 0.4, 0.40)
+    p_start = (0.5, -0.3, 0.35); p_goal = (0.5, 0.4, 0.45)
     def ik(p, q_seed):
         T = upright_pose(p); T_ee = T @ np.linalg.inv(T_em)
         q, info = ik_solve(fk, torch.tensor(q_seed, dtype=torch.float64),
@@ -108,9 +108,10 @@ def plan_and_render(grasp_name, label, color_bg, T_budget=0.6, theta_max=18.0):
     N = 50; dt = T_budget / (N - 1)
     sp = SpillCost(SpillConfig(T_ee_to_mug=T_em, theta_max_deg=theta_max,
                                  mug_up_local=MUG_UP_LOCAL, dt=dt), fk)
+    floor_cost = make_floor_cost(fk, T_em, z_floor=0.05, margin=0.05)
     cfg = CHOMPConfig(N=N, dt=dt, n_iters=1000, alpha_smooth=1.0,
-                      gamma_spill=5.0, step_size=0.003)
-    res = chomp_optimize(fk, q_s, q_g, cfg, spill=sp)
+                      gamma_spill=5.0, beta_obs=300.0, step_size=0.003)
+    res = chomp_optimize(fk, q_s, q_g, cfg, spill=sp, obs_cost_fn=floor_cost)
     q_traj = res["q_traj"]; d = res["spill_diag"]
     print(f"  {grasp_name}: spill_ratio={d['spill_ratio']:.1%}  max_tilt={d['tilt_deg'].max():.1f}°")
 

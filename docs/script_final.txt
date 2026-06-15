@@ -1,0 +1,96 @@
+================================================================
+FINAL PRESENTATION SCRIPT  (2 minutes · 2 slides)
+Grasp-Conditioned Spill-Free Mug Transport — Jihoon Yoon
+Motion Planning Term Project
+================================================================
+
+----------------------------------------------------------------
+SPEAKING SCRIPT (English — for delivery)
+----------------------------------------------------------------
+
+[SLIDE 1 — Problem & Demo  (~60s)]
+
+My thesis generates dexterous grasps; this project asks what comes
+NEXT — can the robot CARRY the grasped mug without spilling?
+
+The key physics is the "waiter problem": even a perfectly upright
+cup spills when it accelerates, because what the water feels is
+EFFECTIVE GRAVITY, g minus a. So we require the apparent-gravity
+vector to stay inside the cup's RIM CONE.
+
+We add exactly that as a DIFFERENTIABLE SPILL COST inside CHOMP,
+and we evaluate it PER GRASP.
+
+(point to demo) Here are three transport tasks at the SAME time
+budget. On top, standard min-jerk motion — it spills in every case.
+On the bottom, ours keeps the water in.
+
+
+[SLIDE 2 — Results & Conclusion  (~60s)]
+
+Three findings.
+
+FIRST — against four baselines, our spill-aware CHOMP gives the
+LOWEST spill: 11 percent versus 50 to 97 percent, and at lower
+compute than sampling.
+
+SECOND — spill-robustness is a PROPERTY OF THE GRASP: at a fixed
+time budget, achievable spill ranges from 0 to 34 percent across
+grasps, and a third of grasps can't even reach the task.
+
+THIRD — the key point — it's NOT predictable from grasp geometry;
+offset versus spill is essentially uncorrelated. So spill-robustness
+must be MEASURED by planning, not assumed.
+
+To conclude — this project achieved two things: we built a
+spill-aware planner that reliably generates spill-free transport
+trajectories, and we showed that spill margin is a property of the
+grasp — it varies widely and is not predictable from geometry, so
+it has to be measured. This is exactly the kind of signal a grasp
+generator could use.
+
+Thank you.
+
+
+----------------------------------------------------------------
+한국어 (이해 / 연습용)
+----------------------------------------------------------------
+
+[슬라이드 1]
+졸업논문은 grasp을 만들고, 이 프로젝트는 그 다음 — 잡은 컵을 안 쏟고
+옮기기. 핵심은 waiter problem: 똑바른 컵도 가속하면 쏟아짐(유효중력
+g-a). 그래서 apparent-gravity가 컵 rim cone 안에 있어야 함. 이걸
+미분가능 spill cost로 CHOMP에 넣고 grasp마다 평가. 데모: 같은 시간,
+위(min-jerk)는 다 쏟고 아래(ours)는 유지.
+
+[슬라이드 2]
+세 가지. 첫째, 5개 방법 중 ours가 spill 최저(11% vs 50~97%), 계산도
+적음. 둘째, spill-robustness는 grasp의 속성(고정 시간에 0~34%,
+grasp의 1/3은 도달 불가). 셋째 — 핵심 — 단순 geometry로 예측 불가
+(offset vs spill 무상관) → 측정해야 함.
+결론적으로 이 프로젝트는 두 가지를 해냈습니다 — spill-aware planner로
+안 쏟는 운반 궤적을 안정적으로 생성했고, spill margin이 grasp에 따라
+다르며 단순 geometry로 예측되지 않음을 확인했습니다. 이것이 바로
+grasp generator가 활용할 수 있는 신호입니다. 감사합니다.
+
+
+----------------------------------------------------------------
+DELIVERY TIPS
+----------------------------------------------------------------
+- 2분 빡빡함. Slide 1의 "waiter problem"에서 한 박자 멈춤(hook).
+- Slide 2는 First / Second / Third 또렷하게, 숫자만 강조.
+- 데모는 정적 PDF라 "top spills, bottom keeps it in" 한 마디로 충분.
+- "Thank you" 전에 한 박자.
+
+
+----------------------------------------------------------------
+Q&A PREP
+----------------------------------------------------------------
+- "실제 유체 시뮬인가?" → reduced quasi-static 모델(apparent-gravity
+  cone), 풀 CFD 아님. 강체 입자 시뮬도 시도했으나 granular 거동이라
+  fluid 검증엔 부적합해 제외.
+- "왜 CHOMP인가?" → spill이 가속도에 대한 미분가능 cost라 gradient에
+  자연스럽고, CHOMP의 smoothness 연산자를 재사용.
+- "왜 최소 시간(T_min)을 안 쓰나?" → CHOMP 비단조성으로 T_min 추정이
+  불안정해, 고정 시간예산에서의 spill을 지표로 사용 (limitation).
+================================================================

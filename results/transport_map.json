@@ -1,0 +1,1082 @@
+[
+  {
+    "grasp_name": "mug_0_left_2finger_0",
+    "taxonomy": "2finger",
+    "idx": 0,
+    "offset_r": 0.14259627666630795,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_2finger_8",
+    "taxonomy": "2finger",
+    "idx": 8,
+    "offset_r": 0.13587652851442536,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_2finger_15",
+    "taxonomy": "2finger",
+    "idx": 15,
+    "offset_r": 0.20277477486764797,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_2finger_23",
+    "taxonomy": "2finger",
+    "idx": 23,
+    "offset_r": 0.13462781814919197,
+    "reachable": false,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_2finger_31",
+    "taxonomy": "2finger",
+    "idx": 31,
+    "offset_r": 0.1335832371697448,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_2finger_38",
+    "taxonomy": "2finger",
+    "idx": 38,
+    "offset_r": 0.11334847459099195,
+    "reachable": false,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_2finger_46",
+    "taxonomy": "2finger",
+    "idx": 46,
+    "offset_r": 0.12422734529870545,
+    "reachable": false,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_2finger_54",
+    "taxonomy": "2finger",
+    "idx": 54,
+    "offset_r": 0.12380084070428743,
+    "reachable": false,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_2finger_61",
+    "taxonomy": "2finger",
+    "idx": 61,
+    "offset_r": 0.15065652960538362,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_2finger_69",
+    "taxonomy": "2finger",
+    "idx": 69,
+    "offset_r": 0.13622531724418147,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_2finger_77",
+    "taxonomy": "2finger",
+    "idx": 77,
+    "offset_r": 0.10947670036723786,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_2finger_84",
+    "taxonomy": "2finger",
+    "idx": 84,
+    "offset_r": 0.10620469585060892,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_2finger_92",
+    "taxonomy": "2finger",
+    "idx": 92,
+    "offset_r": 0.1472844142096809,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_2finger_100",
+    "taxonomy": "2finger",
+    "idx": 100,
+    "offset_r": 0.19414627042039062,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_2finger_107",
+    "taxonomy": "2finger",
+    "idx": 107,
+    "offset_r": 0.1804758939059438,
+    "reachable": false,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_2finger_115",
+    "taxonomy": "2finger",
+    "idx": 115,
+    "offset_r": 0.12003684169729854,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_2finger_123",
+    "taxonomy": "2finger",
+    "idx": 123,
+    "offset_r": 0.14089228234112403,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_2finger_130",
+    "taxonomy": "2finger",
+    "idx": 130,
+    "offset_r": 0.14175077783800025,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_2finger_138",
+    "taxonomy": "2finger",
+    "idx": 138,
+    "offset_r": 0.11399703830631941,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_2finger_146",
+    "taxonomy": "2finger",
+    "idx": 146,
+    "offset_r": 0.15983336237067536,
+    "reachable": false,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_2finger_153",
+    "taxonomy": "2finger",
+    "idx": 153,
+    "offset_r": 0.12548537875867224,
+    "reachable": false,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_2finger_161",
+    "taxonomy": "2finger",
+    "idx": 161,
+    "offset_r": 0.1479470698607634,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_2finger_169",
+    "taxonomy": "2finger",
+    "idx": 169,
+    "offset_r": 0.11043607074610962,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_2finger_176",
+    "taxonomy": "2finger",
+    "idx": 176,
+    "offset_r": 0.1128317369503849,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_2finger_184",
+    "taxonomy": "2finger",
+    "idx": 184,
+    "offset_r": 0.13815639202084654,
+    "reachable": false,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_2finger_192",
+    "taxonomy": "2finger",
+    "idx": 192,
+    "offset_r": 0.15495147462229938,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_2finger_199",
+    "taxonomy": "2finger",
+    "idx": 199,
+    "offset_r": 0.11033143025155133,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_2finger_207",
+    "taxonomy": "2finger",
+    "idx": 207,
+    "offset_r": 0.1539220091475748,
+    "reachable": false,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_2finger_215",
+    "taxonomy": "2finger",
+    "idx": 215,
+    "offset_r": 0.1285359767026057,
+    "reachable": false,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_2finger_222",
+    "taxonomy": "2finger",
+    "idx": 222,
+    "offset_r": 0.16797166769941632,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_2finger_230",
+    "taxonomy": "2finger",
+    "idx": 230,
+    "offset_r": 0.1475788724421046,
+    "reachable": false,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_2finger_238",
+    "taxonomy": "2finger",
+    "idx": 238,
+    "offset_r": 0.17532371597054064,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_2finger_245",
+    "taxonomy": "2finger",
+    "idx": 245,
+    "offset_r": 0.1373244817310069,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_2finger_253",
+    "taxonomy": "2finger",
+    "idx": 253,
+    "offset_r": 0.11230394664457802,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_2finger_261",
+    "taxonomy": "2finger",
+    "idx": 261,
+    "offset_r": 0.11166873229323786,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_2finger_268",
+    "taxonomy": "2finger",
+    "idx": 268,
+    "offset_r": 0.16585873031610615,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_2finger_276",
+    "taxonomy": "2finger",
+    "idx": 276,
+    "offset_r": 0.10624078070097875,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_2finger_284",
+    "taxonomy": "2finger",
+    "idx": 284,
+    "offset_r": 0.17376052962853053,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_2finger_291",
+    "taxonomy": "2finger",
+    "idx": 291,
+    "offset_r": 0.1177357817815869,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_2finger_299",
+    "taxonomy": "2finger",
+    "idx": 299,
+    "offset_r": 0.16127827824222532,
+    "reachable": false,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_3finger_0",
+    "taxonomy": "3finger",
+    "idx": 0,
+    "offset_r": 0.11261745919484584,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_3finger_8",
+    "taxonomy": "3finger",
+    "idx": 8,
+    "offset_r": 0.13309581226009778,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_3finger_15",
+    "taxonomy": "3finger",
+    "idx": 15,
+    "offset_r": 0.1463488857883175,
+    "reachable": false,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_3finger_23",
+    "taxonomy": "3finger",
+    "idx": 23,
+    "offset_r": 0.13487463168345465,
+    "reachable": false,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_3finger_31",
+    "taxonomy": "3finger",
+    "idx": 31,
+    "offset_r": 0.13434255300545708,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_3finger_38",
+    "taxonomy": "3finger",
+    "idx": 38,
+    "offset_r": 0.14740782167546532,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_3finger_46",
+    "taxonomy": "3finger",
+    "idx": 46,
+    "offset_r": 0.14981493257709808,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_3finger_54",
+    "taxonomy": "3finger",
+    "idx": 54,
+    "offset_r": 0.13219559118312796,
+    "reachable": false,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_3finger_61",
+    "taxonomy": "3finger",
+    "idx": 61,
+    "offset_r": 0.12292001039027607,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_3finger_69",
+    "taxonomy": "3finger",
+    "idx": 69,
+    "offset_r": 0.11887118462460007,
+    "reachable": false,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_3finger_77",
+    "taxonomy": "3finger",
+    "idx": 77,
+    "offset_r": 0.13261568923434758,
+    "reachable": false,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_3finger_84",
+    "taxonomy": "3finger",
+    "idx": 84,
+    "offset_r": 0.14671129776404707,
+    "reachable": false,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_3finger_92",
+    "taxonomy": "3finger",
+    "idx": 92,
+    "offset_r": 0.1476983853035964,
+    "reachable": false,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_3finger_100",
+    "taxonomy": "3finger",
+    "idx": 100,
+    "offset_r": 0.14212359901158525,
+    "reachable": false,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_3finger_107",
+    "taxonomy": "3finger",
+    "idx": 107,
+    "offset_r": 0.14037643828125376,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_3finger_115",
+    "taxonomy": "3finger",
+    "idx": 115,
+    "offset_r": 0.13967534945616106,
+    "reachable": false,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_3finger_123",
+    "taxonomy": "3finger",
+    "idx": 123,
+    "offset_r": 0.10648232529999893,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_3finger_130",
+    "taxonomy": "3finger",
+    "idx": 130,
+    "offset_r": 0.13136715864558576,
+    "reachable": false,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_3finger_138",
+    "taxonomy": "3finger",
+    "idx": 138,
+    "offset_r": 0.12502644563283274,
+    "reachable": false,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_3finger_146",
+    "taxonomy": "3finger",
+    "idx": 146,
+    "offset_r": 0.12693468320829285,
+    "reachable": false,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_3finger_153",
+    "taxonomy": "3finger",
+    "idx": 153,
+    "offset_r": 0.1704218889819652,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_3finger_161",
+    "taxonomy": "3finger",
+    "idx": 161,
+    "offset_r": 0.1288304638765561,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_3finger_169",
+    "taxonomy": "3finger",
+    "idx": 169,
+    "offset_r": 0.1428301707210007,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_3finger_176",
+    "taxonomy": "3finger",
+    "idx": 176,
+    "offset_r": 0.13565082590723843,
+    "reachable": false,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_3finger_184",
+    "taxonomy": "3finger",
+    "idx": 184,
+    "offset_r": 0.16258399849017388,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_3finger_192",
+    "taxonomy": "3finger",
+    "idx": 192,
+    "offset_r": 0.14436996814471553,
+    "reachable": false,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_3finger_199",
+    "taxonomy": "3finger",
+    "idx": 199,
+    "offset_r": 0.1497492532973336,
+    "reachable": false,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_3finger_207",
+    "taxonomy": "3finger",
+    "idx": 207,
+    "offset_r": 0.13757134743862484,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_3finger_215",
+    "taxonomy": "3finger",
+    "idx": 215,
+    "offset_r": 0.14139887902226628,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_3finger_222",
+    "taxonomy": "3finger",
+    "idx": 222,
+    "offset_r": 0.15490415730995735,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_3finger_230",
+    "taxonomy": "3finger",
+    "idx": 230,
+    "offset_r": 0.1343961779767614,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_3finger_238",
+    "taxonomy": "3finger",
+    "idx": 238,
+    "offset_r": 0.14961188200242428,
+    "reachable": false,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_3finger_245",
+    "taxonomy": "3finger",
+    "idx": 245,
+    "offset_r": 0.1650583277698286,
+    "reachable": false,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_3finger_253",
+    "taxonomy": "3finger",
+    "idx": 253,
+    "offset_r": 0.20979387499299085,
+    "reachable": false,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_3finger_261",
+    "taxonomy": "3finger",
+    "idx": 261,
+    "offset_r": 0.15061352691084398,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_3finger_268",
+    "taxonomy": "3finger",
+    "idx": 268,
+    "offset_r": 0.1226103202292101,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_3finger_276",
+    "taxonomy": "3finger",
+    "idx": 276,
+    "offset_r": 0.13527301409465828,
+    "reachable": false,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_3finger_284",
+    "taxonomy": "3finger",
+    "idx": 284,
+    "offset_r": 0.13850364108643576,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_3finger_291",
+    "taxonomy": "3finger",
+    "idx": 291,
+    "offset_r": 0.14678983850300986,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_3finger_299",
+    "taxonomy": "3finger",
+    "idx": 299,
+    "offset_r": 0.18243315950346062,
+    "reachable": false,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_whole_0",
+    "taxonomy": "whole",
+    "idx": 0,
+    "offset_r": 0.13474674782743257,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_whole_8",
+    "taxonomy": "whole",
+    "idx": 8,
+    "offset_r": 0.14545823852486162,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_whole_15",
+    "taxonomy": "whole",
+    "idx": 15,
+    "offset_r": 0.1575835771046514,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_whole_23",
+    "taxonomy": "whole",
+    "idx": 23,
+    "offset_r": 0.1600339251374993,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_whole_31",
+    "taxonomy": "whole",
+    "idx": 31,
+    "offset_r": 0.1547971567867456,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_whole_38",
+    "taxonomy": "whole",
+    "idx": 38,
+    "offset_r": 0.14094075591140118,
+    "reachable": false,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_whole_46",
+    "taxonomy": "whole",
+    "idx": 46,
+    "offset_r": 0.10217995193100142,
+    "reachable": false,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_whole_54",
+    "taxonomy": "whole",
+    "idx": 54,
+    "offset_r": 0.13258815021379677,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_whole_61",
+    "taxonomy": "whole",
+    "idx": 61,
+    "offset_r": 0.11471114547042312,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_whole_69",
+    "taxonomy": "whole",
+    "idx": 69,
+    "offset_r": 0.1824327105179113,
+    "reachable": false,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_whole_77",
+    "taxonomy": "whole",
+    "idx": 77,
+    "offset_r": 0.11350983885895397,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_whole_84",
+    "taxonomy": "whole",
+    "idx": 84,
+    "offset_r": 0.1429074247288732,
+    "reachable": false,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_whole_92",
+    "taxonomy": "whole",
+    "idx": 92,
+    "offset_r": 0.1318354012815943,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_whole_100",
+    "taxonomy": "whole",
+    "idx": 100,
+    "offset_r": 0.134628500142144,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_whole_107",
+    "taxonomy": "whole",
+    "idx": 107,
+    "offset_r": 0.15240061464876567,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_whole_115",
+    "taxonomy": "whole",
+    "idx": 115,
+    "offset_r": 0.1307711021890799,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_whole_123",
+    "taxonomy": "whole",
+    "idx": 123,
+    "offset_r": 0.147336159067076,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_whole_130",
+    "taxonomy": "whole",
+    "idx": 130,
+    "offset_r": 0.11094849467204183,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_whole_138",
+    "taxonomy": "whole",
+    "idx": 138,
+    "offset_r": 0.12814892983599352,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_whole_146",
+    "taxonomy": "whole",
+    "idx": 146,
+    "offset_r": 0.12765660561778402,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_whole_153",
+    "taxonomy": "whole",
+    "idx": 153,
+    "offset_r": 0.12824863662070196,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_whole_161",
+    "taxonomy": "whole",
+    "idx": 161,
+    "offset_r": 0.1584082638495147,
+    "reachable": false,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_whole_169",
+    "taxonomy": "whole",
+    "idx": 169,
+    "offset_r": 0.14944727947605144,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_whole_176",
+    "taxonomy": "whole",
+    "idx": 176,
+    "offset_r": 0.12439593843141122,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_whole_184",
+    "taxonomy": "whole",
+    "idx": 184,
+    "offset_r": 0.1418498007050489,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_whole_192",
+    "taxonomy": "whole",
+    "idx": 192,
+    "offset_r": 0.12197311821991291,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_whole_199",
+    "taxonomy": "whole",
+    "idx": 199,
+    "offset_r": 0.12767877349270293,
+    "reachable": false,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_whole_207",
+    "taxonomy": "whole",
+    "idx": 207,
+    "offset_r": 0.12452537680355692,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_whole_215",
+    "taxonomy": "whole",
+    "idx": 215,
+    "offset_r": 0.12765630060750102,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_whole_222",
+    "taxonomy": "whole",
+    "idx": 222,
+    "offset_r": 0.12319734873934632,
+    "reachable": false,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_whole_230",
+    "taxonomy": "whole",
+    "idx": 230,
+    "offset_r": 0.13677279404755568,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_whole_238",
+    "taxonomy": "whole",
+    "idx": 238,
+    "offset_r": 0.15130043557256623,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_whole_245",
+    "taxonomy": "whole",
+    "idx": 245,
+    "offset_r": 0.1607079632060129,
+    "reachable": false,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_whole_253",
+    "taxonomy": "whole",
+    "idx": 253,
+    "offset_r": 0.15236735585980715,
+    "reachable": false,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_whole_261",
+    "taxonomy": "whole",
+    "idx": 261,
+    "offset_r": 0.13904100661778848,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_whole_268",
+    "taxonomy": "whole",
+    "idx": 268,
+    "offset_r": 0.15616701843851374,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_whole_276",
+    "taxonomy": "whole",
+    "idx": 276,
+    "offset_r": 0.15268660969166772,
+    "reachable": false,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_whole_284",
+    "taxonomy": "whole",
+    "idx": 284,
+    "offset_r": 0.1585287853221031,
+    "reachable": false,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_whole_291",
+    "taxonomy": "whole",
+    "idx": 291,
+    "offset_r": 0.13978633669409146,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  },
+  {
+    "grasp_name": "mug_0_left_whole_299",
+    "taxonomy": "whole",
+    "idx": 299,
+    "offset_r": 0.1501530820030636,
+    "reachable": true,
+    "T_min": null,
+    "spill_at": null
+  }
+]
